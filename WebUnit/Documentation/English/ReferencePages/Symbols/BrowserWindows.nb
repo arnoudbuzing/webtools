@@ -1,0 +1,510 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     12948,        501]
+NotebookOptionsPosition[      8545,        346]
+NotebookOutlinePosition[      9169,        370]
+CellTagsIndexPosition[      9091,        365]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[TextData[{
+ "New in: ",
+ Cell["XX", "HistoryData",
+  CellTags->"New"],
+ " | Modified in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Modified"],
+ " | Obsolete in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Obsolete"],
+ " | Excised in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Excised"]
+}], "History",
+ CellID->1247902091],
+
+Cell[CellGroupData[{
+
+Cell["Categorization", "CategorizationSection",
+ CellID->1122911449],
+
+Cell["Symbol", "Categorization",
+ CellLabel->"Entity Type",
+ CellID->686433507],
+
+Cell["WebUnit Package", "Categorization",
+ CellLabel->"Paclet Name",
+ CellID->605800465],
+
+Cell["WebUnit`", "Categorization",
+ CellLabel->"Context",
+ CellID->468444828],
+
+Cell["WebUnit/ref/InstallWebUnit", "Categorization",
+ CellLabel->"URI"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Keywords", "KeywordsSection",
+ CellID->477174294],
+
+Cell["\<\
+webdriver, chrome, internet explorer, firefox, safari\
+\>", "Keywords",
+ CellChangeTimes->{{3.554807348166874*^9, 3.5548073723752947`*^9}},
+ CellID->1164421360]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Syntax Templates", "TemplatesSection",
+ CellID->1872225408],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Additional Function Template",
+ CellID->1562036412],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Arguments Pattern",
+ CellID->158391909],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Local Variables",
+ CellID->1360575930],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Color Equal Signs",
+ CellID->793782254]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Details", "DetailsSection",
+ CellID->307771771],
+
+Cell["XXXX", "Details",
+ CellLabel->"Lead",
+ CellID->670882175],
+
+Cell["XXXX", "Details",
+ CellLabel->"Developers",
+ CellID->350963985],
+
+Cell["XXXX", "Details",
+ CellLabel->"Authors",
+ CellID->8391405],
+
+Cell["XXXX", "Details",
+ CellLabel->"Feature Name",
+ CellID->3610269],
+
+Cell["XXXX", "Details",
+ CellLabel->"QA",
+ CellID->401364205],
+
+Cell["XXXX", "Details",
+ CellLabel->"DA",
+ CellID->350204745],
+
+Cell["XXXX", "Details",
+ CellLabel->"Docs",
+ CellID->732958810],
+
+Cell["XXXX", "Details",
+ CellLabel->"Features Page Notes",
+ CellID->222905350],
+
+Cell["XXXX", "Details",
+ CellLabel->"Comments",
+ CellID->240026365]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["InstallWebUnit", "ObjectName",
+ CellID->1224892054],
+
+Cell[TextData[{
+ Cell["   ", "ModInfo"],
+ Cell[BoxData[
+  RowBox[{"InstallWebUnit", "[", "]"}]], "InlineFormula"],
+ " \[LineSeparator]launches the WebDriver executable and prepares it to be \
+used from ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ ".\n",
+ Cell["      ", "ModInfo"],
+ Cell[BoxData[
+  RowBox[{"InstallWebUnit", "[", 
+   StyleBox["driver", "TI"], "]"}]], "InlineFormula"],
+ "\[LineSeparator]launches a WebDriver for a specific browser."
+}], "Usage",
+ CellChangeTimes->{{3.554806356884756*^9, 3.5548063943665037`*^9}, {
+  3.5548066697230363`*^9, 3.5548066849955635`*^9}, {3.554806748373901*^9, 
+  3.5548068007671394`*^9}, {3.5550706153881407`*^9, 3.555070618059408*^9}},
+ CellID->982511436],
+
+Cell[TextData[{
+ "To use ",
+ Cell[BoxData[
+  ButtonBox["InstallWebUnit",
+   BaseStyle->"Link",
+   ButtonData->"paclet:WebUnit/ref/InstallWebUnit"]], "InlineFormula"],
+ ", you first need to load WebUnit using ",
+ ButtonBox["Needs",
+  BaseStyle->"Link",
+  ButtonData->"paclet:ref/Needs"],
+ "[\"WebUnit`\"]"
+}], "Notes",
+ CellChangeTimes->{{3.554806474720538*^9, 3.5548065032173877`*^9}, {
+  3.5548078512001724`*^9, 3.554807857617814*^9}},
+ CellID->1067943069],
+
+Cell["\<\
+WebUnit support multiple drivers on multiple platforms:\
+\>", "Notes",
+ CellChangeTimes->{{3.5548071989599547`*^9, 3.55480721931299*^9}},
+ CellID->47756450],
+
+Cell[BoxData[GridBox[{
+   {Cell["      ", "ModInfo"], "\"\<ChromeDriver\>\"", Cell["\<\
+Google Chrome browser (default)\
+\>", "TableText"]},
+   {Cell["      ", "ModInfo"], "\"\<InternetExplorerDriver\>\"", Cell["\<\
+Microsoft Internet Explorer browser (Windows only)\
+\>", "TableText"]},
+   {Cell["      ", "ModInfo"], "\"\<FirefoxDriver\>\"", Cell["\<\
+Mozilla Firefox browser (not yet implemented)\
+\>", "TableText"]},
+   {Cell["      ", "ModInfo"], "\"\<SafariDriver\>\"", Cell["\<\
+Apple Safari browser (not yet implemented)\
+\>", "TableText"]}
+  }]], "2ColumnTableMod",
+ CellChangeTimes->{{3.5548069184779096`*^9, 3.5548070769827585`*^9}, {
+  3.5548072387669353`*^9, 3.554807244630522*^9}},
+ CellID->273355677]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Tutorials", "TutorialsSection",
+ CellID->250839057],
+
+Cell[TextData[ButtonBox["Introduction to WebUnit",
+ BaseStyle->"Link",
+ ButtonData->"paclet:WebUnit/tutorial/Introduction"]], "Tutorials",
+ CellChangeTimes->{{3.5550706861902204`*^9, 3.5550707178613873`*^9}},
+ CellID->341631938]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Demonstrations", "RelatedDemonstrationsSection",
+ CellID->1268215905],
+
+Cell["XXXX", "RelatedDemonstrations",
+ CellID->1129518860]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Links", "RelatedLinksSection",
+ CellID->1584193535],
+
+Cell["XXXX", "RelatedLinks",
+ CellID->1038487239]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["See Also", "SeeAlsoSection",
+ CellID->1255426704],
+
+Cell["XXXX", "SeeAlso",
+ CellID->929782353]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["More About", "MoreAboutSection",
+ CellID->38303248],
+
+Cell[TextData[ButtonBox["WebUnit",
+ BaseStyle->"Link",
+ ButtonData->"paclet:WebUnit/guide/WebUnit"]], "MoreAbout",
+ CellChangeTimes->{{3.555070757905391*^9, 3.5550707682194223`*^9}},
+ CellID->1665078683]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[GridBox[{
+    {
+     StyleBox["Examples", "PrimaryExamplesSection"], 
+     ButtonBox[
+      RowBox[{
+       RowBox[{"More", " ", "Examples"}], " ", "\[RightTriangle]"}],
+      BaseStyle->"ExtendedExamplesLink",
+      ButtonData:>"ExtendedExamples"]}
+   }],
+  $Line = 0; Null]], "PrimaryExamplesSection",
+ CellID->880084151],
+
+Cell["Load the package:", "ExampleText",
+ CellChangeTimes->{{3.5550705846620684`*^9, 3.5550705872583284`*^9}},
+ CellID->8083337],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<WebUnit`\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.5550705717257752`*^9, 3.5550705940400066`*^9}},
+ CellID->295007361],
+
+Cell["\<\
+Launch the default WebDriver executable:\
+\>", "ExampleText",
+ CellChangeTimes->{{3.5548068327203345`*^9, 3.554806856688731*^9}},
+ CellID->76117871],
+
+Cell[BoxData[
+ RowBox[{"InstallWebUnit", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.5548068126573286`*^9, 3.5548068155126143`*^9}},
+ CellID->43181140]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["More Examples", "ExtendedExamplesSection",
+ CellTags->"ExtendedExamples",
+ CellID->1854448968],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Scope", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1293636265],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Generalizations & Extensions", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1020263627],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["Options", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->2061341341],
+
+Cell[BoxData[
+ InterpretationBox[Cell["XXXX", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1757724783],
+
+Cell[BoxData[
+ InterpretationBox[Cell["XXXX", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1295379749]
+}, Closed]],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Applications", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->258228157],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Properties & Relations", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->2123667759],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Possible Issues", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1305812373],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Interactive Examples", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1653164318],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Neat Examples", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->589267740]
+}, Open  ]]
+},
+WindowSize->{1461, 867},
+WindowMargins->{{52, Automatic}, {Automatic, 13}},
+CellContext->"Global`",
+FrontEndVersion->"9.0 for Microsoft Windows (64-bit) (August 23, 2012)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "FunctionPageStyles.nb", 
+  CharacterEncoding -> "WindowsANSI"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "ExtendedExamples"->{
+  Cell[7025, 288, 100, 2, 53, "ExtendedExamplesSection",
+   CellTags->"ExtendedExamples",
+   CellID->1854448968]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"ExtendedExamples", 8953, 358}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 324, 14, 22, "History",
+ CellID->1247902091],
+Cell[CellGroupData[{
+Cell[906, 38, 68, 1, 27, "CategorizationSection",
+ CellID->1122911449],
+Cell[977, 41, 79, 2, 31, "Categorization",
+ CellID->686433507],
+Cell[1059, 45, 88, 2, 31, "Categorization",
+ CellID->605800465],
+Cell[1150, 49, 77, 2, 31, "Categorization",
+ CellID->468444828],
+Cell[1230, 53, 71, 1, 31, "Categorization"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1338, 59, 55, 1, 27, "KeywordsSection",
+ CellID->477174294],
+Cell[1396, 62, 170, 4, 17, "Keywords",
+ CellID->1164421360]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1603, 71, 65, 1, 27, "TemplatesSection",
+ CellID->1872225408],
+Cell[1671, 74, 94, 2, 70, "Template",
+ CellID->1562036412],
+Cell[1768, 78, 82, 2, 70, "Template",
+ CellID->158391909],
+Cell[1853, 82, 81, 2, 70, "Template",
+ CellID->1360575930],
+Cell[1937, 86, 82, 2, 70, "Template",
+ CellID->793782254]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[2056, 93, 53, 1, 17, "DetailsSection",
+ CellID->307771771],
+Cell[2112, 96, 63, 2, 70, "Details",
+ CellID->670882175],
+Cell[2178, 100, 69, 2, 70, "Details",
+ CellID->350963985],
+Cell[2250, 104, 64, 2, 70, "Details",
+ CellID->8391405],
+Cell[2317, 108, 69, 2, 70, "Details",
+ CellID->3610269],
+Cell[2389, 112, 61, 2, 70, "Details",
+ CellID->401364205],
+Cell[2453, 116, 61, 2, 70, "Details",
+ CellID->350204745],
+Cell[2517, 120, 63, 2, 70, "Details",
+ CellID->732958810],
+Cell[2583, 124, 78, 2, 70, "Details",
+ CellID->222905350],
+Cell[2664, 128, 67, 2, 70, "Details",
+ CellID->240026365]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[2768, 135, 57, 1, 62, "ObjectName",
+ CellID->1224892054],
+Cell[2828, 138, 710, 18, 105, "Usage",
+ CellID->982511436],
+Cell[3541, 158, 457, 14, 25, "Notes",
+ CellID->1067943069],
+Cell[4001, 174, 166, 4, 23, "Notes",
+ CellID->47756450],
+Cell[4170, 180, 715, 16, 68, "2ColumnTableMod",
+ CellID->273355677]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4922, 201, 57, 1, 43, "TutorialsSection",
+ CellID->250839057],
+Cell[4982, 204, 228, 4, 16, "Tutorials",
+ CellID->341631938]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5247, 213, 83, 1, 30, "RelatedDemonstrationsSection",
+ CellID->1268215905],
+Cell[5333, 216, 58, 1, 16, "RelatedDemonstrations",
+ CellID->1129518860]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5428, 222, 65, 1, 30, "RelatedLinksSection",
+ CellID->1584193535],
+Cell[5496, 225, 49, 1, 16, "RelatedLinks",
+ CellID->1038487239]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5582, 231, 55, 1, 30, "SeeAlsoSection",
+ CellID->1255426704],
+Cell[5640, 234, 43, 1, 16, "SeeAlso",
+ CellID->929782353]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5720, 240, 57, 1, 30, "MoreAboutSection",
+ CellID->38303248],
+Cell[5780, 243, 203, 4, 16, "MoreAbout",
+ CellID->1665078683]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6020, 252, 356, 11, 68, "PrimaryExamplesSection",
+ CellID->880084151],
+Cell[6379, 265, 128, 2, 20, "ExampleText",
+ CellID->8083337],
+Cell[6510, 269, 163, 3, 27, "Input",
+ CellID->295007361],
+Cell[6676, 274, 158, 4, 20, "ExampleText",
+ CellID->76117871],
+Cell[6837, 280, 151, 3, 27, "Input",
+ CellID->43181140]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7025, 288, 100, 2, 53, "ExtendedExamplesSection",
+ CellTags->"ExtendedExamples",
+ CellID->1854448968],
+Cell[7128, 292, 125, 3, 30, "ExampleSection",
+ CellID->1293636265],
+Cell[7256, 297, 148, 3, 18, "ExampleSection",
+ CellID->1020263627],
+Cell[CellGroupData[{
+Cell[7429, 304, 127, 3, 18, "ExampleSection",
+ CellID->2061341341],
+Cell[7559, 309, 130, 3, 70, "ExampleSubsection",
+ CellID->1757724783],
+Cell[7692, 314, 130, 3, 70, "ExampleSubsection",
+ CellID->1295379749]
+}, Closed]],
+Cell[7837, 320, 131, 3, 18, "ExampleSection",
+ CellID->258228157],
+Cell[7971, 325, 142, 3, 18, "ExampleSection",
+ CellID->2123667759],
+Cell[8116, 330, 135, 3, 18, "ExampleSection",
+ CellID->1305812373],
+Cell[8254, 335, 140, 3, 18, "ExampleSection",
+ CellID->1653164318],
+Cell[8397, 340, 132, 3, 18, "ExampleSection",
+ CellID->589267740]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
