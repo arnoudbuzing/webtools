@@ -93,7 +93,7 @@ InstallWebUnit[driver_] := Module[{dir},
 		Switch[ driver,
 			"ChromeDriver",
 				Switch[ $SystemID,
-					"Windows-x86-64", Run["start " <> FileNameJoin[{ dir, "chromedriver.exe" }] ],
+					"Windows-x86-64", process = StartProcess[ $SystemShell ]; WriteLine[ process, "start /b " <> FileNameJoin[{ dir, "chromedriver.exe" }] ],
 					"MacOSX-x86-64", Run[ FileNameJoin[{ dir, "chromedriver"}] <> " &" ],
 					"Linux-x86-64", Null,
 					_, Null
