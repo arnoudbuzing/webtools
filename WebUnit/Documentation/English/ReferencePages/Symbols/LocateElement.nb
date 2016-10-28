@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[     12038,        464]
-NotebookOptionsPosition[      7858,        317]
-NotebookOutlinePosition[      8479,        341]
-CellTagsIndexPosition[      8401,        336]
+NotebookDataLength[     14031,        529]
+NotebookOptionsPosition[      9457,        368]
+NotebookOutlinePosition[     10077,        392]
+CellTagsIndexPosition[      9999,        387]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -242,6 +242,8 @@ Cell["XXXX", "MoreAbout",
  CellID->1665078683]
 }, Open  ]],
 
+Cell[CellGroupData[{
+
 Cell[BoxData[
  InterpretationBox[GridBox[{
     {
@@ -254,6 +256,55 @@ Cell[BoxData[
    }],
   $Line = 0; Null]], "PrimaryExamplesSection",
  CellID->880084151],
+
+Cell["Load the package:", "ExampleText",
+ CellChangeTimes->{{3.5550705846620684`*^9, 3.5550705872583284`*^9}},
+ CellID->8083337],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<WebUnit`\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.5550705717257752`*^9, 3.5550705940400066`*^9}},
+ CellID->295007361],
+
+Cell["Launch the default WebDriver executable:", "ExampleText",
+ CellChangeTimes->{{3.5548068327203345`*^9, 3.554806856688731*^9}},
+ CellID->76117871],
+
+Cell[BoxData[
+ RowBox[{"InstallWebUnit", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.5548068126573286`*^9, 3.5548068155126143`*^9}},
+ CellID->43181140],
+
+Cell["Start a new web session:", "ExampleText",
+ CellChangeTimes->{{3.5548068327203345`*^9, 3.554806856688731*^9}, {
+  3.686633125444084*^9, 3.686633132482484*^9}},
+ CellID->298699327],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"StartWebSession", "[", "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+  "OpenWebPage", "[", "\"\<http://reference.wolfram.com/language/\>\"", "]"}],
+   ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Pause", "[", "1", "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"element", "=", 
+   RowBox[{"LocateElement", "[", 
+    RowBox[{"Id", "[", "\"\<query\>\"", "]"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"TypeElement", "[", 
+   RowBox[{"element", ",", 
+    TagBox[
+     StyleBox["\"\<Weibull Distribution \\[EnterKey]\>\"",
+      ShowSpecialCharacters->False,
+      ShowStringCharacters->True,
+      NumberMarks->True],
+     FullForm]}], " ", "]"}], ";"}]}], "Input",
+ CellID->93838531]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -318,9 +369,9 @@ Cell[BoxData[
 WindowSize->{1664, 915},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
 CellContext->"Global`",
-FrontEndVersion->"10.2 for Microsoft Windows (64-bit) (June 26, 2015)",
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (September 21, 2016)",
 StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "FunctionPageStyles.nb", 
-  CharacterEncoding -> "WindowsANSI"]
+  CharacterEncoding -> "UTF-8"]
 ]
 (* End of Notebook Content *)
 
@@ -328,14 +379,14 @@ StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "FunctionPageStyles.nb",
 (*CellTagsOutline
 CellTagsIndex->{
  "ExtendedExamples"->{
-  Cell[6338, 259, 100, 2, 53, "ExtendedExamplesSection",
+  Cell[7937, 310, 100, 2, 53, "ExtendedExamplesSection",
    CellTags->"ExtendedExamples",
    CellID->1854448968]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"ExtendedExamples", 8263, 329}
+ {"ExtendedExamples", 9861, 380}
  }
 *)
 (*NotebookFileOutline
@@ -396,9 +447,9 @@ Cell[2538, 125, 67, 2, 31, "Details",
 Cell[CellGroupData[{
 Cell[2642, 132, 124, 2, 62, "ObjectName",
  CellID->1224892054],
-Cell[2769, 136, 484, 13, 71, "Usage",
+Cell[2769, 136, 484, 13, 70, "Usage",
  CellID->982511436],
-Cell[3256, 151, 542, 15, 39, "Notes",
+Cell[3256, 151, 542, 15, 38, "Notes",
  CellID->126939398],
 Cell[3801, 168, 182, 3, 23, "Notes",
  CellID->14141667],
@@ -437,37 +488,50 @@ Cell[5836, 237, 57, 1, 30, "MoreAboutSection",
 Cell[5896, 240, 46, 1, 16, "MoreAbout",
  CellID->1665078683]
 }, Open  ]],
-Cell[5957, 244, 356, 11, 68, "PrimaryExamplesSection",
- CellID->880084151],
 Cell[CellGroupData[{
-Cell[6338, 259, 100, 2, 53, "ExtendedExamplesSection",
+Cell[5979, 246, 356, 11, 67, "PrimaryExamplesSection",
+ CellID->880084151],
+Cell[6338, 259, 128, 2, 20, "ExampleText",
+ CellID->8083337],
+Cell[6469, 263, 163, 3, 25, "Input",
+ CellID->295007361],
+Cell[6635, 268, 150, 2, 20, "ExampleText",
+ CellID->76117871],
+Cell[6788, 272, 151, 3, 25, "Input",
+ CellID->43181140],
+Cell[6942, 277, 184, 3, 20, "ExampleText",
+ CellID->298699327],
+Cell[7129, 282, 771, 23, 98, "Input",
+ CellID->93838531]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7937, 310, 100, 2, 53, "ExtendedExamplesSection",
  CellTags->"ExtendedExamples",
  CellID->1854448968],
-Cell[6441, 263, 125, 3, 30, "ExampleSection",
+Cell[8040, 314, 125, 3, 31, "ExampleSection",
  CellID->1293636265],
-Cell[6569, 268, 148, 3, 18, "ExampleSection",
+Cell[8168, 319, 148, 3, 19, "ExampleSection",
  CellID->1020263627],
 Cell[CellGroupData[{
-Cell[6742, 275, 127, 3, 18, "ExampleSection",
+Cell[8341, 326, 127, 3, 19, "ExampleSection",
  CellID->2061341341],
-Cell[6872, 280, 130, 3, 21, "ExampleSubsection",
+Cell[8471, 331, 130, 3, 22, "ExampleSubsection",
  CellID->1757724783],
-Cell[7005, 285, 130, 3, 17, "ExampleSubsection",
+Cell[8604, 336, 130, 3, 18, "ExampleSubsection",
  CellID->1295379749]
 }, Open  ]],
-Cell[7150, 291, 131, 3, 30, "ExampleSection",
+Cell[8749, 342, 131, 3, 31, "ExampleSection",
  CellID->258228157],
-Cell[7284, 296, 142, 3, 18, "ExampleSection",
+Cell[8883, 347, 142, 3, 19, "ExampleSection",
  CellID->2123667759],
-Cell[7429, 301, 135, 3, 18, "ExampleSection",
+Cell[9028, 352, 135, 3, 19, "ExampleSection",
  CellID->1305812373],
-Cell[7567, 306, 140, 3, 18, "ExampleSection",
+Cell[9166, 357, 140, 3, 19, "ExampleSection",
  CellID->1653164318],
-Cell[7710, 311, 132, 3, 18, "ExampleSection",
+Cell[9309, 362, 132, 3, 19, "ExampleSection",
  CellID->589267740]
 }, Open  ]]
 }
 ]
 *)
 
-(* End of internal cache information *)
