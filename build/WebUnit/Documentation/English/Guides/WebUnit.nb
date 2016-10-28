@@ -1,0 +1,460 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     13854,        451]
+NotebookOptionsPosition[     10724,        358]
+NotebookOutlinePosition[     12268,        397]
+CellTagsIndexPosition[     12225,        394]
+WindowTitle->WebUnit
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[GridBox[{
+   {Cell["WEB UNIT PACKAGE GUIDE", "PacletNameCell"], Cell[TextData[{
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox[
+        InterpretationBox[Cell[TextData[{
+          "Functions",
+          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+           StripOnInput->False]
+         }]],
+         TextCell[
+          Row[{"Functions", 
+            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+        StripOnInput->False], {"\<\"BrowserWindows\"\>":>
+       Documentation`HelpLookup[
+       "paclet:WebUnit/ref/BrowserWindows"], "\<\"ClearElement\"\>":>
+       Documentation`HelpLookup[
+       "paclet:WebUnit/ref/ClearElement"], "\<\"FocusFrame\"\>":>
+       Documentation`HelpLookup[
+       "paclet:WebUnit/ref/FocusFrame"], "\<\"InstallWebUnit\"\>":>
+       Documentation`HelpLookup[
+       "paclet:WebUnit/ref/InstallWebUnit"], "\<\"PageBack\"\>":>
+       Documentation`HelpLookup[
+       "paclet:WebUnit/ref/PageBack"], "\<\"PageForward\"\>":>
+       Documentation`HelpLookup[
+       "paclet:WebUnit/ref/PageForward"], "\<\"SetBrowserWindow\"\>":>
+       Documentation`HelpLookup[
+       "paclet:WebUnit/ref/SetBrowserWindow"], "\<\"WebSessionStart\"\>":>
+       Documentation`HelpLookup[
+       "paclet:WebUnit/ref/StartWebSession"], "\<\"WebSessionStatus\"\>":>
+       Documentation`HelpLookup[
+       "paclet:WebUnit/ref/WebSessionStatus"], "\<\"WebSessionStop\"\>":>
+       Documentation`HelpLookup["paclet:WebUnit/ref/StopWebSession"]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"GuideFunction"]],
+      LineSpacing->{1.4, 0}],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox[
+        InterpretationBox[Cell[TextData[{
+          "URL",
+          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+           StripOnInput->False]
+         }]],
+         TextCell[
+          Row[{"URL", 
+            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+        StripOnInput->False], {"\<\"WebUnit/guide/WebUnit\"\>":>
+       None, "\<\"Copy Wolfram Documentation Center URL\"\>":>
+       Module[{DocumentationSearch`Private`nb$}, 
+        DocumentationSearch`Private`nb$ = NotebookPut[
+           Notebook[{
+             Cell["WebUnit/guide/WebUnit"]}, Visible -> False]]; 
+        SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+        FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+        NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+       Delimiter, "\<\"Copy web URL\"\>":>
+       Module[{DocumentationSearch`Private`nb$}, 
+        DocumentationSearch`Private`nb$ = NotebookPut[
+           Notebook[{
+             Cell[
+              BoxData[
+               MakeBoxes[
+                Hyperlink[
+                "http://reference.wolfram.com/language/WebUnit/guide/WebUnit.\
+html"], StandardForm]], "Input", TextClipboardType -> "PlainText"]}, Visible -> 
+            False]]; SelectionMove[
+         DocumentationSearch`Private`nb$, All, Notebook]; 
+        FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+        NotebookClose[DocumentationSearch`Private`nb$]; 
+        Null], "\<\"Go to web URL\"\>":>FrontEndExecute[{
+         NotebookLocate[{
+           URL[
+            StringJoin[
+             If[
+              TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$2448], 
+              "http://reference.wolfram.com/system-modeler/", 
+              "http://reference.wolfram.com/language/"], 
+             "WebUnit/guide/WebUnit", ".html"]], None}]}]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"URLMenu"]],
+      LineSpacing->{1.4, 0}]
+    }], "AnchorBar"]}
+  }]], "AnchorBarGrid",
+ GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
+     Scaled[0.65], {
+      Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+   "RowsIndexed" -> {}}},
+ CellID->1],
+
+Cell[CellGroupData[{
+
+Cell["WebUnit", "GuideTitle",
+ CellID->942062912],
+
+Cell["\<\
+WebUnit puts the computational universe of web browsers at your feet.\
+\>", "GuideAbstract",
+ CellID->2001916300]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{6, 0}],
+    CacheGraphics->False],
+   Spacer[6]]]],
+ "Reference"
+}], "GuideReferenceSection",
+ WholeCellGroupOpener->True],
+
+Cell["", "SectionHeaderSpacer"],
+
+Cell[CellGroupData[{
+
+Cell["Web Session Management", "GuideFunctionsSubsection",
+ CellID->32464305],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["InstallWebUnit"]],"paclet:WebUnit/ref/InstallWebUnit"},
+   "RefLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " initialize environment for interaction with the web"
+}], "GuideText",
+ CellID->193193946],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["WebSessionStart"]],"paclet:WebUnit/ref/StartWebSession"},
+   "RefLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " start a new web session"
+}], "GuideText",
+ CellID->195103644],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["WebSessionStop"]],"paclet:WebUnit/ref/StopWebSession"},
+   "RefLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " stop a running web session"
+}], "GuideText",
+ CellID->783043201],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["WebSessionStatus"]],"paclet:WebUnit/ref/WebSessionStatus"},
+   "RefLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " status information on the current web session"
+}], "GuideText",
+ CellID->1864674],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["$CurrentWebSession"]],"paclet:WebUnit/ref/$CurrentWebSession"},
+   
+   "RefLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " identifies the currently active web session"
+}], "GuideText",
+ CellID->936886532],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["$WebSessions"]],"paclet:WebUnit/ref/$WebSessions"},
+   "RefLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " list of all active web sessions"
+}], "GuideText",
+ CellID->90321764]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Operations on a Web Page", "GuideFunctionsSubsection",
+ CellID->897418852],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["PageRefresh"]],"paclet:WebUnit/ref/PageRefresh"},
+   "RefLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " refresh the active web page"
+}], "GuideText",
+ CellID->423348248],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["PageBack"]],"paclet:WebUnit/ref/PageBack"},
+   "RefLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " return to the previously active web page"
+}], "GuideText",
+ CellID->21957113],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["PageForward"]],"paclet:WebUnit/ref/PageForward"},
+   "RefLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " return to the next more recently active web page"
+}], "GuideText",
+ CellID->197888],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["BrowserWindows"]],"paclet:WebUnit/ref/BrowserWindows"},
+   "RefLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " list of known browser windows in the current session"
+}], "GuideText",
+ CellID->87600486],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["SetBrowserWindow"]],"paclet:WebUnit/ref/SetBrowserWindow"},
+   "RefLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " set the active browser window"
+}], "GuideText",
+ CellID->36214067]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Operations on Elements of a Web Page", "GuideFunctionsSubsection",
+ CellID->373843448],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["LocateElement"]],"paclet:WebUnit/ref/locateElement"},
+   "RefLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " locate an element on a web page by various methods"
+}], "GuideText",
+ CellID->405477897],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["ClickElement"]],"paclet:WebUnit/ref/clickElement"},
+   "RefLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " click a specific link or element"
+}], "GuideText",
+ CellID->203374175],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["TypeElement"]],"paclet:WebUnit/ref/typeElement"},
+   "RefLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " type in a specific input field or text area"
+}], "GuideText",
+ CellID->1463276848],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["ClearElement"]],"paclet:WebUnit/ref/ClearElement"},
+   "RefLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " clear text from a specific input field or text area"
+}], "GuideText",
+ CellID->252454963],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["FocusFrame"]],"paclet:WebUnit/ref/FocusFrame"},
+   "RefLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " sets the focus on an invisible web frame <iframe> to allow access to the \
+elements within"
+}], "GuideText",
+ CellID->7235326]
+}, Open  ]]
+}, Open  ]],
+
+Cell[" ", "FooterCell"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{725, 750},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"WebUnit",
+TaggingRules->{
+ "ModificationHighlight" -> False, "ColorType" -> "GuideColor", "LinkTrails" -> 
+  GridBox[{{
+      RowBox[{
+        ButtonBox[
+        "Wolfram Language", ButtonData -> "paclet:guide/WolframRoot", 
+         BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
+    Left], "ExampleCounter" -> 1, "NeedPlatMsgIn" -> None, "RootCaptions" -> 
+  "", "Metadata" -> {
+   "built" -> "{2016, 10, 28, 21, 57, 42.4645283}", 
+    "history" -> {"XX", "", "", ""}, "context" -> "WebUnit`", 
+    "keywords" -> {}, "specialkeywords" -> {}, 
+    "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
+    "Web Unit Package Guide", "language" -> "en", "paclet" -> 
+    "WebUnit Package", "status" -> "None", "summary" -> 
+    "WebUnit puts the computational universe of web browsers at your feet.", 
+    "synonyms" -> {}, "tabletags" -> 
+    DocumentationBuild`Make`Private`tabletaggingrules$2376, "title" -> 
+    "WebUnit", "titlemodifier" -> "", "windowtitle" -> "WebUnit", "type" -> 
+    "Guide", "uri" -> "WebUnit/guide/WebUnit"}},
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (September 21, 2016)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "Reference.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[579, 21, 3950, 92, 70, "AnchorBarGrid",
+ CellID->1],
+Cell[CellGroupData[{
+Cell[4554, 117, 49, 1, 70, "GuideTitle",
+ CellID->942062912],
+Cell[4606, 120, 123, 3, 70, "GuideAbstract",
+ CellID->2001916300]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4766, 128, 257, 11, 70, "GuideReferenceSection"],
+Cell[5026, 141, 31, 0, 70, "SectionHeaderSpacer"],
+Cell[CellGroupData[{
+Cell[5082, 145, 77, 1, 70, "GuideFunctionsSubsection",
+ CellID->32464305],
+Cell[5162, 148, 337, 10, 70, "GuideText",
+ CellID->193193946],
+Cell[5502, 160, 311, 10, 70, "GuideText",
+ CellID->195103644],
+Cell[5816, 172, 312, 10, 70, "GuideText",
+ CellID->783043201],
+Cell[6131, 184, 333, 10, 70, "GuideText",
+ CellID->1864674],
+Cell[6467, 196, 341, 11, 70, "GuideText",
+ CellID->936886532],
+Cell[6811, 209, 312, 10, 70, "GuideText",
+ CellID->90321764]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7160, 224, 80, 1, 70, "GuideFunctionsSubsection",
+ CellID->897418852],
+Cell[7243, 227, 307, 10, 70, "GuideText",
+ CellID->423348248],
+Cell[7553, 239, 313, 10, 70, "GuideText",
+ CellID->21957113],
+Cell[7869, 251, 325, 10, 70, "GuideText",
+ CellID->197888],
+Cell[8197, 263, 337, 10, 70, "GuideText",
+ CellID->87600486],
+Cell[8537, 275, 318, 10, 70, "GuideText",
+ CellID->36214067]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8892, 290, 92, 1, 70, "GuideFunctionsSubsection",
+ CellID->373843448],
+Cell[8987, 293, 334, 10, 70, "GuideText",
+ CellID->405477897],
+Cell[9324, 305, 314, 10, 70, "GuideText",
+ CellID->203374175],
+Cell[9641, 317, 324, 10, 70, "GuideText",
+ CellID->1463276848],
+Cell[9968, 329, 333, 10, 70, "GuideText",
+ CellID->252454963],
+Cell[10304, 341, 366, 11, 70, "GuideText",
+ CellID->7235326]
+}, Open  ]]
+}, Open  ]],
+Cell[10697, 356, 23, 0, 70, "FooterCell"]
+}
+]
+*)
+
+(* End of internal cache information *)

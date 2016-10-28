@@ -1,0 +1,518 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     14423,        508]
+NotebookOptionsPosition[      9953,        371]
+NotebookOutlinePosition[     12154,        429]
+CellTagsIndexPosition[     12069,        424]
+WindowTitle->PageBack
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[GridBox[{
+   {Cell["WEB UNIT PACKAGE SYMBOL", "PacletNameCell"], Cell[TextData[{
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox[
+        InterpretationBox[Cell[TextData[{
+          "Tutorials",
+          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+           StripOnInput->False]
+         }]],
+         TextCell[
+          Row[{"Tutorials", 
+            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+        StripOnInput->False], {"\<\"Introduction to WebUnit\"\>":>
+       Documentation`HelpLookup["paclet:WebUnit/tutorial/Introduction"]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"Tutorials"]],
+      LineSpacing->{1.4, 0}],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox[
+        InterpretationBox[Cell[TextData[{
+          "Related Guides",
+          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+           StripOnInput->False]
+         }]],
+         TextCell[
+          Row[{"Related Guides", 
+            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+        StripOnInput->False], {"\<\"WebUnit\"\>":>Documentation`HelpLookup[
+       "paclet:WebUnit/guide/WebUnit"]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"MoreAbout"]],
+      LineSpacing->{1.4, 0}],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox[
+        InterpretationBox[Cell[TextData[{
+          "URL",
+          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+           StripOnInput->False]
+         }]],
+         TextCell[
+          Row[{"URL", 
+            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+        StripOnInput->False], {"\<\"WebUnit/ref/PageBack\"\>":>
+       None, "\<\"Copy Wolfram Documentation Center URL\"\>":>
+       Module[{DocumentationSearch`Private`nb$}, 
+        DocumentationSearch`Private`nb$ = NotebookPut[
+           Notebook[{
+             Cell["WebUnit/ref/PageBack"]}, Visible -> False]]; 
+        SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+        FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+        NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+       Delimiter, "\<\"Copy web URL\"\>":>
+       Module[{DocumentationSearch`Private`nb$}, 
+        DocumentationSearch`Private`nb$ = NotebookPut[
+           Notebook[{
+             Cell[
+              BoxData[
+               MakeBoxes[
+                Hyperlink[
+                "http://reference.wolfram.com/language/WebUnit/ref/PageBack.\
+html"], StandardForm]], "Input", TextClipboardType -> "PlainText"]}, Visible -> 
+            False]]; SelectionMove[
+         DocumentationSearch`Private`nb$, All, Notebook]; 
+        FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+        NotebookClose[DocumentationSearch`Private`nb$]; 
+        Null], "\<\"Go to web URL\"\>":>FrontEndExecute[{
+         NotebookLocate[{
+           URL[
+            StringJoin[
+             If[
+              TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$9479], 
+              "http://reference.wolfram.com/system-modeler/", 
+              "http://reference.wolfram.com/language/"], 
+             "WebUnit/ref/PageBack", ".html"]], None}]}]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"URLMenu"]],
+      LineSpacing->{1.4, 0}]
+    }], "AnchorBar"]}
+  }]], "AnchorBarGrid",
+ CellID->1],
+
+Cell[TextData[{
+ Cell["PageBack", "ObjectName"],
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{8, 0}],
+    CacheGraphics->False],
+   Spacer[8]]]],
+ Cell[BoxData[""], "ObjectNameTranslation"]
+}], "ObjectNameGrid"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[GridBox[{
+   {"", Cell[TextData[{
+     Cell[BoxData[
+      RowBox[{"PageBack", "[", "]"}]], "InlineFormula"],
+     " \[LineSeparator]instructs the web browser to navigate to the \
+previously visible page in its active web session."
+    }]]},
+   {"", Cell[TextData[{
+     Cell[BoxData[
+      RowBox[{"PageBack", "[", 
+       StyleBox["sessionId", "TI"], "]"}]], "InlineFormula"],
+     "\[LineSeparator]navigates back for the web session specified by ",
+     StyleBox["sessionId", "TI"],
+     "."
+    }]]}
+  }]], "Usage",
+ GridBoxOptions->{
+ GridBoxBackground->{
+  "Columns" -> {{None}}, "ColumnsIndexed" -> {}, "Rows" -> {None, {None}}, 
+   "RowsIndexed" -> {}}},
+ CellID->982511436],
+
+Cell[CellGroupData[{
+
+Cell[TextData[Cell[BoxData[
+ ButtonBox[Cell[TextData[{
+   Cell[BoxData[
+    InterpretationBox[
+     StyleBox[
+      GraphicsBox[{},
+       BaselinePosition->Baseline,
+       ImageSize->{6, 0}],
+      CacheGraphics->False],
+     Spacer[6]]]],
+   "Details"
+  }], "NotesFrameText"],
+  Appearance->{Automatic, None},
+  BaseStyle->None,
+  ButtonFunction:>(FrontEndExecute[{
+     FrontEnd`SelectionMove[
+      FrontEnd`SelectedNotebook[], All, ButtonCell], 
+     FrontEndToken["OpenCloseGroup"], 
+     FrontEnd`SelectionMove[
+      FrontEnd`SelectedNotebook[], After, CellContents]}]& ),
+  Evaluator->None,
+  Method->"Preemptive"]]]], "NotesSection",
+ WholeCellGroupOpener->True,
+ CellGroupingRules->{"SectionGrouping", 50},
+ CellID->425209654],
+
+Cell["", "SectionHeaderSpacer"],
+
+Cell["\<\
+If there is no previously visible page in the session history, no action is \
+taken.\
+\>", "Notes",
+ CellID->1067943069],
+
+Cell["", "SectionFooterSpacer"]
+}, Closed]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{6, 0}],
+    CacheGraphics->False],
+   Spacer[6]]]],
+ "Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount"]
+}], "PrimaryExamplesSection",
+ WholeCellGroupOpener->True,
+ CellTags->"PrimaryExamplesSection",
+ CellID->147981474],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Basic Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount"]
+}], "ExampleSection", "ExampleSection",
+ WholeCellGroupOpener->True,
+ CellID->364340635],
+
+Cell["Load the package:", "ExampleText",
+ CellID->8083337],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<WebUnit`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->295007361],
+
+Cell["Launch the default WebDriver executable:", "ExampleText",
+ CellID->76117871],
+
+Cell[BoxData[
+ RowBox[{"InstallWebUnit", "[", "]"}]], "Input",
+ CellLabel->"In[2]:=",
+ CellID->43181140],
+
+Cell["Start a new web session:", "ExampleText",
+ CellID->328133610],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"StartWebSession", "[", "]"}]], "Input",
+ CellLabel->"In[3]:=",
+ CellID->855459279],
+
+Cell[BoxData["\<\"2d5838761e4c2a47575ce4d79ec32e71\"\>"], "Output",
+ ImageSize->{228, 14},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[3]=",
+ CellID->85480348]
+}, Open  ]],
+
+Cell["Open an initial page:", "ExampleText",
+ CellID->371678909],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"OpenWebPage", "[", "\"\<http://www.wolfram.com\>\"", "]"}]], "Input",
+ CellLabel->"In[4]:=",
+ CellID->4996655],
+
+Cell[BoxData[
+ RowBox[{"{", "}"}]], "Output",
+ ImageSize->{18, 14},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[4]=",
+ CellID->588120862]
+}, Open  ]],
+
+Cell["Open a second page:", "ExampleText",
+ CellID->143233406],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"OpenWebPage", "[", "\"\<http://www.wolframalpha.com\>\"", 
+  "]"}]], "Input",
+ CellLabel->"In[5]:=",
+ CellID->177816570],
+
+Cell[BoxData[
+ RowBox[{"{", "}"}]], "Output",
+ ImageSize->{18, 14},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[5]=",
+ CellID->143602348]
+}, Open  ]],
+
+Cell["Navigate back to the initial page:", "ExampleText",
+ CellID->89401731],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PageBack", "[", "]"}]], "Input",
+ CellLabel->"In[6]:=",
+ CellID->274356662],
+
+Cell[BoxData[
+ RowBox[{"{", "}"}]], "Output",
+ ImageSize->{18, 14},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[6]=",
+ CellID->510482881]
+}, Open  ]]
+}, Open  ]],
+
+Cell["", "SectionFooterSpacer"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{6, 0}],
+    CacheGraphics->False],
+   Spacer[6]]]],
+ "Tutorials"
+}], "TutorialsSection",
+ WholeCellGroupOpener->True,
+ CellID->250839057],
+
+Cell["", "SectionHeaderSpacer"],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["Introduction to WebUnit"]],
+   "paclet:WebUnit/tutorial/Introduction"},
+  "RefLink",
+  BaseStyle->"Tutorials"]], "Tutorials",
+ CellID->341631938],
+
+Cell["", "SectionFooterSpacer"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{6, 0}],
+    CacheGraphics->False],
+   Spacer[6]]]],
+ "Related Guides"
+}], "MoreAboutSection",
+ WholeCellGroupOpener->True,
+ CellID->38303248],
+
+Cell["", "SectionHeaderSpacer"],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["WebUnit"]],"paclet:WebUnit/guide/WebUnit"},
+  "RefLink",
+  BaseStyle->"MoreAbout"]], "MoreAbout",
+ CellID->564303703]
+}, Open  ]],
+
+Cell[" ", "FooterCell"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{725, 661},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"PageBack",
+TaggingRules->{
+ "ModificationHighlight" -> False, "ColorType" -> "SymbolColor", "LinkTrails" -> 
+  GridBox[{{
+      RowBox[{
+        ButtonBox[
+        "WebUnit", ButtonData -> "paclet:WebUnit/guide/WebUnit", 
+         BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
+    Left], "HasOptions" -> False, "ExampleCounter" -> 1, "NeedPlatMsgIn" -> 
+  None, "RootCaptions" -> "", 
+  "Metadata" -> {
+   "built" -> "{2016, 10, 28, 21, 57, 54.9510065}", 
+    "history" -> {"XX", "", "", ""}, "context" -> "WebUnit`", 
+    "keywords" -> {"webunit pageback navigation"}, "specialkeywords" -> {}, 
+    "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
+    "Web Unit Package Symbol", "language" -> "en", "paclet" -> 
+    "WebUnit Package", "status" -> "None", "summary" -> 
+    "PageBack[] instructs the web browser to navigate to the previously \
+visible page in its active web session. PageBack[sessionId] navigates back \
+for the web session specified by sessionId.", "synonyms" -> {}, 
+    "tabletags" -> {}, "title" -> "PageBack", "titlemodifier" -> "", 
+    "windowtitle" -> "PageBack", "type" -> "Symbol", "uri" -> 
+    "WebUnit/ref/PageBack"}, "SearchTextTranslated" -> ""},
+CellContext->"Global`",
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (September 21, 2016)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[
+    StyleDefinitions -> FrontEnd`FileName[{"Wolfram"}, "Reference.nb"]]], 
+   Cell[
+    StyleData["Input"], CellContext -> "Global`"], 
+   Cell[
+    StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
+  FrontEndVersion -> 
+  "11.0 for Microsoft Windows (64-bit) (September 21, 2016)", 
+  StyleDefinitions -> "Default.nb"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "PrimaryExamplesSection"->{
+  Cell[6152, 191, 387, 15, 30, "PrimaryExamplesSection",
+   CellTags->"PrimaryExamplesSection",
+   CellID->147981474]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"PrimaryExamplesSection", 11926, 417}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[580, 21, 3551, 89, 48, "AnchorBarGrid",
+ CellID->1],
+Cell[4134, 112, 285, 11, 44, "ObjectNameGrid"],
+Cell[CellGroupData[{
+Cell[4444, 127, 695, 20, 139, "Usage",
+ CellID->982511436],
+Cell[CellGroupData[{
+Cell[5164, 151, 738, 24, 31, "NotesSection",
+ CellGroupingRules->{"SectionGrouping", 50},
+ CellID->425209654],
+Cell[5905, 177, 31, 0, 70, "SectionHeaderSpacer"],
+Cell[5939, 179, 130, 4, 70, "Notes",
+ CellID->1067943069],
+Cell[6072, 185, 31, 0, 70, "SectionFooterSpacer"]
+}, Closed]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6152, 191, 387, 15, 30, "PrimaryExamplesSection",
+ CellTags->"PrimaryExamplesSection",
+ CellID->147981474],
+Cell[CellGroupData[{
+Cell[6564, 210, 195, 6, 25, "ExampleSection",
+ CellID->364340635],
+Cell[6762, 218, 58, 1, 33, "ExampleText",
+ CellID->8083337],
+Cell[6823, 221, 116, 3, 26, "Input",
+ CellID->295007361],
+Cell[6942, 226, 82, 1, 33, "ExampleText",
+ CellID->76117871],
+Cell[7027, 229, 104, 3, 26, "Input",
+ CellID->43181140],
+Cell[7134, 234, 67, 1, 33, "ExampleText",
+ CellID->328133610],
+Cell[CellGroupData[{
+Cell[7226, 239, 106, 3, 26, "Input",
+ CellID->855459279],
+Cell[7335, 244, 197, 5, 35, "Output",
+ CellID->85480348]
+}, Open  ]],
+Cell[7547, 252, 64, 1, 33, "ExampleText",
+ CellID->371678909],
+Cell[CellGroupData[{
+Cell[7636, 257, 134, 3, 26, "Input",
+ CellID->4996655],
+Cell[7773, 262, 175, 6, 35, "Output",
+ CellID->588120862]
+}, Open  ]],
+Cell[7963, 271, 62, 1, 33, "ExampleText",
+ CellID->143233406],
+Cell[CellGroupData[{
+Cell[8050, 276, 144, 4, 70, "Input",
+ CellID->177816570],
+Cell[8197, 282, 175, 6, 35, "Output",
+ CellID->143602348]
+}, Open  ]],
+Cell[8387, 291, 76, 1, 70, "ExampleText",
+ CellID->89401731],
+Cell[CellGroupData[{
+Cell[8488, 296, 99, 3, 70, "Input",
+ CellID->274356662],
+Cell[8590, 301, 175, 6, 35, "Output",
+ CellID->510482881]
+}, Open  ]]
+}, Open  ]],
+Cell[8792, 311, 31, 0, 70, "SectionFooterSpacer"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8860, 316, 272, 12, 70, "TutorialsSection",
+ CellID->250839057],
+Cell[9135, 330, 31, 0, 70, "SectionHeaderSpacer"],
+Cell[9169, 332, 193, 6, 70, "Tutorials",
+ CellID->341631938],
+Cell[9365, 340, 31, 0, 70, "SectionFooterSpacer"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9433, 345, 276, 12, 70, "MoreAboutSection",
+ CellID->38303248],
+Cell[9712, 359, 31, 0, 70, "SectionHeaderSpacer"],
+Cell[9746, 361, 165, 5, 70, "MoreAbout",
+ CellID->564303703]
+}, Open  ]],
+Cell[9926, 369, 23, 0, 70, "FooterCell"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

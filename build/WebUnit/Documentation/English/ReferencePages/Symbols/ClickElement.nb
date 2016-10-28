@@ -1,0 +1,438 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     13107,        429]
+NotebookOptionsPosition[      9438,        322]
+NotebookOutlinePosition[     11625,        380]
+CellTagsIndexPosition[     11540,        375]
+WindowTitle->InstallWebUnit
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[GridBox[{
+   {Cell["WEB UNIT PACKAGE SYMBOL", "PacletNameCell"], Cell[TextData[{
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox[
+        InterpretationBox[Cell[TextData[{
+          "Tutorials",
+          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+           StripOnInput->False]
+         }]],
+         TextCell[
+          Row[{"Tutorials", 
+            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+        StripOnInput->False], {"\<\"Introduction to WebUnit\"\>":>
+       Documentation`HelpLookup["paclet:WebUnit/tutorial/Introduction"]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"Tutorials"]],
+      LineSpacing->{1.4, 0}],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox[
+        InterpretationBox[Cell[TextData[{
+          "Related Guides",
+          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+           StripOnInput->False]
+         }]],
+         TextCell[
+          Row[{"Related Guides", 
+            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+        StripOnInput->False], {"\<\"WebUnit\"\>":>Documentation`HelpLookup[
+       "paclet:WebUnit/guide/WebUnit"]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"MoreAbout"]],
+      LineSpacing->{1.4, 0}],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox[
+        InterpretationBox[Cell[TextData[{
+          "URL",
+          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+           StripOnInput->False]
+         }]],
+         TextCell[
+          Row[{"URL", 
+            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+        StripOnInput->False], {"\<\"WebUnit/ref/InstallWebUnit\"\>":>
+       None, "\<\"Copy Wolfram Documentation Center URL\"\>":>
+       Module[{DocumentationSearch`Private`nb$}, 
+        DocumentationSearch`Private`nb$ = NotebookPut[
+           Notebook[{
+             Cell["WebUnit/ref/InstallWebUnit"]}, Visible -> False]]; 
+        SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+        FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+        NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+       Delimiter, "\<\"Copy web URL\"\>":>
+       Module[{DocumentationSearch`Private`nb$}, 
+        DocumentationSearch`Private`nb$ = NotebookPut[
+           Notebook[{
+             Cell[
+              BoxData[
+               MakeBoxes[
+                Hyperlink[
+                "http://reference.wolfram.com/language/WebUnit/ref/\
+InstallWebUnit.html"], StandardForm]], "Input", TextClipboardType -> 
+              "PlainText"]}, Visible -> False]]; 
+        SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+        FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+        NotebookClose[DocumentationSearch`Private`nb$]; 
+        Null], "\<\"Go to web URL\"\>":>FrontEndExecute[{
+         NotebookLocate[{
+           URL[
+            StringJoin[
+             If[
+              TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$5439], 
+              "http://reference.wolfram.com/system-modeler/", 
+              "http://reference.wolfram.com/language/"], 
+             "WebUnit/ref/InstallWebUnit", ".html"]], None}]}]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"URLMenu"]],
+      LineSpacing->{1.4, 0}]
+    }], "AnchorBar"]}
+  }]], "AnchorBarGrid",
+ CellID->1],
+
+Cell[TextData[{
+ Cell["InstallWebUnit", "ObjectName"],
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{8, 0}],
+    CacheGraphics->False],
+   Spacer[8]]]],
+ Cell[BoxData[""], "ObjectNameTranslation"]
+}], "ObjectNameGrid"],
+
+Cell[BoxData[GridBox[{
+   {"", Cell[TextData[{
+     Cell[BoxData[
+      RowBox[{"InstallWebUnit", "[", "]"}]], "InlineFormula"],
+     " \[LineSeparator]launches the WebDriver executable and prepares it to \
+be used from ",
+     StyleBox["Mathematica",
+      FontSlant->"Italic"],
+     "."
+    }]]},
+   {"", Cell[TextData[{
+     Cell[BoxData[
+      RowBox[{"InstallWebUnit", "[", 
+       StyleBox["driver", "TI"], "]"}]], "InlineFormula"],
+     "\[LineSeparator]launches a WebDriver for a specific browser."
+    }]]}
+  }]], "Usage",
+ GridBoxOptions->{
+ GridBoxBackground->{
+  "Columns" -> {{None}}, "ColumnsIndexed" -> {}, "Rows" -> {None, {None}}, 
+   "RowsIndexed" -> {}}},
+ CellID->982511436],
+
+Cell[CellGroupData[{
+
+Cell[TextData[Cell[BoxData[
+ ButtonBox[Cell[TextData[{
+   Cell[BoxData[
+    InterpretationBox[
+     StyleBox[
+      GraphicsBox[{},
+       BaselinePosition->Baseline,
+       ImageSize->{6, 0}],
+      CacheGraphics->False],
+     Spacer[6]]]],
+   "Details"
+  }], "NotesFrameText"],
+  Appearance->{Automatic, None},
+  BaseStyle->None,
+  ButtonFunction:>(FrontEndExecute[{
+     FrontEnd`SelectionMove[
+      FrontEnd`SelectedNotebook[], All, ButtonCell], 
+     FrontEndToken["OpenCloseGroup"], 
+     FrontEnd`SelectionMove[
+      FrontEnd`SelectedNotebook[], After, CellContents]}]& ),
+  Evaluator->None,
+  Method->"Preemptive"]]]], "NotesSection",
+ WholeCellGroupOpener->True,
+ CellGroupingRules->{"SectionGrouping", 50},
+ CellID->1],
+
+Cell["", "SectionHeaderSpacer"],
+
+Cell[TextData[{
+ "To use ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["InstallWebUnit"]],"paclet:WebUnit/ref/InstallWebUnit"},
+   "RefLink",
+   BaseStyle->{"InlineFormula"}]], "InlineFormula"],
+ ", you first need to load WebUnit using ",
+ ButtonBox["Needs",
+  BaseStyle->"Link",
+  ButtonData->"paclet:ref/Needs"],
+ "[\"WebUnit`\"]"
+}], "Notes",
+ CellID->1067943069],
+
+Cell["WebUnit support multiple drivers on multiple platforms:", "Notes",
+ CellID->47756450],
+
+Cell[BoxData[GridBox[{
+   {Cell["      ", "TableRowIcon"], "\"\<ChromeDriver\>\"", Cell[
+    "Google Chrome browser (default)", "TableText"]},
+   {Cell["      ", "TableRowIcon"], "\"\<InternetExplorerDriver\>\"", Cell[
+    "Microsoft Internet Explorer browser (Windows only)", "TableText"]},
+   {Cell["      ", "TableRowIcon"], "\"\<FirefoxDriver\>\"", Cell[
+    "Mozilla Firefox browser (not yet implemented)", "TableText"]},
+   {Cell["      ", "TableRowIcon"], "\"\<SafariDriver\>\"", Cell[
+    "Apple Safari browser (not yet implemented)", "TableText"]}
+  }]], "2ColumnTableMod",
+ GridBoxOptions->{
+ GridBoxBackground->{
+  "Columns" -> {{None}}, "ColumnsIndexed" -> {}, 
+   "Rows" -> {None, None, None, {None}}, "RowsIndexed" -> {}},
+ GridBoxDividers->{"Rows" -> {{True, True, True, True, True}}}},
+ CellID->273355677],
+
+Cell["", "SectionFooterSpacer"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{6, 0}],
+    CacheGraphics->False],
+   Spacer[6]]]],
+ "Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount"]
+}], "PrimaryExamplesSection",
+ WholeCellGroupOpener->True,
+ CellTags->"PrimaryExamplesSection",
+ CellID->1],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Basic Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount"]
+}], "ExampleSection", "ExampleSection",
+ WholeCellGroupOpener->True,
+ CellID->1],
+
+Cell["Load the package:", "ExampleText",
+ CellID->8083337],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<WebUnit`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->295007361],
+
+Cell["Launch the default WebDriver executable:", "ExampleText",
+ CellID->76117871],
+
+Cell[BoxData[
+ RowBox[{"InstallWebUnit", "[", "]"}]], "Input",
+ CellLabel->"In[2]:=",
+ CellID->43181140]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SectionFooterSpacer"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{6, 0}],
+    CacheGraphics->False],
+   Spacer[6]]]],
+ "Tutorials"
+}], "TutorialsSection",
+ WholeCellGroupOpener->True,
+ CellID->250839057],
+
+Cell["", "SectionHeaderSpacer"],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["Introduction to WebUnit"]],
+   "paclet:WebUnit/tutorial/Introduction"},
+  "RefLink",
+  BaseStyle->"Tutorials"]], "Tutorials",
+ CellID->341631938],
+
+Cell["", "SectionFooterSpacer"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{6, 0}],
+    CacheGraphics->False],
+   Spacer[6]]]],
+ "Related Guides"
+}], "MoreAboutSection",
+ WholeCellGroupOpener->True,
+ CellID->38303248],
+
+Cell["", "SectionHeaderSpacer"],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["WebUnit"]],"paclet:WebUnit/guide/WebUnit"},
+  "RefLink",
+  BaseStyle->"MoreAbout"]], "MoreAbout",
+ CellID->1]
+}, Open  ]],
+
+Cell[" ", "FooterCell"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{725, 750},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"InstallWebUnit",
+TaggingRules->{
+ "ModificationHighlight" -> False, "ColorType" -> "SymbolColor", "LinkTrails" -> 
+  GridBox[{{
+      RowBox[{
+        ButtonBox[
+        "WebUnit", ButtonData -> "paclet:WebUnit/guide/WebUnit", 
+         BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
+    Left], "HasOptions" -> False, "ExampleCounter" -> 1, "NeedPlatMsgIn" -> 
+  None, "RootCaptions" -> "", 
+  "Metadata" -> {
+   "built" -> "{2016, 10, 28, 21, 57, 47.2624664}", 
+    "history" -> {"XX", "", "", ""}, "context" -> "WebUnit`", 
+    "keywords" -> {"webdriver chrome internet explorer firefox safari"}, 
+    "specialkeywords" -> {}, "tutorialcollectionlinks" -> {}, "index" -> True,
+     "label" -> "Web Unit Package Symbol", "language" -> "en", "paclet" -> 
+    "WebUnit Package", "status" -> "None", "summary" -> 
+    "InstallWebUnit[] launches the WebDriver executable and prepares it to be \
+used from Mathematica. InstallWebUnit[driver] launches a WebDriver for a \
+specific browser.", "synonyms" -> {}, "tabletags" -> {}, "title" -> 
+    "InstallWebUnit", "titlemodifier" -> "", "windowtitle" -> 
+    "InstallWebUnit", "type" -> "Symbol", "uri" -> 
+    "WebUnit/ref/InstallWebUnit"}},
+CellContext->"Global`",
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (September 21, 2016)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[
+    StyleDefinitions -> FrontEnd`FileName[{"Wolfram"}, "Reference.nb"]]], 
+   Cell[
+    StyleData["Input"], CellContext -> "Global`"], 
+   Cell[
+    StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
+  FrontEndVersion -> 
+  "11.0 for Microsoft Windows (64-bit) (September 21, 2016)", 
+  StyleDefinitions -> "Default.nb"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "PrimaryExamplesSection"->{
+  Cell[7307, 218, 379, 15, 70, "PrimaryExamplesSection",
+   CellTags->"PrimaryExamplesSection",
+   CellID->1]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"PrimaryExamplesSection", 11405, 368}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[586, 21, 3576, 89, 70, "AnchorBarGrid",
+ CellID->1],
+Cell[4165, 112, 291, 11, 70, "ObjectNameGrid"],
+Cell[4459, 125, 694, 21, 70, "Usage",
+ CellID->982511436],
+Cell[CellGroupData[{
+Cell[5178, 150, 730, 24, 70, "NotesSection",
+ CellGroupingRules->{"SectionGrouping", 50},
+ CellID->1],
+Cell[5911, 176, 31, 0, 70, "SectionHeaderSpacer"],
+Cell[5945, 178, 373, 13, 70, "Notes",
+ CellID->1067943069],
+Cell[6321, 193, 91, 1, 70, "Notes",
+ CellID->47756450],
+Cell[6415, 196, 821, 15, 70, "2ColumnTableMod",
+ CellID->273355677],
+Cell[7239, 213, 31, 0, 70, "SectionFooterSpacer"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[7307, 218, 379, 15, 70, "PrimaryExamplesSection",
+ CellTags->"PrimaryExamplesSection",
+ CellID->1],
+Cell[CellGroupData[{
+Cell[7711, 237, 187, 6, 70, "ExampleSection",
+ CellID->1],
+Cell[7901, 245, 58, 1, 70, "ExampleText",
+ CellID->8083337],
+Cell[7962, 248, 116, 3, 70, "Input",
+ CellID->295007361],
+Cell[8081, 253, 82, 1, 70, "ExampleText",
+ CellID->76117871],
+Cell[8166, 256, 104, 3, 70, "Input",
+ CellID->43181140]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8319, 265, 31, 0, 70, "SectionFooterSpacer"],
+Cell[8353, 267, 272, 12, 70, "TutorialsSection",
+ CellID->250839057],
+Cell[8628, 281, 31, 0, 70, "SectionHeaderSpacer"],
+Cell[8662, 283, 193, 6, 70, "Tutorials",
+ CellID->341631938],
+Cell[8858, 291, 31, 0, 70, "SectionFooterSpacer"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8926, 296, 276, 12, 70, "MoreAboutSection",
+ CellID->38303248],
+Cell[9205, 310, 31, 0, 70, "SectionHeaderSpacer"],
+Cell[9239, 312, 157, 5, 70, "MoreAbout",
+ CellID->1]
+}, Open  ]],
+Cell[9411, 320, 23, 0, 70, "FooterCell"]
+}
+]
+*)
+
+(* End of internal cache information *)
