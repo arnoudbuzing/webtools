@@ -1,4 +1,4 @@
-GitLink is Copyright (C) 2016, Wolfram Research, Inc.
+WebUnit is Copyright (C) 2016, Wolfram Research, Inc.
 
 ---
 
