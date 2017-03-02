@@ -9,3 +9,12 @@ Supported functionality includes:
 * Typing in input fields and clicking links
 * Reading web page content and taking screen shots
 * Executing javascript in the current browser session and returning javascript function results
+
+To install the cloned copy of this repository in the Wolfram Language, run the following commands:
+
+`PacletDirectoryAdd[ "<path to repo>/WebUnit" ]`
+
+`PacletInstall["WebUnit"]`
+
+
+ 
