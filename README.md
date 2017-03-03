@@ -10,17 +10,10 @@ Supported functionality includes:
 * Reading web page content and taking screen shots
 * Executing javascript in the current browser session and returning javascript function results
 
-To install the cloned copy of this repository in the Wolfram Language, run the following commands:
+To install this package:
 
-`PacletDirectoryAdd[ "<path to repo>/WebUnit" ]`
-
-`PacletInstall["WebUnit"]`
-
-Or download a released .paclet file and install it with:
+* Navigate to the 'Releases' area of this repository: https://github.com/arnoudbuzing/webunit/releases
+* Download the most release WebUnit-x.y.z.paclet file from this page
+* Start the Wolfram Language and evaluate the following command (replacing x.y.z with the actual version digits):
 
 `PacletInstall["WebUnit-x.y.z.paclet"]`
-
-where x.y.z is replaced by and actual released version number (e.g. 0.0.1)
-
-
- 
