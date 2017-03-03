@@ -16,5 +16,11 @@ To install the cloned copy of this repository in the Wolfram Language, run the f
 
 `PacletInstall["WebUnit"]`
 
+Or download a released .paclet file and install it with:
+
+`PacletInstall["WebUnit-x.y.z.paclet"]`
+
+where x.y.z is replaced by and actual released version number (e.g. 0.0.1)
+
 
  
