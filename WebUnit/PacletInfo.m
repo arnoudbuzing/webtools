@@ -7,6 +7,6 @@ Paclet[
   MathematicaVersion -> "11.0+",
   Extensions -> { 
    { "Documentation", Language -> "English"},
-   { "Application", Context -> "WebUnit" }
+   { "Application", Context -> "WebUnit`" }
   }
 ]
