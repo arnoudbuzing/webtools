@@ -1,11 +1,12 @@
-(* Paclet Info File *)
-
-(* created 2016.10.27*)
-
 Paclet[
   Name -> "WebUnit",
-  Version -> "0.0.1",
-  MathematicaVersion -> "6+",
-  Extensions -> {
-    {"Documentation", Language -> "English"}
-}]
+  Description -> "WebUnit is a package which automates interaction to a web browser",
+  Creator -> "Arnoud Buzing",
+  Publisher -> "Wolfram Research",
+  Version -> "0.0.2",
+  MathematicaVersion -> "11.0+",
+  Extensions -> { 
+   { "Documentation", Language -> "English"},
+   { "Application", Context -> "WebUnit" }
+  }
+]
