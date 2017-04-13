@@ -16,4 +16,4 @@ To install this package:
 * Download the most release WebUnit-x.y.z.paclet file from this page
 * Start the Wolfram Language and evaluate the following command (replacing x.y.z with the actual version digits):
 
-`PacletInstall["WebUnit-x.y.z.paclet"]`
+`PacletInstall["<path to downloads>/WebUnit-x.y.z.paclet"]`
