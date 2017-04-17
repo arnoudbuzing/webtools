@@ -17,3 +17,5 @@ To install this package:
 * Start the Wolfram Language and evaluate the following command (replacing x.y.z with the actual version digits):
 
 `PacletInstall["<path to downloads>/WebUnit-x.y.z.paclet"]`
+
+Then, open the `usage.nb` notebook to see basic usage for the supported functions.
