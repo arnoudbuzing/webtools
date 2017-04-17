@@ -48,6 +48,7 @@ XPath::usage = "";
 
 (* Javascript based functions *)
 
+GetPageHtml::usage = "";
 
 Begin["`Private`"]
 (* Implementation of the package *)
@@ -243,6 +244,7 @@ PageLinks[] := JavascriptExecute["
 	return result;
 "];
 
+GetPageHtml[] := JavascriptExecute["return document.getElementsByTagName('html')[0].innerHTML;"]
 End[];
 
 EndPackage[];
