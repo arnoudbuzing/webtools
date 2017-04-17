@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    471820,       7769]
-NotebookOptionsPosition[    470210,       7723]
-NotebookOutlinePosition[    470555,       7738]
-CellTagsIndexPosition[    470512,       7735]
+NotebookDataLength[    473227,       7806]
+NotebookOptionsPosition[    471120,       7750]
+NotebookOutlinePosition[    471464,       7765]
+CellTagsIndexPosition[    471421,       7762]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -25,6 +25,11 @@ Cell["usage", "Subsubsection",
   3.701455922772996*^9, 
   3.701455925397026*^9}},ExpressionUUID->"e5be9214-4704-4693-8ab4-\
 074214911676"],
+
+Cell["Check the paclet version and meta-information:", "Text",
+ CellChangeTimes->{{3.7014560975096207`*^9, 
+  3.7014561095581975`*^9}},ExpressionUUID->"290705aa-83ad-4451-b300-\
+525b32339261"],
 
 Cell[CellGroupData[{
 
@@ -918,17 +923,34 @@ Paclets\\Repository\\WebUnit-0.0.4",
 f733fe8d48a6"]
 }, Open  ]],
 
+Cell["Load the paclet:", "Text",
+ CellChangeTimes->{{3.701456115541787*^9, 
+  3.701456119317972*^9}},ExpressionUUID->"3cc8b4a8-5df6-4c97-b80d-\
+a426f53b0c7b"],
+
 Cell[BoxData[
  RowBox[{"Needs", "[", "\"\<WebUnit`\>\"", "]"}]], "Input",
  CellChangeTimes->{{3.6975454098221498`*^9, 
   3.697545414305681*^9}},ExpressionUUID->"4a842b49-6658-4c10-8386-\
 42289acc6100"],
 
+Cell["Install the paclet:", "Text",
+ CellChangeTimes->{{3.7014561225018787`*^9, 
+  3.701456143365676*^9}},ExpressionUUID->"c81bc8c7-70fb-4c5e-95ca-\
+9ec7b4c8cdd1"],
+
 Cell[BoxData[
  RowBox[{"InstallWebUnit", "[", "]"}]], "Input",
  CellChangeTimes->{{3.697545417001728*^9, 
   3.697545419081437*^9}},ExpressionUUID->"19f4da30-7c98-470e-9a22-\
 3e00a1ac0422"],
+
+Cell["\<\
+Start a new web session (default and recommended browser is Chrome):\
+\>", "Text",
+ CellChangeTimes->{{3.7014561456219783`*^9, 
+  3.701456168566516*^9}},ExpressionUUID->"dc480999-ac7a-4744-b34a-\
+8f29b5b908f2"],
 
 Cell[CellGroupData[{
 
@@ -944,6 +966,11 @@ Cell[BoxData["\<\"519694edd817f6edc594a21be1fdd477\"\>"], "Output",
   3.7014557595933805`*^9},ExpressionUUID->"83445fbb-5244-484b-8dca-\
 8f4689ae9dfe"]
 }, Open  ]],
+
+Cell["Open a web page:", "Text",
+ CellChangeTimes->{{3.7014561800780325`*^9, 
+  3.7014561825826173`*^9}},ExpressionUUID->"37aa713e-520c-44dd-835b-\
+02f6077eacb4"],
 
 Cell[BoxData[
  RowBox[{"OpenWebPage", "[", "\"\<https://www.wolfram.com\>\"", 
@@ -7721,8 +7748,8 @@ $('html.touch-enabled #immediate a:nth-of-type(3)').prop('href', \
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{1020, 833},
-WindowMargins->{{Automatic, 406}, {29, Automatic}},
+WindowSize->{1920, 997},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
 FrontEndVersion->"11.1 for Microsoft Windows (64-bit) (March 13, 2017)",
 StyleDefinitions->"Default.nb"
 ]
@@ -7740,34 +7767,44 @@ Notebook[{
 Cell[CellGroupData[{
 Cell[580, 22, 209, 4, 39, "Subsubsection", "ExpressionUUID" -> \
 "e5be9214-4704-4693-8ab4-074214911676"],
+Cell[792, 28, 192, 3, 30, "Text", "ExpressionUUID" -> \
+"290705aa-83ad-4451-b300-525b32339261"],
 Cell[CellGroupData[{
-Cell[814, 30, 367, 8, 30, "Input", "ExpressionUUID" -> \
+Cell[1009, 35, 367, 8, 30, "Input", "ExpressionUUID" -> \
 "4dca158f-c921-4168-81ac-1417d38b4b5e"],
-Cell[1184, 40, 43292, 877, 435, "Output", "ExpressionUUID" -> \
+Cell[1379, 45, 43292, 877, 435, "Output", "ExpressionUUID" -> \
 "df5e61eb-1aaf-4705-983f-f733fe8d48a6"]
 }, Open  ]],
-Cell[44491, 920, 201, 4, 30, "Input", "ExpressionUUID" -> \
+Cell[44686, 925, 158, 3, 30, "Text", "ExpressionUUID" -> \
+"3cc8b4a8-5df6-4c97-b80d-a426f53b0c7b"],
+Cell[44847, 930, 201, 4, 30, "Input", "ExpressionUUID" -> \
 "4a842b49-6658-4c10-8386-42289acc6100"],
-Cell[44695, 926, 188, 4, 30, "Input", "ExpressionUUID" -> \
+Cell[45051, 936, 163, 3, 30, "Text", "ExpressionUUID" -> \
+"c81bc8c7-70fb-4c5e-95ca-9ec7b4c8cdd1"],
+Cell[45217, 941, 188, 4, 30, "Input", "ExpressionUUID" -> \
 "19f4da30-7c98-470e-9a22-3e00a1ac0422"],
+Cell[45408, 947, 220, 5, 30, "Text", "ExpressionUUID" -> \
+"dc480999-ac7a-4744-b34a-8f29b5b908f2"],
 Cell[CellGroupData[{
-Cell[44908, 934, 193, 4, 30, "Input", "ExpressionUUID" -> \
+Cell[45653, 956, 193, 4, 30, "Input", "ExpressionUUID" -> \
 "832680d0-30cd-45b4-bc47-862fe04a141d"],
-Cell[45104, 940, 243, 4, 30, "Output", "ExpressionUUID" -> \
+Cell[45849, 962, 243, 4, 30, "Output", "ExpressionUUID" -> \
 "83445fbb-5244-484b-8dca-8f4689ae9dfe"]
 }, Open  ]],
-Cell[45362, 947, 276, 6, 30, "Input", "ExpressionUUID" -> \
+Cell[46107, 969, 162, 3, 30, "Text", "ExpressionUUID" -> \
+"37aa713e-520c-44dd-835b-02f6077eacb4"],
+Cell[46272, 974, 276, 6, 30, "Input", "ExpressionUUID" -> \
 "3af1da1f-a5a1-4ec2-ada6-b058920387e2"],
 Cell[CellGroupData[{
-Cell[45663, 957, 190, 4, 30, "Input", "ExpressionUUID" -> \
+Cell[46573, 984, 190, 4, 30, "Input", "ExpressionUUID" -> \
 "2a6bfdea-72c6-466a-b73b-c4c9cc575a7b"],
-Cell[45856, 963, 282183, 4631, 788, "Output", "ExpressionUUID" -> \
+Cell[46766, 990, 282183, 4631, 903, "Output", "ExpressionUUID" -> \
 "ec2e1b53-ab33-4dc8-b20a-439250abcaa5"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[328076, 5599, 189, 4, 30, "Input", "ExpressionUUID" -> \
+Cell[328986, 5626, 189, 4, 30, "Input", "ExpressionUUID" -> \
 "870026b9-b55e-40ec-90ef-3f95fdeb83b8"],
-Cell[328268, 5605, 141914, 2114, 34193, "Output", "ExpressionUUID" -> \
+Cell[329178, 5632, 141914, 2114, 23686, "Output", "ExpressionUUID" -> \
 "855d24a2-cda9-4b16-89ef-899939c0b018"]
 }, Open  ]]
 }, Open  ]]
