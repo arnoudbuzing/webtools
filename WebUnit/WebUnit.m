@@ -88,8 +88,8 @@ InstallWebUnit[driver_] := Module[{dir},
 		"InternetExplorerDriver", {"InternetExplorer","http://localhost:5555"},
 		"MicrosoftWebDriver", {"Edge", "http://localhost:17556"},
 		_, Null ];
-	If[ Quiet[URLFetch[webDriverBaseURL<>"/status"]] === $Failed, (* only launch driver if not running *)
-		dir = FileNameJoin[{ $WebUnitDirectory, "WebDriver", driver, $SystemID }];
+	If[ TimeConstrained[URLFetch[webDriverBaseURL<>"/status"],1] === $Aborted, (* only launch driver if not running *)
+		dir = FileNameJoin[{ $WebUnitDirectory, "WebDriver", driver, $SystemID }]; Print @ dir;
 		SetDirectory[dir];
 		Switch[ driver,
 			"ChromeDriver",
@@ -108,19 +108,19 @@ InstallWebUnit[driver_] := Module[{dir},
 				Switch[ $SystemID,
 					"Windows-x86-64", Run["start " <> FileNameJoin[{ dir, "microsoftwebdriver.exe" }]],
 					_, Null
-				],				
+				],
 			"FirefoxDriver",
 				Switch[ $SystemID,
 					"Windows-x86-64", Null,
 					"MacOSX-x86-64", Null,
 					_, Null
-				],	
+				],
 			"SafariDriver",
 				Switch[ $SystemID,
 					"MacOSX-x86-64", Null,
 					_, Null
-				],	
-			_, Null];	
+				],
+			_, Null];
 		ResetDirectory[];
 	]
 ]
@@ -166,7 +166,7 @@ LocateElement[{valueId_,num_},OptionsPattern[]] := Module[{sessionId, result},
 	result = elements[sessionId,{"using"->QueryMethod[valueId], "value"->QueryValue[valueId]}];
 	If[ result === "ELEMENT", result = {} ];
 	If[ Length[result]>0, result[[num]], result ]
-] 
+]
 
 Options[ClickElement] = Options[LocateElement];
 
@@ -245,7 +245,9 @@ PageLinks[] := JavascriptExecute["
 "];
 
 GetPageHtml[] := JavascriptExecute["return document.getElementsByTagName('html')[0].innerHTML;"]
+
+GetHtmlForId[id_String] := JavascriptExecute[ "return document.getElementById('" <> id <> "').innerHTML;"]
+
 End[];
 
 EndPackage[];
-
