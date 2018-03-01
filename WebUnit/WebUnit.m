@@ -88,7 +88,7 @@ InstallWebUnit[driver_] := Module[{dir},
 		"InternetExplorerDriver", {"InternetExplorer","http://localhost:5555"},
 		"MicrosoftWebDriver", {"Edge", "http://localhost:17556"},
 		_, Null ];
-	If[ TimeConstrained[URLFetch[webDriverBaseURL<>"/status"],1] === $Aborted, (* only launch driver if not running *)
+	If[ TimeConstrained[URLFetch[webDriverBaseURL<>"/status"],0.5] === $Aborted, (* only launch driver if not running *)
 		dir = FileNameJoin[{ $WebUnitDirectory, "WebDriver", driver, $SystemID }]; Print @ dir;
 		SetDirectory[dir];
 		Switch[ driver,
