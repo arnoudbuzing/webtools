@@ -1,0 +1,491 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     13781,        482]
+NotebookOptionsPosition[     10238,        358]
+NotebookOutlinePosition[     10665,        374]
+CellTagsIndexPosition[     10622,        371]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[TextData[{
+ "New in: ",
+ Cell["XX", "HistoryData",
+  CellTags->"New"],
+ " | Modified in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Modified"],
+ " | Obsolete in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Obsolete"],
+ " | Excised in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Excised"]
+}], "History",
+ CellID->1247902091],
+
+Cell[CellGroupData[{
+
+Cell["Categorization", "CategorizationSection",
+ CellID->1122911449],
+
+Cell["Guide", "Categorization",
+ CellLabel->"Entity Type",
+ CellID->686433507],
+
+Cell["WebTools Package", "Categorization",
+ CellLabel->"Paclet Name",
+ CellID->605800465],
+
+Cell["WebTools`", "Categorization",
+ CellLabel->"Context",
+ CellID->468444828],
+
+Cell["WebTools/guide/WebTools", "Categorization",
+ CellLabel->"URI"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Keywords", "KeywordsSection",
+ CellID->1427428552],
+
+Cell["XXXX", "Keywords",
+ CellID->1251852827]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Details", "DetailsSection",
+ CellID->307771771],
+
+Cell["XXXX", "Details",
+ CellLabel->"Lead",
+ CellID->795394057],
+
+Cell["XXXX", "Details",
+ CellLabel->"Developers",
+ CellID->350963985],
+
+Cell["XXXX", "Details",
+ CellLabel->"Authors",
+ CellID->802101],
+
+Cell["XXXX", "Details",
+ CellLabel->"Feature Name",
+ CellID->509823116],
+
+Cell["XXXX", "Details",
+ CellLabel->"QA",
+ CellID->199884516],
+
+Cell["XXXX", "Details",
+ CellLabel->"DA",
+ CellID->463951815],
+
+Cell["XXXX", "Details",
+ CellLabel->"Docs",
+ CellID->8237523],
+
+Cell["XXXX", "Details",
+ CellLabel->"Features Page Notes",
+ CellID->813936640],
+
+Cell["XXXX", "Details",
+ CellLabel->"Comments",
+ CellID->240026365]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["WebTools", "GuideTitle",
+ CellID->942062912],
+
+Cell["\<\
+WebTools puts the computational universe of web browsers at your feet.\
+\>", "GuideAbstract",
+ CellChangeTimes->{{3.5548101874967785`*^9, 3.554810246033632*^9}},
+ CellID->2001916300]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "GuideFunctionsSection",
+ CellID->1866139230],
+
+Cell[CellGroupData[{
+
+Cell["Web Session Management", "GuideFunctionsSubsection",
+ CellChangeTimes->{{3.5548118450635185`*^9, 3.5548118493109436`*^9}},
+ CellID->32464305],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["InstallWebTools",
+   BaseStyle->"Link",
+   ButtonData->"paclet:WebTools/ref/InstallWebTools"]], "InlineGuideFunction"],
+ " \[LongDash] initialize environment for interaction with the web"
+}], "GuideText",
+ CellChangeTimes->{{3.5548118753645487`*^9, 3.554811877932805*^9}, {
+  3.554811915410553*^9, 3.554811980762087*^9}},
+ CellID->193193946],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["WebSessionStart",
+   BaseStyle->"Link",
+   ButtonData->"paclet:WebTools/ref/StartWebSession"]], "InlineGuideFunction"],
+ " \[LongDash] start a new web session"
+}], "GuideText",
+ CellChangeTimes->{{3.5548119856735783`*^9, 3.554812030964107*^9}, {
+  3.5548124074817553`*^9, 3.554812407579765*^9}, {3.554812577938799*^9, 
+  3.55481258445045*^9}, {3.5548126776267667`*^9, 3.554812678106815*^9}},
+ CellID->195103644],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["WebSessionStop",
+   BaseStyle->"Link",
+   ButtonData->"paclet:WebTools/ref/StopWebSession"]], "InlineGuideFunction"],
+ " \[LongDash] stop a running web session"
+}], "GuideText",
+ CellChangeTimes->{{3.5548120399790087`*^9, 3.5548120791199217`*^9}, {
+  3.5548124099860053`*^9, 3.554812410079015*^9}, {3.554812588331838*^9, 
+  3.5548125958265877`*^9}, {3.5548126795149555`*^9, 3.5548126798739915`*^9}},
+ CellID->783043201],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["WebSessionStatus",
+   BaseStyle->"Link",
+   ButtonData->"paclet:WebTools/ref/WebSessionStatus"]], "InlineGuideFunction"],
+ " \[LongDash] status information on the current web session"
+}], "GuideText",
+ CellChangeTimes->{{3.5548125564016457`*^9, 3.554812639360941*^9}, {
+  3.5548126816671705`*^9, 3.5548126820512094`*^9}},
+ CellID->1864674],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["$CurrentWebSession",
+   BaseStyle->"Link",
+   ButtonData->"paclet:WebTools/ref/$CurrentWebSession"]], 
+  "InlineGuideFunction"],
+ " \[LongDash] identifies the currently active web session"
+}], "GuideText",
+ CellChangeTimes->{{3.5548127114951534`*^9, 3.554812770406044*^9}},
+ CellID->936886532],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["$WebSessions",
+   BaseStyle->"Link",
+   ButtonData->"paclet:WebTools/ref/$WebSessions"]], "InlineGuideFunction"],
+ " \[LongDash] list of all active web sessions"
+}], "GuideText",
+ CellChangeTimes->{{3.5548127976047635`*^9, 3.5548128216641693`*^9}},
+ CellID->90321764]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Operations on a Web Page", "GuideFunctionsSubsection",
+ CellChangeTimes->{{3.554812114010411*^9, 3.5548121201060205`*^9}},
+ CellID->897418852],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["PageRefresh",
+   BaseStyle->"Link",
+   ButtonData->"paclet:WebTools/ref/PageRefresh"]], "InlineGuideFunction"],
+ " \[LongDash] refresh the active web page"
+}], "GuideText",
+ CellChangeTimes->{{3.554812134064416*^9, 3.554812149227932*^9}, {
+  3.554812366357643*^9, 3.554812372594267*^9}, {3.554812412745281*^9, 
+  3.5548124128412905`*^9}},
+ CellID->423348248],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["PageBack",
+   BaseStyle->"Link",
+   ButtonData->"paclet:WebTools/ref/PageBack"]], "InlineGuideFunction"],
+ " \[LongDash] return to the previously active web page"
+}], "GuideText",
+ CellChangeTimes->{{3.5548121581208215`*^9, 3.5548121586978793`*^9}, {
+  3.554812191478157*^9, 3.554812204590468*^9}, {3.554812375386546*^9, 
+  3.5548123757855854`*^9}, {3.55481241513052*^9, 3.554812415223529*^9}},
+ CellID->21957113],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["PageForward",
+   BaseStyle->"Link",
+   ButtonData->"paclet:WebTools/ref/PageForward"]], "InlineGuideFunction"],
+ " \[LongDash] return to the next more recently active web page"
+}], "GuideText",
+ CellChangeTimes->{{3.554812210899099*^9, 3.5548122123162403`*^9}, {
+  3.554812311347142*^9, 3.554812378378845*^9}, {3.554812417759783*^9, 
+  3.5548124178617926`*^9}, {3.554815257825761*^9, 3.554815258424821*^9}},
+ CellID->197888],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["BrowserWindows",
+   BaseStyle->"Link",
+   ButtonData->"paclet:WebTools/ref/BrowserWindows"]], "InlineGuideFunction"],
+ " \[LongDash] list of known browser windows in the current session"
+}], "GuideText",
+ CellChangeTimes->{{3.5548140566566563`*^9, 3.5548141124002295`*^9}, {
+  3.554815247486727*^9, 3.55481524761574*^9}},
+ CellID->87600486],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["SetBrowserWindow",
+   BaseStyle->"Link",
+   ButtonData->"paclet:WebTools/ref/SetBrowserWindow"]], "InlineGuideFunction"],
+ " \[LongDash] set the active browser window"
+}], "GuideText",
+ CellChangeTimes->{{3.554814121316121*^9, 3.554814137392729*^9}, {
+  3.554815252826261*^9, 3.5548152529452724`*^9}},
+ CellID->36214067]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Operations on Elements of a Web Page\
+\>", "GuideFunctionsSubsection",
+ CellChangeTimes->{{3.554811754059419*^9, 3.5548118057005825`*^9}},
+ CellID->373843448],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["LocateElement",
+   BaseStyle->"Link",
+   ButtonData->"paclet:WebTools/ref/locateElement"]], "InlineGuideFunction"],
+ " \[LongDash] locate an element on a web page by various methods"
+}], "GuideText",
+ CellChangeTimes->{{3.554810312993327*^9, 3.554810315562584*^9}, {
+  3.5548106359006147`*^9, 3.5548106604920735`*^9}, {3.554810731055129*^9, 
+  3.5548107311831417`*^9}, {3.5548109152055426`*^9, 3.5548109152995515`*^9}, {
+  3.554812448523859*^9, 3.554812448964903*^9}},
+ CellID->405477897],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["ClickElement",
+   BaseStyle->"Link",
+   ButtonData->"paclet:WebTools/ref/clickElement"]], "InlineGuideFunction"],
+ " \[LongDash] click a specific link or element"
+}], "GuideText",
+ CellChangeTimes->{{3.5548102938814163`*^9, 3.554810295488577*^9}, {
+  3.5548106639804225`*^9, 3.5548106822522492`*^9}, {3.5548107345594797`*^9, 
+  3.5548107346714907`*^9}, {3.5548117220072145`*^9, 3.5548117220972233`*^9}, {
+  3.554812452580264*^9, 3.5548124529102974`*^9}},
+ CellID->203374175],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["TypeElement",
+   BaseStyle->"Link",
+   ButtonData->"paclet:WebTools/ref/typeElement"]], "InlineGuideFunction"],
+ " \[LongDash] type in a specific input field or text area"
+}], "GuideText",
+ CellChangeTimes->{{3.5548102996329913`*^9, 3.554810305890617*^9}, {
+  3.5548106845094748`*^9, 3.5548106977087946`*^9}, {3.554810737375761*^9, 
+  3.5548107377437983`*^9}, {3.554811725814595*^9, 3.554811725907604*^9}, {
+  3.554812455957602*^9, 3.55481245643865*^9}},
+ CellID->1463276848],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["ClearElement",
+   BaseStyle->"Link",
+   ButtonData->"paclet:WebTools/ref/ClearElement"]], "InlineGuideFunction"],
+ " \[LongDash] clear text from a specific input field or text area"
+}], "GuideText",
+ CellChangeTimes->{{3.554812470990105*^9, 3.5548124993389397`*^9}},
+ CellID->252454963],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["FocusFrame",
+   BaseStyle->"Link",
+   ButtonData->"paclet:WebTools/ref/FocusFrame"]], "InlineGuideFunction"],
+ " \[LongDash] sets the focus on an invisible web frame <iframe> to allow \
+access to the elements within"
+}], "GuideText",
+ CellChangeTimes->{{3.5548141971767063`*^9, 3.554814316467634*^9}},
+ CellID->7235326]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Tutorials", "GuideTutorialsSection",
+ CellID->415694126],
+
+Cell["XXXX", "GuideTutorial",
+ CellID->806871991]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["More About", "GuideMoreAboutSection",
+ CellID->23220180],
+
+Cell["XXXX", "GuideMoreAbout",
+ CellID->1567025153],
+
+Cell["XXXX", "GuideMoreAbout",
+ CellID->252299663]
+}, Open  ]],
+
+Cell["Related Links", "GuideRelatedLinksSection",
+ CellID->415694148]
+},
+WindowSize->{1566, 839},
+WindowMargins->{{Automatic, -487}, {-110, Automatic}},
+FrontEndVersion->"9.0 for Microsoft Windows (64-bit) (August 20, 2012)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "GuidePageStyles.nb", 
+  CharacterEncoding -> "WindowsANSI"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 324, 14, 22, "History",
+ CellID->1247902091],
+Cell[CellGroupData[{
+Cell[906, 38, 68, 1, 27, "CategorizationSection",
+ CellID->1122911449],
+Cell[977, 41, 78, 2, 31, "Categorization",
+ CellID->686433507],
+Cell[1058, 45, 88, 2, 31, "Categorization",
+ CellID->605800465],
+Cell[1149, 49, 77, 2, 31, "Categorization",
+ CellID->468444828],
+Cell[1229, 53, 66, 1, 31, "Categorization"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1332, 59, 56, 1, 27, "KeywordsSection",
+ CellID->1427428552],
+Cell[1391, 62, 45, 1, 70, "Keywords",
+ CellID->1251852827]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[1473, 68, 53, 1, 17, "DetailsSection",
+ CellID->307771771],
+Cell[1529, 71, 63, 2, 70, "Details",
+ CellID->795394057],
+Cell[1595, 75, 69, 2, 70, "Details",
+ CellID->350963985],
+Cell[1667, 79, 63, 2, 70, "Details",
+ CellID->802101],
+Cell[1733, 83, 71, 2, 70, "Details",
+ CellID->509823116],
+Cell[1807, 87, 61, 2, 70, "Details",
+ CellID->199884516],
+Cell[1871, 91, 61, 2, 70, "Details",
+ CellID->463951815],
+Cell[1935, 95, 61, 2, 70, "Details",
+ CellID->8237523],
+Cell[1999, 99, 78, 2, 70, "Details",
+ CellID->813936640],
+Cell[2080, 103, 67, 2, 70, "Details",
+ CellID->240026365]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[2184, 110, 49, 1, 76, "GuideTitle",
+ CellID->942062912],
+Cell[2236, 113, 191, 4, 25, "GuideAbstract",
+ CellID->2001916300]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2464, 122, 54, 1, 68, "GuideFunctionsSection",
+ CellID->1866139230],
+Cell[CellGroupData[{
+Cell[2543, 127, 147, 2, 33, "GuideFunctionsSubsection",
+ CellID->32464305],
+Cell[2693, 131, 382, 9, 23, "GuideText",
+ CellID->193193946],
+Cell[3078, 142, 454, 10, 23, "GuideText",
+ CellID->195103644],
+Cell[3535, 154, 462, 10, 23, "GuideText",
+ CellID->783043201],
+Cell[4000, 166, 382, 9, 23, "GuideText",
+ CellID->1864674],
+Cell[4385, 177, 336, 9, 23, "GuideText",
+ CellID->936886532],
+Cell[4724, 188, 310, 8, 23, "GuideText",
+ CellID->90321764]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5071, 201, 148, 2, 33, "GuideFunctionsSubsection",
+ CellID->897418852],
+Cell[5222, 205, 401, 10, 23, "GuideText",
+ CellID->423348248],
+Cell[5626, 217, 456, 10, 23, "GuideText",
+ CellID->21957113],
+Cell[6085, 229, 467, 10, 23, "GuideText",
+ CellID->197888],
+Cell[6555, 241, 383, 9, 23, "GuideText",
+ CellID->87600486],
+Cell[6941, 252, 363, 9, 23, "GuideText",
+ CellID->36214067]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7341, 266, 168, 4, 33, "GuideFunctionsSubsection",
+ CellID->373843448],
+Cell[7512, 272, 531, 11, 23, "GuideText",
+ CellID->405477897],
+Cell[8046, 285, 517, 11, 23, "GuideText",
+ CellID->203374175],
+Cell[8566, 298, 518, 11, 23, "GuideText",
+ CellID->1463276848],
+Cell[9087, 311, 329, 8, 23, "GuideText",
+ CellID->252454963],
+Cell[9419, 321, 362, 9, 37, "GuideText",
+ CellID->7235326]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9830, 336, 62, 1, 70, "GuideTutorialsSection",
+ CellID->415694126],
+Cell[9895, 339, 49, 1, 20, "GuideTutorial",
+ CellID->806871991]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9981, 345, 62, 1, 70, "GuideMoreAboutSection",
+ CellID->23220180],
+Cell[10046, 348, 51, 1, 20, "GuideMoreAbout",
+ CellID->1567025153],
+Cell[10100, 351, 50, 1, 20, "GuideMoreAbout",
+ CellID->252299663]
+}, Open  ]],
+Cell[10165, 355, 69, 1, 70, "GuideRelatedLinksSection",
+ CellID->415694148]
+}
+]
+*)
+
+(* End of internal cache information *)

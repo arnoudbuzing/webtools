@@ -1,4 +1,4 @@
-WebUnit is Copyright (C) 2017, Wolfram Research, Inc.
+WebTools is Copyright (C) 2017, Wolfram Research, Inc.
 
 ---
 

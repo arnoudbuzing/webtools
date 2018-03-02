@@ -1,7 +1,7 @@
 Print[];
 
 (* uninstall old paclets first *)
-paclets = PacletFind["WebUnit"];
+paclets = PacletFind["WebTools"];
 Print["Found the following old paclets (uninstalling): ", Map[ #["Location"]&, paclets]];
 Map[ PacletUninstall, paclets ];
 
