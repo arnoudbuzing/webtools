@@ -90,13 +90,13 @@ InstallWebTools[driver_] := Module[{dir},
 		"InternetExplorerDriver", {"InternetExplorer","http://localhost:5555"},
 		"MicrosoftWebDriver", {"Edge", "http://localhost:17556"},
 		_, Null ];
-	If[ TimeConstrained[URLFetch[$WebDriverBaseURL<>"/status"],0.5] === $Aborted, (* only launch driver if not running *)
+	If[ TimeConstrained[URLRead[$WebDriverBaseURL<>"/status"],0.5] === $Aborted, (* only launch driver if not running *)
 		dir = FileNameJoin[{ $WebToolsDirectory, "WebDriver", driver, $SystemID }]; Print @ dir;
 		SetDirectory[dir];
 		Switch[ driver,
 			"ChromeDriver",
 				Switch[ $SystemID,
-					"Windows-x86-64", process = StartProcess[ $SystemShell ]; WriteLine[ process, "start /b " <> FileNameJoin[{ dir, "chromedriver.exe" }] ],
+					"Windows-x86-64", StartProcess[ FileNameJoin[{ dir, "chromedriver.exe" }] ],
 					"MacOSX-x86-64", Run[ FileNameJoin[{ dir, "chromedriver"}] <> " &" ],
 					"Linux-x86-64", Null,
 					_, Null

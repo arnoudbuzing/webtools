@@ -1,16 +1,4 @@
 
-(*)
-DebugPrint::usage = "";
-NonTextKeys::usage = "";
-format::usage = "";
-json::usage = "";
-fetch::usage = "";
-get::usage = "";
-post::usage = "";
-delete::usage = "";
-*)
-
-
 (* debug *)
 $Debug = False; DebugPrint[e_] := If[$Debug, Print, Identity];
 
@@ -45,22 +33,23 @@ json[expr_] := (DebugPrint[expr]; ImportString[ StringReplace[ExportString[expr,
 
 (* fetch *)
 
-fetch[type_, path_, data_, key_] := Module[{res},
-  res = ImportString[
-    URLFetch[ $WebDriverBaseURL <> path, "Method" -> type, "BodyData" -> json[data]], "JSON"];
-    DebugPrint[format[res]];
-    key /. res];
+fetch[type_, path_, data_, key_] := Module[{request,res},
+  request = HTTPRequest[ $WebDriverBaseURL <> path, <| "Method" -> type, "Body" -> json[data] |> ];
+  res = ImportString[ URLRead[ request ]["Body"], "JSON"];
+  DebugPrint[format[res]];
+  key /. res
+  ];
 
 (* get *)
 
 get[path_] := get[path, "value"];
-get[path_, key_] := fetch["Get", path, Null, key];
+get[path_, key_] := fetch["GET", path, Null, key];
 
 (* post *)
 
 post[path_] := post[path, {"xxx" -> "xxx"}]; (* hack, not all systems like empty post commands *)
 post[path_, data_] := post[path, data, "value"];
-post[path_, data_, key_] := fetch["Post",path,data,key];
+post[path_, data_, key_] := fetch["POST",path,data,key];
 
 (* delete *)
 

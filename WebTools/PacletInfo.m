@@ -5,6 +5,7 @@ Paclet[
   Publisher -> "Wolfram Research",
   Version -> "0.0.1",
   MathematicaVersion -> "11.2+",
+  Loading -> Automatic,
   Extensions -> {
    { "Documentation", Language -> "English"},
    { "Kernel", Symbols -> {"WebTools`BrowserWindows", "WebTools`CaptureWebPage", "WebTools`ClearElement",
@@ -14,7 +15,7 @@ Paclet[
 "WebTools`PageBack", "WebTools`PageForward", "WebTools`PageLinks", "WebTools`PartialLinkText", "WebTools`RefreshWebPage",
 "WebTools`SetBrowserWindow", "WebTools`StartWebSession", "WebTools`StopWebSession", "WebTools`SubmitElement",
 "WebTools`TagName", "WebTools`TypeElement", "WebTools`WebSessionStatus", "WebTools`XPath", "WebTools`$CurrentWebSession",
-"WebTools`$SupportedWebDrivers", "WebTools`$WebSessions", "$WebDriver", "$WebDriverBaseURL"}, 
+"WebTools`$SupportedWebDrivers", "WebTools`$WebSessions", "$WebDriver", "$WebDriverBaseURL"},
  Context -> {"WebTools`"} }
   }
 ]
