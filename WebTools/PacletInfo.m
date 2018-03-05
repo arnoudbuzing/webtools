@@ -3,7 +3,7 @@ Paclet[
   Description -> "WebTools is a package which automates interaction to a web browser",
   Creator -> "Arnoud Buzing",
   Publisher -> "Wolfram Research",
-  Version -> "0.0.2",
+  Version -> "0.1.0",
   MathematicaVersion -> "11.2+",
   Loading -> Automatic,
   Extensions -> {
