@@ -1287,7 +1287,7 @@ right-clicking to copy the xpath):\
 778d59821fb9"],
 
 Cell[BoxData[
- RowBox[{"ClickElement", "[", 
+ RowBox[{"wtClickElement", "[", 
   RowBox[{"XPath", "[", "\"\<//*[@id=\\\"_nav-search\\\"]/a\>\"", "]"}], 
   "]"}]], "Input",
  CellChangeTimes->{{3.7015243154723396`*^9, 3.701524355343542*^9}, {
@@ -1373,7 +1373,7 @@ Cell["Take a screen capture of the visible area:", "Text",
 2dd2f5264e90"],
 
 Cell[BoxData[
- RowBox[{"CaptureWebPage", "[", "]"}]], "Input",
+ RowBox[{"wtCaptureWebPage", "[", "]"}]], "Input",
  CellChangeTimes->{{3.701446479515845*^9, 3.7014464814254656`*^9}},
  CellLabel->"In[8]:=",ExpressionUUID->"2a6bfdea-72c6-466a-b73b-c4c9cc575a7b"],
 
@@ -1383,7 +1383,7 @@ Cell["Get the raw html of the current page state:", "Text",
 fdcdb6f26f5a"],
 
 Cell[BoxData[
- RowBox[{"GetPageHtml", "[", "]"}]], "Input",
+ RowBox[{"wtGetPageHtml", "[", "]"}]], "Input",
  CellChangeTimes->{{3.7014557693958893`*^9, 3.7014557711500373`*^9}},
  CellLabel->"In[9]:=",ExpressionUUID->"870026b9-b55e-40ec-90ef-3f95fdeb83b8"],
 

@@ -1,52 +1,52 @@
 BeginPackage["WebTools`", {"CloudObject`", "CURLLink`"}];
 
-InstallWebTools::usage = "InstallWebTools[] launches the default web driver which allows Mathematica to communicate with a web browser. InstallWebTools[driver] launches the specified driver.";
-$SupportedWebDrivers::usage = "$SupportedWebDrivers returns the list of web drivers supported on your platform.";
+wtInstallWebTools::usage = "wtInstallWebTools[] launches the default web driver which allows Mathematica to communicate with a web browser. wtInstallWebTools[driver] launches the specified driver.";
+$wtSupportedWebDrivers::usage = "$wtSupportedWebDrivers returns the list of web drivers supported on your platform.";
 
 (* Web session functions *)
 
-StartWebSession::usage = "StartWebSession[] starts a new web session in a web browser and returns the unique session identifier.";
-StopWebSession::usage = "StopWebSession[sessionid] stops the web session identified by 'sessionid'";
-WebSessionStatus::usage = "WebSessionStatus[] returns status information for the current web session. WebSessionStatus[sessionid] returns status information for the specified 'sessionid'";
-$CurrentWebSession::usage = "$CurrentWebSession holds the session identifier for the current web session.";
-$WebSessions::usage = "$WebSessions returns the list of all open web sessions.";
+wtStartWebSession::usage = "wtStartWebSession[] starts a new web session in a web browser and returns the unique session identifier.";
+wtStopWebSession::usage = "wtStopWebSession[sessionid] stops the web session identified by 'sessionid'";
+wtWebSessionStatus::usage = "wtWebSessionStatus[] returns status information for the current web session. wtWebSessionStatus[sessionid] returns status information for the specified 'sessionid'";
+$wtCurrentWebSession::usage = "$wtCurrentWebSession holds the session identifier for the current web session.";
+$wtWebSessions::usage = "$wtWebSessions returns the list of all open web sessions.";
 
 
-OpenWebPage::usage = "OpenWebPage[url] opens the web page specified by 'url'";
-RefreshWebPage::usage = "RefreshWebPage[] refreshes the currently open web page.";
-PageBack::usage = "PageBack[] instructs the web browser to navigate to the previously visible page in its web session.";
-PageForward::usage = "PageForward[] instructs the web browser to navigate to the next visible page in its web session and acts as the inverse operation of PageBack[].";
-PageLinks::usage = "PageLinks[] returns the hyperlinks for the current active page.";
+wtOpenWebPage::usage = "wtOpenWebPage[url] opens the web page specified by 'url'";
+wtRefreshWebPage::usage = "wtRefreshWebPage[] refreshes the currently open web page.";
+wtPageBack::usage = "wtPageBack[] instructs the web browser to navigate to the previously visible page in its web session.";
+wtPageForward::usage = "wtPageForward[] instructs the web browser to navigate to the next visible page in its web session and acts as the inverse operation of wtPageBack[].";
+wtPageLinks::usage = "wtPageLinks[] returns the hyperlinks for the current active page.";
 
-CaptureWebPage::usage = "CaptureWebPage[]";
-SetBrowserWindow::usage = "SetBrowserWindow[windowid] changes the active browser window to the one specified by 'windowid'. A list of all window identifiers is given by BrowserWindows[].";
-BrowserWindows::usage = "BrowserWindows[] returns a list of all window identifiers, that are open in a given web session.";
+wtCaptureWebPage::usage = "wtCaptureWebPage[]";
+wtSetBrowserWindow::usage = "wtSetBrowserWindow[windowid] changes the active browser window to the one specified by 'windowid'. A list of all window identifiers is given by wtBrowserWindows[].";
+wtBrowserWindows::usage = "wtBrowserWindows[] returns a list of all window identifiers, that are open in a given web session.";
 
-JavascriptExecute::usage = "JavascriptExecute[\"javascript\"] executes a piece of JavaScript in the current window";
-LocateElement::usage = "LocateElement[id] returns";
-ClickElement::usage = "ClickElement[id] clicks on the first web element identified by 'id'. ClickElement[{id,n}] clicks the n-th matching element identified by 'id'. Typical elements are form submit buttons and hyperlinks.";
-TypeElement::usage = "TypeElement[id, text] types 'text' into a web element identified by 'id'. Typical elements are input fields and text areas.";
-ClearElement::usage = "ClearElement[id] clears text of a web elements identified by 'id'. Typical elements are input field and text areas.";
-SubmitElement::usage = "";
-HoverElement::usage = "HoverElement[id] clicks on the first web element identified by 'id'. ClickElement[{id,n}] clicks the n-th matching element identified by 'id'. Typical elements are form submit buttons and hyperlinks.";
-HideElement::usage = "";
+wtJavascriptExecute::usage = "wtJavascriptExecute[\"javascript\"] executes a piece of JavaScript in the current window";
+wtLocateElement::usage = "wtLocateElement[id] returns";
+wtClickElement::usage = "wtClickElement[id] clicks on the first web element identified by 'id'. wtClickElement[{id,n}] clicks the n-th matching element identified by 'id'. Typical elements are form submit buttons and hyperlinks.";
+wtTypeElement::usage = "wtTypeElement[id, text] types 'text' into a web element identified by 'id'. Typical elements are input fields and text areas.";
+wtClearElement::usage = "wtClearElement[id] clears text of a web elements identified by 'id'. Typical elements are input field and text areas.";
+wtSubmitElement::usage = "";
+wtHoverElement::usage = "wtHoverElement[id] clicks on the first web element identified by 'id'. wtClickElement[{id,n}] clicks the n-th matching element identified by 'id'. Typical elements are form submit buttons and hyperlinks.";
+wtHideElement::usage = "";
 
-FocusFrame::usage = "FocusFrame[id] gives focus to a web frame inside a web page. Typical usage is for giving focus to elements within <iframe> tags"
+wtFocusFrame::usage = "wtFocusFrame[id] gives focus to a web frame inside a web page. Typical usage is for giving focus to elements within <iframe> tags"
 
-ElementClassName::usage = "";
-CssSelector::usage = "";
-Id::usage = "";
-Name::usage = "";
-LinkText::usage = "";
-PartialLinkText::usage = "";
-TagName::usage = "";
-XPath::usage = "";
+wtElementClassName::usage = "";
+wtCssSelector::usage = "";
+wtId::usage = "";
+wtName::usage = "";
+wtLinkText::usage = "";
+wtPartialLinkText::usage = "";
+wtTagName::usage = "";
+wtXPath::usage = "";
 
-$WebDriver::usage = "";
-$WebDriverBaseURL::usage = "";
+$wtWebDriver::usage = "";
+$wtWebDriverBaseURL::usage = "";
 (* Javascript based functions *)
 
-GetPageHtml::usage = "";
+wtGetPageHtml::usage = "";
 
 Begin["`Private`"];
 
@@ -60,37 +60,37 @@ $WebToolsDirectory = DirectoryName[$InputFileName];
 
 (* toplevel functions to api binding translations *)
 
-StartWebSession[x___] := setsession[x];
-StopWebSession[x___] := Null;
-WebSessionStatus[x___] := status[x];
-$WebSessions := sessions[];
+wtStartWebSession[x___] := setsession[x];
+wtStopWebSession[x___] := Null;
+wtWebSessionStatus[x___] := status[x];
+$wtWebSessions := sessions[];
 
-OpenWebPage[x___] := seturl[x];
-RefreshWebPage[x___] := refresh[x];
-PageBack[x___] := back[x];
-PageForward[x___] := forward[x];
+wtOpenWebPage[x___] := seturl[x];
+wtRefreshWebPage[x___] := refresh[x];
+wtPageBack[x___] := back[x];
+wtPageForward[x___] := forward[x];
 
-BrowserWindows[x___] := windowhandles[x];
-SetBrowserWindow[x___] := setwindow[x];
+wtBrowserWindows[x___] := windowhandles[x];
+wtSetBrowserWindow[x___] := setwindow[x];
 
-CaptureWebPage[x___] := screenshot[x];
+wtCaptureWebPage[x___] := screenshot[x];
 
-$SupportedWebDrivers = Switch[ $SystemID ,
+$wtSupportedWebDrivers = Switch[ $SystemID ,
 	"Windows-x86-64", {"ChromeDriver","InternetExplorerDriver","MicrosoftWebDriver"},
 	"MacOSX-x86-64", {"ChromeDriver"},
 	_, {}
 ];
 
 (* execute once to start the standalone driver *)
-InstallWebTools[] := InstallWebTools["ChromeDriver"];
+wtInstallWebTools[] := wtInstallWebTools["ChromeDriver"];
 
-InstallWebTools[driver_] := Module[{dir},
-	{$WebDriver,$WebDriverBaseURL} = Switch[ driver,
+wtInstallWebTools[driver_] := Module[{dir},
+	{$wtWebDriver,$wtWebDriverBaseURL} = Switch[ driver,
 		"ChromeDriver", {"Chrome","http://localhost:9515"},
 		"InternetExplorerDriver", {"InternetExplorer","http://localhost:5555"},
 		"MicrosoftWebDriver", {"Edge", "http://localhost:17556"},
 		_, Null ];
-	If[ TimeConstrained[URLRead[$WebDriverBaseURL<>"/status"],0.5] === $Aborted, (* only launch driver if not running *)
+	If[ TimeConstrained[URLRead[$wtWebDriverBaseURL<>"/status"],0.5] === $Aborted, (* only launch driver if not running *)
 		dir = FileNameJoin[{ $WebToolsDirectory, "WebDriver", driver, $SystemID }];
 		SetDirectory[dir];
 		Switch[ driver,
@@ -132,105 +132,105 @@ InstallWebTools[driver_] := Module[{dir},
 
 (* higher level functions *)
 
-QueryMethod[ ElementClassName[_String] ] ^:= "class name";
-QueryMethod[ CssSelector[_String] ] ^:= "css selector";
+QueryMethod[ wtElementClassName[_String] ] ^:= "class name";
+QueryMethod[ wtCssSelector[_String] ] ^:= "css selector";
 QueryMethod[ Id[_String] ] ^:= "id";
 QueryMethod[ Name[_String] ] ^:= "name";
-QueryMethod[ LinkText[_String] ] ^:= "link text";
-QueryMethod[ PartialLinkText[_String] ] ^:= "partial link text";
-QueryMethod[ TagName[_String] ] ^:= "tag name";
-QueryMethod[ XPath[_String] ] ^:= "xpath";
+QueryMethod[ wtLinkText[_String] ] ^:= "link text";
+QueryMethod[ wtPartialLinkText[_String] ] ^:= "partial link text";
+QueryMethod[ wtTagName[_String] ] ^:= "tag name";
+QueryMethod[ wtXPath[_String] ] ^:= "xpath";
 
-QueryValue[ ElementClassName[s_String] ] ^:= s;
-QueryValue[ CssSelector[s_String] ] ^:= s;
-QueryValue[ Id[s_String] ] ^:= s;
-QueryValue[ Name[s_String] ] ^:= s;
-QueryValue[ LinkText[s_String] ] ^:= s;
-QueryValue[ PartialLinkText[s_String] ] ^:= s;
-QueryValue[ TagName[s_String] ] ^:= s;
-QueryValue[ XPath[s_String] ] ^:= s;
+QueryValue[ wtElementClassName[s_String] ] ^:= s;
+QueryValue[ wtCssSelector[s_String] ] ^:= s;
+QueryValue[ wtId[s_String] ] ^:= s;
+QueryValue[ wtName[s_String] ] ^:= s;
+QueryValue[ wtLinkText[s_String] ] ^:= s;
+QueryValue[ wtPartialLinkText[s_String] ] ^:= s;
+QueryValue[ wtTagName[s_String] ] ^:= s;
+QueryValue[ wtXPath[s_String] ] ^:= s;
 
 
 
-Options[JavascriptExecute] = { "SessionID" -> Automatic };
+Options[wtJavascriptExecute] = { "SessionID" -> Automatic };
 
-JavascriptExecute[javascript_, OptionsPattern[]] := Module[ {sessionId},
-	sessionId = OptionValue["SessionID"] /. {Automatic -> $CurrentWebSession};
+wtJavascriptExecute[javascript_, OptionsPattern[]] := Module[ {sessionId},
+	sessionId = OptionValue["SessionID"] /. {Automatic -> $wtCurrentWebSession};
 	execute[sessionId,javascript, {}]
 ];
 
-Options[LocateElement] = { "SessionID" -> Automatic };
+Options[wtLocateElement] = { "SessionID" -> Automatic };
 
-LocateElement[valueId_, options:OptionsPattern[]] := LocateElement[{valueId,1},options];
+wtLocateElement[valueId_, options:OptionsPattern[]] := wtLocateElement[{valueId,1},options];
 
-LocateElement[{valueId_,num_},OptionsPattern[]] := Module[{sessionId, result},
-	sessionId = OptionValue["SessionID"] /. {Automatic -> $CurrentWebSession};
+wtLocateElement[{valueId_,num_},OptionsPattern[]] := Module[{sessionId, result},
+	sessionId = OptionValue["SessionID"] /. {Automatic -> $wtCurrentWebSession};
 	result = elements[sessionId,{"using"->QueryMethod[valueId], "value"->QueryValue[valueId]}];
 	If[ result === "ELEMENT", result = {} ];
 	If[ Length[result]>0, result[[num]], result ]
 ]
 
-Options[ClickElement] = Options[LocateElement];
+Options[wtClickElement] = Options[wtLocateElement];
 
-ClickElement[valueId_, options:OptionsPattern[]] := ClickElement[{valueId,1},options];
+wtClickElement[valueId_, options:OptionsPattern[]] := wtClickElement[{valueId,1},options];
 
-ClickElement[{valueId_,num_}, OptionsPattern[] ] := Module[ {sessionId,elementId},
-	sessionId = OptionValue["SessionID"] /. {Automatic -> $CurrentWebSession};
-	elementId=If[StringQ[valueId],valueId,LocateElement[{valueId,num},"SessionID"->sessionId]];
+wtClickElement[{valueId_,num_}, OptionsPattern[] ] := Module[ {sessionId,elementId},
+	sessionId = OptionValue["SessionID"] /. {Automatic -> $wtCurrentWebSession};
+	elementId=If[StringQ[valueId],valueId,wtLocateElement[{valueId,num},"SessionID"->sessionId]];
 	click[sessionId,elementId];
 ];
 
-Options[TypeElement] = Options[LocateElement];
+Options[wtTypeElement] = Options[wtLocateElement];
 
-TypeElement[valueId_, text_, options:OptionsPattern[]] := TypeElement[{valueId,1}, text,options];
+wtTypeElement[valueId_, text_, options:OptionsPattern[]] := wtTypeElement[{valueId,1}, text,options];
 
-TypeElement[{valueId_,num_}, text_, OptionsPattern[]] := Module[ {sessionId,elementId},
-	sessionId = OptionValue["SessionID"] /. {Automatic -> $CurrentWebSession};
-	elementId=If[StringQ[valueId],valueId,LocateElement[{valueId,num},"SessionID"->sessionId]];
+wtTypeElement[{valueId_,num_}, text_, OptionsPattern[]] := Module[ {sessionId,elementId},
+	sessionId = OptionValue["SessionID"] /. {Automatic -> $wtCurrentWebSession};
+	elementId=If[StringQ[valueId],valueId,wtLocateElement[{valueId,num},"SessionID"->sessionId]];
 	clear[sessionId,elementId];
 	value[sessionId,elementId, text];
 ];
 
-Options[HoverElement] = Options[LocateElement];
+Options[wtHoverElement] = Options[wtLocateElement];
 
-HoverElement[valueId_, options:OptionsPattern[]] := HoverElement[{valueId,1}, options];
+wtHoverElement[valueId_, options:OptionsPattern[]] := wtHoverElement[{valueId,1}, options];
 
-HoverElement[{valueId_,num_}, OptionsPattern[]] := Module[ {sessionId,elementId},
-	sessionId = OptionValue["SessionID"] /. {Automatic -> $CurrentWebSession};
-	elementId=If[StringQ[valueId],valueId,LocateElement[valueId,"SessionID"->sessionId]];
+wtHoverElement[{valueId_,num_}, OptionsPattern[]] := Module[ {sessionId,elementId},
+	sessionId = OptionValue["SessionID"] /. {Automatic -> $wtCurrentWebSession};
+	elementId=If[StringQ[valueId],valueId,wtLocateElement[valueId,"SessionID"->sessionId]];
 	moveto[sessionId,elementId];
 ];
 
-Options[SubmitElement] = Options[LocateElement];
+Options[wtSubmitElement] = Options[wtLocateElement];
 
-SubmitElement[valueId_, options:OptionsPattern[]] := SubmitElement[{valueId,1}, options];
+wtSubmitElement[valueId_, options:OptionsPattern[]] := wtSubmitElement[{valueId,1}, options];
 
-SubmitElement[{valueId_,num_}, OptionsPattern[]] := Module[ {sessionId,elementId},
-	sessionId = OptionValue["SessionID"] /. {Automatic -> $CurrentWebSession};
-	elementId=If[StringQ[valueId],valueId,LocateElement[valueId,"SessionID"->sessionId]];
+wtSubmitElement[{valueId_,num_}, OptionsPattern[]] := Module[ {sessionId,elementId},
+	sessionId = OptionValue["SessionID"] /. {Automatic -> $wtCurrentWebSession};
+	elementId=If[StringQ[valueId],valueId,wtLocateElement[valueId,"SessionID"->sessionId]];
 	submit[sessionId,elementId]
 ];
 
-Options[HideElement] = Options[LocateElement];
+Options[wtHideElement] = Options[wtLocateElement];
 
-HideElement[valueId_, options:OptionsPattern[]] := HideElement[{valueId,1}, options];
+wtHideElement[valueId_, options:OptionsPattern[]] := wtHideElement[{valueId,1}, options];
 
-HideElement[{valueId_,num_}, OptionsPattern[]] := Module[ {sessionId,elementId},
-	sessionId = OptionValue["SessionID"] /. {Automatic -> $CurrentWebSession};
-	elementId=If[StringQ[valueId],valueId,LocateElement[valueId,"SessionID"->sessionId]];
+wtHideElement[{valueId_,num_}, OptionsPattern[]] := Module[ {sessionId,elementId},
+	sessionId = OptionValue["SessionID"] /. {Automatic -> $wtCurrentWebSession};
+	elementId=If[StringQ[valueId],valueId,wtLocateElement[valueId,"SessionID"->sessionId]];
 	execute[sessionId,"arguments[0].style.visibility='hidden'",{{"ELEMENT"->elementId}}];
 ];
 
-Options[FocusFrame] = Options[LocateElement];
+Options[wtFocusFrame] = Options[wtLocateElement];
 
-FocusFrame[valueId_, options:OptionsPattern[]] := FocusFrame[{valueId,1}, options];
+wtFocusFrame[valueId_, options:OptionsPattern[]] := wtFocusFrame[{valueId,1}, options];
 
-FocusFrame[{valueId_,num_}, OptionsPattern[]] := Module[ {sessionId,elementId},
-	sessionId = OptionValue["SessionID"] /. {Automatic -> $CurrentWebSession};
+wtFocusFrame[{valueId_,num_}, OptionsPattern[]] := Module[ {sessionId,elementId},
+	sessionId = OptionValue["SessionID"] /. {Automatic -> $wtCurrentWebSession};
 	If[valueId===Null,
 		frame[sessionId,Null]
 		,
-		elementId=LocateElement[valueId,"SessionID"->sessionId];
+		elementId=wtLocateElement[valueId,"SessionID"->sessionId];
 		frame[sessionId,elementId];
 	];
 ];
@@ -238,7 +238,7 @@ FocusFrame[{valueId_,num_}, OptionsPattern[]] := Module[ {sessionId,elementId},
 
 (* Javascript based functions *)
 
-PageLinks[] := JavascriptExecute["
+wtPageLinks[] := wtJavascriptExecute["
 	var result = [];
 	for( i=0; i<document.links.length; i++ ) {
 	 result[i] = document.links[i].href;
@@ -246,9 +246,9 @@ PageLinks[] := JavascriptExecute["
 	return result;
 "];
 
-GetPageHtml[] := JavascriptExecute["return document.getElementsByTagName('html')[0].innerHTML;"]
+wtGetPageHtml[] := wtJavascriptExecute["return document.getElementsBywtTagName('html')[0].innerHTML;"]
 
-GetHtmlForId[id_String] := JavascriptExecute[ "return document.getElementById('" <> id <> "').innerHTML;"]
+GetHtmlForId[id_String] := wtJavascriptExecute[ "return document.getElementById('" <> id <> "').innerHTML;"]
 
 End[];
 
