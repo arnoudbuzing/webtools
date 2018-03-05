@@ -1,6 +1,4 @@
-CloudObject; HTTPRequest; URLRead;
-
-BeginPackage["WebTools`"];
+BeginPackage["WebTools`", {"CloudObject`", "CURLLink`"}];
 
 InstallWebTools::usage = "InstallWebTools[] launches the default web driver which allows Mathematica to communicate with a web browser. InstallWebTools[driver] launches the specified driver.";
 $SupportedWebDrivers::usage = "$SupportedWebDrivers returns the list of web drivers supported on your platform.";
@@ -93,7 +91,7 @@ InstallWebTools[driver_] := Module[{dir},
 		"MicrosoftWebDriver", {"Edge", "http://localhost:17556"},
 		_, Null ];
 	If[ TimeConstrained[URLRead[$WebDriverBaseURL<>"/status"],0.5] === $Aborted, (* only launch driver if not running *)
-		dir = FileNameJoin[{ $WebToolsDirectory, "WebDriver", driver, $SystemID }]; Print @ dir;
+		dir = FileNameJoin[{ $WebToolsDirectory, "WebDriver", driver, $SystemID }];
 		SetDirectory[dir];
 		Switch[ driver,
 			"ChromeDriver",
