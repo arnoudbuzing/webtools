@@ -278,7 +278,7 @@ Cell["Start a new web session:", "ExampleText",
 
 Cell[BoxData[{
  RowBox[{
-  RowBox[{"StartWebToolsSession", "[", "]"}], ";"}], "\[IndentingNewLine]", 
+  RowBox[{"StartWebSession", "[", "]"}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{
   "OpenWebPage", "[", "\"\<http://reference.wolfram.com/language/\>\"", "]"}],

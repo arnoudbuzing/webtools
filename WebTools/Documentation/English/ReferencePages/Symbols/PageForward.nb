@@ -273,7 +273,7 @@ Cell["Start a new web session:", "ExampleText",
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"StartWebToolsSession", "[", "]"}]], "Input",
+ RowBox[{"StartWebSession", "[", "]"}]], "Input",
  CellChangeTimes->{{3.5614782022395487`*^9, 3.561478205570882*^9}},
  CellLabel->"In[10]:=",
  CellID->855459279],

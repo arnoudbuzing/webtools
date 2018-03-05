@@ -979,7 +979,7 @@ Cell[CellGroupData[{
 Cell[BoxData[
  RowBox[{"TracePrint", "[", 
   RowBox[{
-   RowBox[{"StartWebToolsSession", "[", "]"}], ",", "_URLRead"}], "]"}]], "Input",
+   RowBox[{"StartWebSession", "[", "]"}], ",", "_URLRead"}], "]"}]], "Input",
  CellChangeTimes->{{3.6975454215987415`*^9, 3.6975454235689993`*^9}, {
    3.728991862181672*^9, 3.7289918688940945`*^9}, 3.7289919117620916`*^9, {
    3.728993601196257*^9, 3.7289936145877676`*^9}},

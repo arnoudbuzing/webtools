@@ -1,3 +1,5 @@
+CloudObject; HTTPRequest; URLRead;
+
 BeginPackage["WebTools`"];
 
 InstallWebTools::usage = "InstallWebTools[] launches the default web driver which allows Mathematica to communicate with a web browser. InstallWebTools[driver] launches the specified driver.";
@@ -5,8 +7,8 @@ $SupportedWebDrivers::usage = "$SupportedWebDrivers returns the list of web driv
 
 (* Web session functions *)
 
-StartWebToolsSession::usage = "StartWebToolsSession[] starts a new web session in a web browser and returns the unique session identifier.";
-StopWebToolsSession::usage = "StopWebToolsSession[sessionid] stops the web session identified by 'sessionid'";
+StartWebSession::usage = "StartWebSession[] starts a new web session in a web browser and returns the unique session identifier.";
+StopWebSession::usage = "StopWebSession[sessionid] stops the web session identified by 'sessionid'";
 WebSessionStatus::usage = "WebSessionStatus[] returns status information for the current web session. WebSessionStatus[sessionid] returns status information for the specified 'sessionid'";
 $CurrentWebSession::usage = "$CurrentWebSession holds the session identifier for the current web session.";
 $WebSessions::usage = "$WebSessions returns the list of all open web sessions.";
@@ -60,8 +62,8 @@ $WebToolsDirectory = DirectoryName[$InputFileName];
 
 (* toplevel functions to api binding translations *)
 
-StartWebToolsSession[x___] := setsession[x];
-StopWebToolsSession[x___] := Null;
+StartWebSession[x___] := setsession[x];
+StopWebSession[x___] := Null;
 WebSessionStatus[x___] := status[x];
 $WebSessions := sessions[];
 
