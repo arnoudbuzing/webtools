@@ -5,8 +5,8 @@ $SupportedWebDrivers::usage = "$SupportedWebDrivers returns the list of web driv
 
 (* Web session functions *)
 
-StartWebSession::usage = "StartWebSession[] starts a new web session in a web browser and returns the unique session identifier.";
-StopWebSession::usage = "StopWebSession[sessionid] stops the web session identified by 'sessionid'";
+StartWebToolsSession::usage = "StartWebToolsSession[] starts a new web session in a web browser and returns the unique session identifier.";
+StopWebToolsSession::usage = "StopWebToolsSession[sessionid] stops the web session identified by 'sessionid'";
 WebSessionStatus::usage = "WebSessionStatus[] returns status information for the current web session. WebSessionStatus[sessionid] returns status information for the specified 'sessionid'";
 $CurrentWebSession::usage = "$CurrentWebSession holds the session identifier for the current web session.";
 $WebSessions::usage = "$WebSessions returns the list of all open web sessions.";
@@ -60,8 +60,8 @@ $WebToolsDirectory = DirectoryName[$InputFileName];
 
 (* toplevel functions to api binding translations *)
 
-StartWebSession[x___] := setsession[x];
-StopWebSession[x___] := Null;
+StartWebToolsSession[x___] := setsession[x];
+StopWebToolsSession[x___] := Null;
 WebSessionStatus[x___] := status[x];
 $WebSessions := sessions[];
 

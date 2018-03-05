@@ -144,7 +144,7 @@ Cell[TextData[{
  Cell[BoxData[
   ButtonBox["WebSessionStart",
    BaseStyle->"Link",
-   ButtonData->"paclet:WebTools/ref/StartWebSession"]], "InlineGuideFunction"],
+   ButtonData->"paclet:WebTools/ref/StartWebToolsSession"]], "InlineGuideFunction"],
  " \[LongDash] start a new web session"
 }], "GuideText",
  CellChangeTimes->{{3.5548119856735783`*^9, 3.554812030964107*^9}, {
@@ -156,7 +156,7 @@ Cell[TextData[{
  Cell[BoxData[
   ButtonBox["WebSessionStop",
    BaseStyle->"Link",
-   ButtonData->"paclet:WebTools/ref/StopWebSession"]], "InlineGuideFunction"],
+   ButtonData->"paclet:WebTools/ref/StopWebToolsSession"]], "InlineGuideFunction"],
  " \[LongDash] stop a running web session"
 }], "GuideText",
  CellChangeTimes->{{3.5548120399790087`*^9, 3.5548120791199217`*^9}, {
