@@ -1,3 +1,5 @@
+(* ::Package:: *)
+
 BeginPackage["WebTools`", {"CloudObject`", "CURLLink`"}];
 
 wtInstallWebTools::usage = "wtInstallWebTools[] launches the default web driver which allows Mathematica to communicate with a web browser. wtInstallWebTools[driver] launches the specified driver.";
@@ -42,11 +44,20 @@ wtPartialLinkText::usage = "";
 wtTagName::usage = "";
 wtXPath::usage = "";
 
+wtSelector::usage="";
+
 $wtWebDriver::usage = "";
 $wtWebDriverBaseURL::usage = "";
 (* Javascript based functions *)
 
-wtGetPageHtml::usage = "";
+wtGetPageHtml::usage = "Get HTML of current tab.";
+
+wtGetHtml::usage = "Get part of HTML of current tab, search method include wtId[], wtXPath and wtSelector[].
+Option \"Seletion\" could be set to \"inner\" or \"outer\" which control the returned part of the selected HTML segment.";
+
+wtGetPageURL::usage = "Get URL of current tab.";
+
+wtOffAlert::usage = "wtOffAlert[] would turn off all bump up windows including alerts(), confirm() and prompt() and automatically confirm them."
 
 Begin["`Private`"];
 
@@ -134,8 +145,8 @@ wtInstallWebTools[driver_] := Module[{dir},
 
 QueryMethod[ wtElementClassName[_String] ] ^:= "class name";
 QueryMethod[ wtCssSelector[_String] ] ^:= "css selector";
-QueryMethod[ Id[_String] ] ^:= "id";
-QueryMethod[ Name[_String] ] ^:= "name";
+QueryMethod[ wtId[_String] ] ^:= "id";
+QueryMethod[ wtName[_String] ] ^:= "name";
 QueryMethod[ wtLinkText[_String] ] ^:= "link text";
 QueryMethod[ wtPartialLinkText[_String] ] ^:= "partial link text";
 QueryMethod[ wtTagName[_String] ] ^:= "tag name";
@@ -248,7 +259,19 @@ wtPageLinks[] := wtJavascriptExecute["
 
 wtGetPageHtml[] := wtJavascriptExecute["return document.getElementsBywtTagName('html')[0].innerHTML;"]
 
-GetHtmlForId[id_String] := wtJavascriptExecute[ "return document.getElementById('" <> id <> "').innerHTML;"]
+(*Get part of HTML*)
+Options[wtGetHtml]={"Selection"->"outer"};
+
+wtGetHtml[] := wtGetPageHtml[]
+wtGetHtml[wtSelector[sel_String],OptionsPattern[]] := wtJavascriptExecute[ "return document.querySelector('" <> sel <> "')."<>OptionValue["Selection"]<>"HTML;"]
+wtGetHtml[wtXPath[xp_String],OptionsPattern[]] := wtJavascriptExecute["document.evaluate('"<>xp<>"', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue."<>OptionValue["Selection"]<>"HTML;"]
+wtGetHtml[wtId[id_String],OptionsPattern[]] := wtJavascriptExecute["return document.getElementById('" <> id <> "')."<>OptionValue["Selection"]<>"HTML;"]
+
+(*Get Current URL*)
+wtGetPageURL[]:=wtJavascriptExecute["return window.location.href;"]
+
+(*Turn off all alerts! They are annoying*)
+wtOffAlert[]:=wtJavascriptExecute[ "window.alert=function(){return 1}; window.confirm=function(){return 1}; window.prompt=function(){return 1};"]
 
 End[];
 
