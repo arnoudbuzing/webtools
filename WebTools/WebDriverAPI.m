@@ -1,5 +1,3 @@
-(* ::Package:: *)
-
 status[] := get["/status"];
 
 sessions[] := get["/sessions"];
