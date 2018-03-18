@@ -87,7 +87,7 @@ wtSetBrowserWindow[x___] := setwindow[x];
 wtCaptureWebPage[x___] := screenshot[x];
 
 $wtSupportedWebDrivers = Switch[ $SystemID ,
-	"Windows-x86-64", {"ChromeDriver","InternetExplorerDriver","MicrosoftWebDriver"},
+	"Windows-x86-64", {"ChromeDriver","InternetExplorerDriver","MicrosoftWebDriver","FirefoxDriver"},
 	"MacOSX-x86-64", {"ChromeDriver"},
 	_, {}
 ];
@@ -100,6 +100,7 @@ wtInstallWebTools[driver_] := Module[{dir},
 		"ChromeDriver", {"Chrome","http://localhost:9515"},
 		"InternetExplorerDriver", {"InternetExplorer","http://localhost:5555"},
 		"MicrosoftWebDriver", {"Edge", "http://localhost:17556"},
+		"FirefoxDriver", {"Firefox", "http://localhost:4444"},
 		_, Null ];
 	If[ TimeConstrained[URLRead[$wtWebDriverBaseURL<>"/status"],0.5] === $Aborted, (* only launch driver if not running *)
 		dir = FileNameJoin[{ $WebToolsDirectory, "WebDriver", driver, $SystemID }];
@@ -124,7 +125,7 @@ wtInstallWebTools[driver_] := Module[{dir},
 				],
 			"FirefoxDriver",
 				Switch[ $SystemID,
-					"Windows-x86-64", Null,
+					"Windows-x86-64", StartProcess[FileNameJoin[{dir,"geckodriver.exe"}]],
 					"MacOSX-x86-64", Null,
 					_, Null
 				],

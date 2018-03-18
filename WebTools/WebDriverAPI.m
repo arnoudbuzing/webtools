@@ -1,3 +1,5 @@
+(* ::Package:: *)
+
 status[] := get["/status"];
 
 sessions[] := get["/sessions"];
@@ -6,6 +8,7 @@ setsession[] := setsession[$wtWebDriver];
 setsession["Chrome"] := ($wtCurrentWebSession = post["/session", {"desiredCapabilities" -> {"browserName" -> "chrome"}}, "sessionId"]);
 setsession["InternetExplorer"] := ($wtCurrentWebSession = post["/session", {"desiredCapabilities" -> {"browserName" -> "internet explorer"}}, "sessionId"]);
 setsession["Edge"] := ($wtCurrentWebSession = post["/session", {"desiredCapabilities" -> {}, "requiredCapabilities"->{}}, "sessionId"]);
+setsession["Firefox"] := ($wtCurrentWebSession = post["/session", {"desiredCapabilities" -> {"browserName" -> "firefox"}}, "sessionId"]);
 getsession[sessionId_] := get["/session/" <> sessionId];
 
 forward[] := forward[$wtCurrentWebSession];
