@@ -8,16 +8,19 @@ Paclet[
   Loading -> Automatic,
   Extensions -> {
    { "Documentation", Language -> "English"},
-   { "Kernel", Symbols -> {"WebTools`wtBrowserWindows", "WebTools`wtCaptureWebPage", "WebTools`wtClearElement",
+   { "Kernel", Symbols -> {
+      "WebTools`StartDriver", "WebTools`StopDriver", "WebTools`DriverObject", "WebTools`$CurrentDriverObject","WebTools`GetDrivers",
+      "WebTools`BrowserOpen", "Webtools`BrowserObject", "WebTools`$CurrentBrowserObject",
+      "Webtools`BrowserTabs",
+      "WebTools`BrowserExecute",
+     "WebTools`wtBrowserWindows", "WebTools`wtCaptureWebPage", "WebTools`wtClearElement",
 "WebTools`wtClickElement", "WebTools`wtCssSelector", "WebTools`wtElementClassName", "WebTools`wtFocusFrame",
-"WebTools`wtGetPageHtml", "WebTools`wtHideElement", "WebTools`wtHoverElement", "WebTools`wtId", "WebTools`StartDriver",
-"WebTools`StopDriver", "WebTools`DriverObject", "Webtools`BrowserObject", "WebTools`$CurrentBrowserObject", "WebTools`$CurrentDriverObject",
-"Webtools`BrowserExecute",
-"WebTools`wtJavascriptExecute", "WebTools`wtLinkText", "WebTools`wtLocateElement", "WebTools`wtName", "WebTools`BrowserOpen",
+"WebTools`wtGetPageHtml", "WebTools`wtHideElement", "WebTools`wtHoverElement", "WebTools`wtId",
+ "WebTools`wtLinkText", "WebTools`wtLocateElement", "WebTools`wtName",
 "WebTools`wtPageBack", "WebTools`wtPageForward", "WebTools`wtPageLinks", "WebTools`wtPartialLinkText", "WebTools`wtRefreshWebPage",
 "WebTools`wtSetBrowserWindow", "WebTools`StartBrowser", "WebTools`wtStopWebSession", "WebTools`wtSubmitElement",
-"WebTools`wtTagName", "WebTools`wtTypeElement", "WebTools`wtWebSessionStatus", "WebTools`wtXPath", "WebTools`$currentsession",
-"WebTools`GetDrivers", "WebTools`$wtWebSessions", "WebTools`$wtWebDriver", "WebTools`$wtWebDriverBaseURL"},
+"WebTools`wtTagName", "WebTools`wtTypeElement", "WebTools`wtWebSessionStatus", "WebTools`wtXPath",
+"WebTools`$wtWebSessions", "WebTools`$wtWebDriver", "WebTools`$wtWebDriverBaseURL"},
  Context -> {"WebTools`"} }
   }
 ]

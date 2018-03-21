@@ -32,8 +32,7 @@ wtRefreshWebPage[x___] := refresh[x];
 wtPageBack[x___] := back[x];
 wtPageForward[x___] := forward[x];
 
-wtBrowserWindows[x___] := windowhandles[x];
-wtSetBrowserWindow[x___] := setwindow[x];
+
 
 wtCaptureWebPage[x___] := screenshot[x];
 

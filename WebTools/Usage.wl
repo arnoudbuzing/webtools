@@ -34,7 +34,7 @@ wtPageLinks::usage = "wtPageLinks[] returns the hyperlinks for the current activ
 
 wtCaptureWebPage::usage = "wtCaptureWebPage[]";
 wtSetBrowserWindow::usage = "wtSetBrowserWindow[windowid] changes the active browser window to the one specified by 'windowid'. A list of all window identifiers is given by wtBrowserWindows[].";
-wtBrowserWindows::usage = "wtBrowserWindows[] returns a list of all window identifiers, that are open in a given web session.";
+BrowserTabs::usage = "BrowserTabs[] returns a list of all window identifiers, that are open in a given web session.";
 
 wtJavascriptExecute::usage = "wtJavascriptExecute[\"javascript\"] executes a piece of JavaScript in the current window";
 wtLocateElement::usage = "wtLocateElement[id] returns";

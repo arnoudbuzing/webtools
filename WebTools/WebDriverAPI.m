@@ -98,8 +98,7 @@ setwindow[sessionId_, window_] := post["/session/" <> sessionId <> "/window", {"
 deletewindow[] := deletewindow[$currentsession];
 deletewindow[sessionId_] := delete["/session/" <> sessionId <> "/window"];
 
-windowhandle[] := windowhandle[$currentsession];
-windowhandle[sessionId_] := get["/session/" <> sessionId <> "/window_handle"];
+windowhandle[ driverurl_, sessionId_] := get[ driverurl <> "/session/" <> sessionId <> "/window_handle"];
 
 windowhandles[] := windowhandles[$currentsession];
 windowhandles[sessionId_] := get["/session/" <> sessionId <> "/window_handles"];

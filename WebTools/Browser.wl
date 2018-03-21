@@ -14,4 +14,8 @@ StartBrowser[ driver_DriverObject ] := setsession[ driver ];
 
 BrowserOpen[url_] := BrowserOpen[ $CurrentDriverObject, $CurrentBrowserObject, url];
 BrowserOpen[browser_, url_] := BrowserOpen[ $CurrentDriverObject, browser, url];
-BrowserOpen[driver_, browser_, url_] := seturl[driver["URL"], browser["SessionID"], url];
+BrowserOpen[driver_, browser_, url_] := seturl[driver["URL"], browser["SessionID"], url ];
+
+BrowserTabs[] := BrowserTabs[ $CurrentDriverObject, $CurrentBrowserObject ];
+BrowserTabs[browser_] := BrowserTabs[ $CurrentDriverObject, browser ];
+BrowserTabs[driver_, browser_] := windowhandle[ driver["URL"], browser["SessionID"] ];
