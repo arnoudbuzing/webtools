@@ -10,7 +10,7 @@ Paclet[
    { "Documentation", Language -> "English"},
    { "Kernel", Symbols -> {"WebTools`wtBrowserWindows", "WebTools`wtCaptureWebPage", "WebTools`wtClearElement",
 "WebTools`wtClickElement", "WebTools`wtCssSelector", "WebTools`wtElementClassName", "WebTools`wtFocusFrame",
-"WebTools`wtGetPageHtml", "WebTools`wtHideElement", "WebTools`wtHoverElement", "WebTools`wtId", "WebTools`InstallWebTools",
+"WebTools`wtGetPageHtml", "WebTools`wtHideElement", "WebTools`wtHoverElement", "WebTools`wtId", "WebTools`LaunchWebDriver",
 "WebTools`wtJavascriptExecute", "WebTools`wtLinkText", "WebTools`wtLocateElement", "WebTools`wtName", "WebTools`wtOpenWebPage",
 "WebTools`wtPageBack", "WebTools`wtPageForward", "WebTools`wtPageLinks", "WebTools`wtPartialLinkText", "WebTools`wtRefreshWebPage",
 "WebTools`wtSetBrowserWindow", "WebTools`wtStartWebSession", "WebTools`wtStopWebSession", "WebTools`wtSubmitElement",

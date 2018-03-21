@@ -1,6 +1,12 @@
 BeginPackage["WebTools`", {"CloudObject`", "CURLLink`"}];
 
-InstallWebTools::usage = "InstallWebTools[] launches the default web driver which allows Mathematica to communicate with a web browser. InstallWebTools[driver] launches the specified driver.";
+LaunchWebDriver::usage = "LaunchWebDriver[] launches the default web driver which allows Mathematica to communicate with a web browser.\n\
+LaunchWebDriver[driver] launches the specified driver.\n\
+LaunchWebDriver["Chrome"] launches the driver for Chrome.\n\
+LaunchWebDriver["Firefox"] launches the driver for Firefox.\n\
+LaunchWebDriver["Edge"] launches the driver for Edge.";
+
+
 $wtSupportedWebDrivers::usage = "$wtSupportedWebDrivers returns the list of web drivers supported on your platform.";
 
 (* Web session functions *)
@@ -97,9 +103,9 @@ randomport[] := Module[{sock,port},
 	port
 	]
 (* execute once to start the standalone driver *)
-InstallWebTools[] := InstallWebTools["ChromeDriver"];
+LaunchWebDriver[] := LaunchWebDriver["ChromeDriver"];
 
-InstallWebTools[driver_] := Module[{dir},
+LaunchWebDriver[driver_] := Module[{dir},
 	{$wtWebDriver,$wtWebDriverBaseURL} = Switch[ driver,
 		"ChromeDriver", {"Chrome","http://localhost:9515"},
 		"InternetExplorerDriver", {"InternetExplorer","http://localhost:5555"},
