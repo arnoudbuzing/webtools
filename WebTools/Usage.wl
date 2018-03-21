@@ -7,6 +7,7 @@ StartDriver[\"Edge\"] launches the driver for Edge.";
 StopDriver::usage = "StopDriver[driver] stops the process associated with 'driver'";
 
 DriverObject::usage = "DriverObject[...] represents the driver launched by StartDriver.";
+BrowserObject::usage = "BrowserObject[...] represents the browser launches by StartBrowser.";
 
 GetDrivers::usage = "GetDrivers[] gives the list of web drivers supported on your platform.\n\
 GetDrivers[\"systemid\"] gives the list for the specified 'systemid' ($SystemID)";
