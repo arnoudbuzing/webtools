@@ -5,7 +5,8 @@ LaunchDriver[\"Firefox\"] launches the driver for Firefox.\n\
 LaunchDriver[\"Edge\"] launches the driver for Edge.";
 
 
-$wtSupportedWebDrivers::usage = "$wtSupportedWebDrivers returns the list of web drivers supported on your platform.";
+GetDrivers::usage = "GetDrivers[] gives the list of web drivers supported on your platform.\n\
+GetDrivers[\"systemid\"] gives the list for the specified 'systemid' ($SystemID)";
 
 (* Web session functions *)
 

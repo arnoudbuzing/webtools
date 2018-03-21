@@ -1,6 +1,7 @@
 BeginPackage["WebTools`", {"CloudObject`", "CURLLink`"}];
 
 Get[ FileNameJoin[{DirectoryName[$InputFileName], "Usage.wl"}] ];
+Get[ FileNameJoin[{DirectoryName[$InputFileName], "Messages.wl"}] ];
 
 Begin["`Private`"];
 
@@ -29,10 +30,12 @@ wtSetBrowserWindow[x___] := setwindow[x];
 
 wtCaptureWebPage[x___] := screenshot[x];
 
-$wtSupportedWebDrivers = Switch[ $SystemID ,
-	"Windows-x86-64", {"ChromeDriver","InternetExplorerDriver","MicrosoftWebDriver","FirefoxDriver"},
-	"MacOSX-x86-64", {"ChromeDriver"},
-	_, {}
+GetDrivers[] := GetDrivers[$SystemID];
+GetDrivers[systemid_] := Switch[ systemid ,
+	"Windows-x86-64", {"Chrome","Firefox","Edge"},
+	"MacOSX-x86-64", {"Chrome"},
+	"Linux-x86-64", {"Chrome"},
+	_, Message[GetDrivers::notsupported]
 ];
 
 randomport[] := Module[{sock,port},
