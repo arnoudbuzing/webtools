@@ -5,31 +5,10 @@ Get[ FileNameJoin[{DirectoryName[$InputFileName], "Messages.wl"}] ];
 
 Begin["`Private`"];
 
-(* where am i? *)
 $WebToolsDirectory = DirectoryName[$InputFileName];
 
-files = {
-	"Driver.wl",
-	"Browser.wl",
-	"Javascript.wl",
-	"Page.wl",
-	"WebDriverAPI.m",
-	"Utilities.m"
-};
-
+files = {	"Driver.wl", "Browser.wl", "Javascript.wl", "Page.wl", "WebDriverAPI.m", "Utilities.m"};
 Map[ Get[ FileNameJoin[{DirectoryName[$InputFileName], #}] ] &, files ];
 
-(* Implementation of the package *)
-
-
-
-
-
-
-
-
-
-
 End[];
-
 EndPackage[];

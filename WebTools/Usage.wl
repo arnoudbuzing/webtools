@@ -11,9 +11,6 @@ StopDriver::usage = "StopDriver[driver] stops the process associated with 'drive
 DriverObject::usage = "DriverObject[...] represents the driver launched by StartDriver.";
 $CurrentDriverObject::usage = "$CurrentDriverObject gives the most recently started driver object.";
 
-GetDrivers::usage = "GetDrivers[] gives the list of web drivers supported on your platform.\n\
-GetDrivers[\"systemid\"] gives the list for the specified 'systemid' ($SystemID)";
-
 (* browser functions *)
 
 StartBrowser::usage = "StartBrowser[driver] launches a new browser using the DriverObject 'driver'";
@@ -21,12 +18,17 @@ BrowserObject::usage = "BrowserObject[...] represents the browser launches by St
 $CurrentBrowserObject::usage = "$CurrentBrowserObject gives the most recently started browser object.";
 BrowserOpenPage::usage = "BrowserOpenPage[url] opens the web page specified by 'url'";
 BrowserTabs::usage = "BrowserTabs[] returns a list of all window identifiers, that are open in a given web session.";
+
+(* javascript based functions *)
 BrowserExecute::usage = "BrowserExecute[script] executes 'script' on the current browser";
 BrowserPageLinks::usage = "BrowserPageLinks[] returns the hyperlinks for the current active page.";
 BrowserPageHTML::usage = "BrowserPageHTML gives the raw HTML for the current browser page.";
 BrowserPageURL::usage = "BrowserPageURL gives the url for the current page";
 
-wtStopWebSession::usage = "wtStopWebSession[sessionid] stops the web session identified by 'sessionid'";
+(* page functions *)
+
+
+(* random other stuff *)
 wtWebSessionStatus::usage = "wtWebSessionStatus[] returns status information for the current web session. wtWebSessionStatus[sessionid] returns status information for the specified 'sessionid'";
 wtRefreshWebPage::usage = "wtRefreshWebPage[] refreshes the currently open web page.";
 wtPageBack::usage = "wtPageBack[] instructs the web browser to navigate to the previously visible page in its web session.";

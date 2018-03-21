@@ -1,11 +1,3 @@
-GetDrivers[] := GetDrivers[$SystemID];
-GetDrivers[systemid_] := Switch[ systemid ,
-	"Windows-x86-64", {"Chrome","Firefox","Edge"},
-	"MacOSX-x86-64", {"Chrome"},
-	"Linux-x86-64", {"Chrome"},
-	_, Message[GetDrivers::notsupported]
-];
-
 randomport[] := Module[{sock,port},
 	sock=SocketOpen[Automatic];
 	port=sock["DestinationPort"];
@@ -19,7 +11,6 @@ getdriver[driver_,version_] := Module[{directory},
 	]
 
 (* driver object *)
-
 DriverObject[assoc_Association][key_] := assoc[key];
 
 DriverObject /: MakeBoxes[object:_DriverObject, form:(StandardForm|TraditionalForm)] := Module[{assoc=First[object]},

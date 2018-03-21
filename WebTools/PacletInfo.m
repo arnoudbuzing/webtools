@@ -9,7 +9,7 @@ Paclet[
   Extensions -> {
    { "Documentation", Language -> "English"},
    { "Kernel", Symbols -> {
-      "WebTools`StartDriver", "WebTools`StopDriver", "WebTools`DriverObject", "WebTools`$CurrentDriverObject","WebTools`GetDrivers",
+      "WebTools`StartDriver", "WebTools`StopDriver", "WebTools`DriverObject", "WebTools`$CurrentDriverObject",
       "WebTools`StartBrowser", "Webtools`BrowserObject", "WebTools`$CurrentBrowserObject",
       "WebTools`BrowserOpenPage", "Webtools`BrowserTabs",
       "WebTools`BrowserExecute", "WebTools`BrowserPageLinks","WebTools`BrowserPageHTML", "WebTools`BrowserPageURL",
