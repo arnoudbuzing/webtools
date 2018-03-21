@@ -42,52 +42,22 @@ randomport[] := Module[{sock,port},
 	sock=SocketOpen[Automatic];
 	port=sock["DestinationPort"];
 	Close[sock];
-	port
+	ToString[port]
 	]
+
+getdriver[driver_] := getdriverpath[driver,$SystemID];
+getdriver[driver_,systemid_] := Module[{directory},
+	directory= FileNameJoin[{ $WebToolsDirectory, "Driver", driver, systemid }];
+	First[ FileNames["*",directory] ] (* assume only one driver per directory *)
+	]
+
 (* execute once to start the standalone driver *)
 LaunchDriver[] := LaunchDriver["Chrome"];
 
-LaunchDriver[driver_] := Module[{dir},
-	{$wtWebDriver,$wtWebDriverBaseURL} = Switch[ driver,
-		"Chrome", {"Chrome","http://localhost:9515"},
-		"FirefoxDriver", {"Firefox", "http://localhost:4444"},
-		"Edge", {"Edge", "http://localhost:17556"},
-		_, Null ];
-	If[ TimeConstrained[URLRead[$wtWebDriverBaseURL<>"/status"],0.5] === $Aborted, (* only launch driver if not running *)
-		dir = FileNameJoin[{ $WebToolsDirectory, "WebDriver", driver, $SystemID }];
-		SetDirectory[dir];
-		Switch[ driver,
-			"ChromeDriver",
-				Switch[ $SystemID,
-					"Windows-x86-64", StartProcess[ FileNameJoin[{ dir, "chromedriver.exe" }] ],
-					"MacOSX-x86-64", Run[ FileNameJoin[{ dir, "chromedriver"}] <> " &" ],
-					"Linux-x86-64", Null,
-					_, Null
-				],
-			"InternetExplorerDriver",
-				Switch[ $SystemID,
-					"Windows-x86-64", Run["start " <> FileNameJoin[{ dir, "iedriverserver.exe" }]],
-					_, Null
-				],
-			"MicrosoftWebDriver",
-				Switch[ $SystemID,
-					"Windows-x86-64", Run["start " <> FileNameJoin[{ dir, "microsoftwebdriver.exe" }]],
-					_, Null
-				],
-			"FirefoxDriver",
-				Switch[ $SystemID,
-					"Windows-x86-64", StartProcess[FileNameJoin[{dir,"geckodriver.exe"}]],
-					"MacOSX-x86-64", Null,
-					_, Null
-				],
-			"SafariDriver",
-				Switch[ $SystemID,
-					"MacOSX-x86-64", Null,
-					_, Null
-				],
-			_, Null];
-		ResetDirectory[];
-	];
+LaunchDriver[driver_] := Module[{executable,port},
+  executable = getdriver[driver];
+	port = randomport[];
+	StartProcess[{executable,"--port="<>port}];
 	DriverObject[ <| "Driver" -> driver, "URL" -> url, "Port" -> port, "Executable" -> executable |> ]
 ]
 
