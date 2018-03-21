@@ -34,7 +34,7 @@ json[expr_] := (DebugPrint[expr]; ImportString[ StringReplace[ExportString[expr,
 (* fetch *)
 
 fetch[type_, path_, data_, key_] := Module[{request,res},
-  request = HTTPRequest[ $wtWebDriverBaseURL <> path, <| "Method" -> type, "Body" -> json[data] |> ];
+  request = HTTPRequest[ $CurrentDriverObject["URL"] <> path, <| "Method" -> type, "Body" -> json[data] |> ];
   res = ImportString[ URLRead[ request ]["Body"], "JSON"];
   DebugPrint[format[res]];
   key /. res

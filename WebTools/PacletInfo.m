@@ -12,7 +12,7 @@ Paclet[
 "WebTools`wtClickElement", "WebTools`wtCssSelector", "WebTools`wtElementClassName", "WebTools`wtFocusFrame",
 "WebTools`wtGetPageHtml", "WebTools`wtHideElement", "WebTools`wtHoverElement", "WebTools`wtId", "WebTools`StartDriver",
 "webTools`StopDriver", "WebTools`DriverObject", "Webtools`BrowserObject", "WebTools`$CurrentBrowserObject", "WebTools`$CurrentDriverObject",
-"WebTools`wtJavascriptExecute", "WebTools`wtLinkText", "WebTools`wtLocateElement", "WebTools`wtName", "WebTools`wtOpenWebPage",
+"WebTools`wtJavascriptExecute", "WebTools`wtLinkText", "WebTools`wtLocateElement", "WebTools`wtName", "WebTools`BrowserOpen",
 "WebTools`wtPageBack", "WebTools`wtPageForward", "WebTools`wtPageLinks", "WebTools`wtPartialLinkText", "WebTools`wtRefreshWebPage",
 "WebTools`wtSetBrowserWindow", "WebTools`StartBrowser", "WebTools`wtStopWebSession", "WebTools`wtSubmitElement",
 "WebTools`wtTagName", "WebTools`wtTypeElement", "WebTools`wtWebSessionStatus", "WebTools`wtXPath", "WebTools`$currentsession",

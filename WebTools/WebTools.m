@@ -22,7 +22,7 @@ wtStopWebSession[x___] := Null;
 wtWebSessionStatus[x___] := status[x];
 $wtWebSessions := sessions[];
 
-wtOpenWebPage[x___] := seturl[x];
+BrowserOpen[x___] := seturl[x];
 wtRefreshWebPage[x___] := refresh[x];
 wtPageBack[x___] := back[x];
 wtPageForward[x___] := forward[x];
