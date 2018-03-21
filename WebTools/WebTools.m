@@ -45,24 +45,24 @@ randomport[] := Module[{sock,port},
 	ToString[port]
 	]
 
-getdriver[driver_] := getdriverpath[driver,$SystemID];
-getdriver[driver_,systemid_] := Module[{directory},
-	directory= FileNameJoin[{ $WebToolsDirectory, "Driver", driver, systemid }];
+getdriver[driver_,version_] := Module[{directory},
+	directory= FileNameJoin[{ $WebToolsDirectory, "Driver", driver, $SystemID, version }];
 	First[ FileNames["*",directory] ] (* assume only one driver per directory *)
 	]
 
 (* execute once to start the standalone driver *)
-LaunchDriver[] := LaunchDriver["Chrome"];
+LaunchDriver[] := LaunchDriver["Chrome", "2.37"];
 
-LaunchDriver[driver_] := Module[{executable,port},
-  executable = getdriver[driver];
+LaunchDriver["Chrome"] := LaunchDriver["Chrome", "2.37"];
+LaunchDriver["Firefox"] := LaunchDriver["Firefox", "0.20.0"];
+LaunchDriver["Edge"] := LaunchDriver["Edge", "15063"];
+
+LaunchDriver[driver_, version_] := Module[{executable,port},
+  executable = getdriver[driver,version];
 	port = randomport[];
 	StartProcess[{executable,"--port="<>port}];
-	DriverObject[ <| "Driver" -> driver, "URL" -> url, "Port" -> port, "Executable" -> executable |> ]
+	DriverObject[ <| "Driver" -> driver, "Version" -> version, "URL" -> "http://localhost:"<>port, "Port" -> port, "Executable" -> executable |> ]
 ]
-
-
-
 
 (* higher level functions *)
 
