@@ -45,14 +45,13 @@ randomport[] := Module[{sock,port},
 	port
 	]
 (* execute once to start the standalone driver *)
-LaunchDriver[] := LaunchDriver["ChromeDriver"];
+LaunchDriver[] := LaunchDriver["Chrome"];
 
 LaunchDriver[driver_] := Module[{dir},
 	{$wtWebDriver,$wtWebDriverBaseURL} = Switch[ driver,
-		"ChromeDriver", {"Chrome","http://localhost:9515"},
-		"InternetExplorerDriver", {"InternetExplorer","http://localhost:5555"},
-		"MicrosoftWebDriver", {"Edge", "http://localhost:17556"},
+		"Chrome", {"Chrome","http://localhost:9515"},
 		"FirefoxDriver", {"Firefox", "http://localhost:4444"},
+		"Edge", {"Edge", "http://localhost:17556"},
 		_, Null ];
 	If[ TimeConstrained[URLRead[$wtWebDriverBaseURL<>"/status"],0.5] === $Aborted, (* only launch driver if not running *)
 		dir = FileNameJoin[{ $WebToolsDirectory, "WebDriver", driver, $SystemID }];
@@ -88,7 +87,8 @@ LaunchDriver[driver_] := Module[{dir},
 				],
 			_, Null];
 		ResetDirectory[];
-	]
+	];
+	DriverObject[ <| "Driver" -> driver, "URL" -> url, "Port" -> port, "Executable" -> executable |> ]
 ]
 
 

@@ -4,6 +4,7 @@ LaunchDriver[\"Chrome\"] launches the driver for Chrome.\n\
 LaunchDriver[\"Firefox\"] launches the driver for Firefox.\n\
 LaunchDriver[\"Edge\"] launches the driver for Edge.";
 
+DriverObject::usage = "DriverObject[...] represents the driver launched by LaunchDriver.";
 
 GetDrivers::usage = "GetDrivers[] gives the list of web drivers supported on your platform.\n\
 GetDrivers[\"systemid\"] gives the list for the specified 'systemid' ($SystemID)";
