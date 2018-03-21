@@ -57,12 +57,23 @@ LaunchDriver["Chrome"] := LaunchDriver["Chrome", "2.37"];
 LaunchDriver["Firefox"] := LaunchDriver["Firefox", "0.20.0"];
 LaunchDriver["Edge"] := LaunchDriver["Edge", "15063"];
 
-LaunchDriver[driver_, version_] := Module[{executable,port},
+LaunchDriver[driver_, version_] := Module[{executable,process,port},
   executable = getdriver[driver,version];
 	port = randomport[];
-	StartProcess[{executable,"--port="<>port}];
-	DriverObject[ <| "Driver" -> driver, "Version" -> version, "URL" -> "http://localhost:"<>port, "Port" -> port, "Executable" -> executable |> ]
+	process=StartProcess[{executable,"--port="<>port}];
+	DriverObject[ <| "Driver" -> driver, "Version" -> version, "Process" -> process, "URL" -> "http://localhost:"<>port, "Port" -> port, "Executable" -> executable |> ]
 ]
+
+DriverObject[assoc_Association][key_] := assoc[key];
+
+DriverObject /: MakeBoxes[object:_DriverObject, form:(StandardForm|TraditionalForm)] := Module[{assoc=First[object]},
+	BoxForm`ArrangeSummaryBox[DriverObject, object, None, {
+		{BoxForm`SummaryItem[{"Driver: ", assoc["Driver"]}], BoxForm`SummaryItem[{"Version: ", assoc["Version"]}]},
+	 	{BoxForm`SummaryItem[{"URL: ", assoc["URL"]}]}
+	}, {
+		{BoxForm`SummaryItem[{"Executable: ", assoc["Executable"]}]},
+		{BoxForm`SummaryItem[{"Process: ", assoc["Process"]}]}
+	}, form, "Interpretable" -> True]];
 
 (* higher level functions *)
 
