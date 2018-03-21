@@ -1007,20 +1007,20 @@ Cell["Open a new web page:", "Text",
 ffa148537172"],
 
 Cell[BoxData[
- RowBox[{"BrowserOpen", "[", "\"\<https://www.wolfram.com\>\"", 
+ RowBox[{"BrowserOpenPage", "[", "\"\<https://www.wolfram.com\>\"", 
   "]"}]], "Input",
  CellChangeTimes->{{3.7306458129419875`*^9, 3.7306458207645884`*^9}},
  CellLabel->"In[4]:=",ExpressionUUID->"1c92aeaa-91fb-4f9a-a909-86402f25b7cb"],
 
 Cell[BoxData[
- RowBox[{"BrowserOpen", "[", 
+ RowBox[{"BrowserOpenPage", "[", 
   RowBox[{"browser", ",", "\"\<https://www.wolfram.com\>\""}], "]"}]], "Input",
  CellChangeTimes->{{3.7306458129419875`*^9, 3.7306458207645884`*^9}, {
   3.7306483654890366`*^9, 3.7306483706571426`*^9}},
  CellLabel->"In[4]:=",ExpressionUUID->"fcb00eb7-2007-4a2f-916b-a6881ff4834e"],
 
 Cell[BoxData[
- RowBox[{"BrowserOpen", "[", 
+ RowBox[{"BrowserOpenPage", "[", 
   RowBox[{"driver", ",", "browser", ",", "\"\<https://www.wolfram.com\>\""}], 
   "]"}]], "Input",
  CellChangeTimes->{{3.7306458129419875`*^9, 3.7306458207645884`*^9}, {

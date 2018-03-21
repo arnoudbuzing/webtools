@@ -12,10 +12,27 @@ BrowserObject /: MakeBoxes[object:_BrowserObject, form:(StandardForm|Traditional
 
 StartBrowser[ driver_DriverObject ] := setsession[ driver ];
 
-BrowserOpen[url_] := BrowserOpen[ $CurrentDriverObject, $CurrentBrowserObject, url];
-BrowserOpen[browser_, url_] := BrowserOpen[ $CurrentDriverObject, browser, url];
-BrowserOpen[driver_, browser_, url_] := seturl[driver["URL"], browser["SessionID"], url ];
+BrowserOpenPage[url_] := BrowserOpenPage[ $CurrentDriverObject, $CurrentBrowserObject, url];
+BrowserOpenPage[browser_, url_] := BrowserOpenPage[ $CurrentDriverObject, browser, url];
+BrowserOpenPage[driver_, browser_, url_] := seturl[driver["URL"], browser["SessionID"], url ];
 
 BrowserTabs[] := BrowserTabs[ $CurrentDriverObject, $CurrentBrowserObject ];
 BrowserTabs[browser_] := BrowserTabs[ $CurrentDriverObject, browser ];
 BrowserTabs[driver_, browser_] := windowhandle[ driver["URL"], browser["SessionID"] ];
+
+
+(* toplevel functions to api binding translations *)
+
+
+wtStopWebSession[x___] := Null;
+wtWebSessionStatus[x___] := status[x];
+$wtWebSessions := sessions[];
+
+
+wtRefreshWebPage[x___] := refresh[x];
+wtPageBack[x___] := back[x];
+wtPageForward[x___] := forward[x];
+
+
+
+wtCaptureWebPage[x___] := screenshot[x];

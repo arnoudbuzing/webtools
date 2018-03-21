@@ -19,7 +19,7 @@ GetDrivers[\"systemid\"] gives the list for the specified 'systemid' ($SystemID)
 StartBrowser::usage = "StartBrowser[driver] launches a new browser using the DriverObject 'driver'";
 BrowserObject::usage = "BrowserObject[...] represents the browser launches by StartBrowser.";
 $CurrentBrowserObject::usage = "$CurrentBrowserObject gives the most recently started browser object.";
-BrowserOpen::usage = "BrowserOpen[url] opens the web page specified by 'url'";
+BrowserOpenPage::usage = "BrowserOpenPage[url] opens the web page specified by 'url'";
 BrowserTabs::usage = "BrowserTabs[] returns a list of all window identifiers, that are open in a given web session.";
 BrowserExecute::usage = "BrowserExecute[script] executes 'script' on the current browser";
 BrowserPageLinks::usage = "BrowserPageLinks[] returns the hyperlinks for the current active page.";
