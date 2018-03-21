@@ -5,6 +5,9 @@ Get[ FileNameJoin[{DirectoryName[$InputFileName], "Messages.wl"}] ];
 
 Begin["`Private`"];
 
+(* where am i? *)
+$WebToolsDirectory = DirectoryName[$InputFileName];
+
 files = {
 	"Driver.wl",
 	"Browser.wl",
@@ -17,8 +20,7 @@ Map[ Get[ FileNameJoin[{DirectoryName[$InputFileName], #}] ] &, files ];
 
 (* Implementation of the package *)
 
-(* where am i? *)
-$WebToolsDirectory = DirectoryName[$InputFileName];
+
 
 (* toplevel functions to api binding translations *)
 
@@ -144,31 +146,7 @@ wtFocusFrame[{valueId_,num_}, OptionsPattern[]] := Module[ {sessionId,elementId}
 ];
 
 
-(* Javascript based functions *)
 
-wtPageLinks[] := wtJavascriptExecute["
-	var result = [];
-	for( i=0; i<document.links.length; i++ ) {
-	 result[i] = document.links[i].href;
-	};
-	return result;
-"];
-
-wtGetPageHtml[] := wtJavascriptExecute["return document.getElementsBywtTagName('html')[0].innerHTML;"]
-
-(*Get part of HTML*)
-Options[wtGetHtml]={"Selection"->"outer"};
-
-wtGetHtml[] := wtGetPageHtml[]
-wtGetHtml[wtSelector[sel_String],OptionsPattern[]] := wtJavascriptExecute[ "return document.querySelector('" <> sel <> "')."<>OptionValue["Selection"]<>"HTML;"]
-wtGetHtml[wtXPath[xp_String],OptionsPattern[]] := wtJavascriptExecute["document.evaluate('"<>xp<>"', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue."<>OptionValue["Selection"]<>"HTML;"]
-wtGetHtml[wtId[id_String],OptionsPattern[]] := wtJavascriptExecute["return document.getElementById('" <> id <> "')."<>OptionValue["Selection"]<>"HTML;"]
-
-(*Get Current URL*)
-wtGetPageURL[]:=wtJavascriptExecute["return window.location.href;"]
-
-(*Turn off all alerts! They are annoying*)
-wtOffAlert[]:=wtJavascriptExecute[ "window.alert=function(){return 1}; window.confirm=function(){return 1}; window.prompt=function(){return 1};"]
 
 End[];
 
