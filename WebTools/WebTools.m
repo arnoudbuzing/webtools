@@ -5,6 +5,9 @@ Get[ FileNameJoin[{DirectoryName[$InputFileName], "Messages.wl"}] ];
 
 Begin["`Private`"];
 
+Get[ FileNameJoin[{DirectoryName[$InputFileName], "Driver.wl"}] ];
+Get[ FileNameJoin[{DirectoryName[$InputFileName], "Browser.wl"}] ];
+
 $currentsession = None;
 
 files = {"WebDriverAPI.m", "Utilities.m"};
@@ -17,7 +20,7 @@ $WebToolsDirectory = DirectoryName[$InputFileName];
 
 (* toplevel functions to api binding translations *)
 
-StartBrowser[ driver_DriverObject ] := setsession[ driver ];
+
 wtStopWebSession[x___] := Null;
 wtWebSessionStatus[x___] := status[x];
 $wtWebSessions := sessions[];
@@ -32,71 +35,12 @@ wtSetBrowserWindow[x___] := setwindow[x];
 
 wtCaptureWebPage[x___] := screenshot[x];
 
-GetDrivers[] := GetDrivers[$SystemID];
-GetDrivers[systemid_] := Switch[ systemid ,
-	"Windows-x86-64", {"Chrome","Firefox","Edge"},
-	"MacOSX-x86-64", {"Chrome"},
-	"Linux-x86-64", {"Chrome"},
-	_, Message[GetDrivers::notsupported]
-];
-
-randomport[] := Module[{sock,port},
-	sock=SocketOpen[Automatic];
-	port=sock["DestinationPort"];
-	Close[sock];
-	ToString[port]
-	]
-
-getdriver[driver_,version_] := Module[{directory},
-	directory= FileNameJoin[{ $WebToolsDirectory, "Driver", driver, $SystemID, version }];
-	First[ FileNames["*",directory] ] (* assume only one driver per versioned directory *)
-	]
-
-(* driver object *)
-
-DriverObject[assoc_Association][key_] := assoc[key];
-
-DriverObject /: MakeBoxes[object:_DriverObject, form:(StandardForm|TraditionalForm)] := Module[{assoc=First[object]},
-	BoxForm`ArrangeSummaryBox[DriverObject, object, None, {
-		{BoxForm`SummaryItem[{"Driver: ", assoc["Driver"]}], BoxForm`SummaryItem[{"Version: ", assoc["Version"]}]},
-	 	{BoxForm`SummaryItem[{"URL: ", assoc["URL"]}]}
-	}, {
-		{BoxForm`SummaryItem[{"Executable: ", assoc["Executable"]}]},
-		{BoxForm`SummaryItem[{"Process: ", assoc["Process"]}]}
-	}, form, "Interpretable" -> True]
-];
-
-BrowserObject[assoc_Association][key_] := assoc[key];
-
-BrowserObject /: MakeBoxes[object:_BrowserObject, form:(StandardForm|TraditionalForm)] := Module[{assoc=First[object]},
-	BoxForm`ArrangeSummaryBox[BrowserObject, object, None, {
-		{BoxForm`SummaryItem[{"Name: ", assoc["Name"]}], BoxForm`SummaryItem[{"Version: ", None}]},
-	 	{BoxForm`SummaryItem[{"SessionID: ", assoc["SessionID"]}]}
-	}, {
-		{BoxForm`SummaryItem[{"Bla: ", None}]}
-	}, form, "Interpretable" -> True]
-];
 
 
-(* execute once to start the standalone driver *)
-StartDriver[] := StartDriver["Chrome", "2.37"];
 
-StartDriver["Chrome"] := StartDriver["Chrome", "2.37"];
-StartDriver["Firefox"] := StartDriver["Firefox", "0.20.0"];
-StartDriver["Edge"] := StartDriver["Edge", "15063"];
 
-StartDriver[driver_, version_] := Module[{executable,process,port},
-  executable = getdriver[driver,version];
-	port = randomport[];
-	process=StartProcess[{executable,"--port="<>port}];
-	$CurrentDriverObject = DriverObject[ <| "Driver" -> driver, "Version" -> version, "Process" -> process, "URL" -> "http://localhost:"<>port, "Port" -> port, "Executable" -> executable |> ]
-]
 
-(* terminate the driver process *)
-StopDriver[ driver_DriverObject ] := Module[{status},
-	KillProcess[ driver["Process"] ];
-	status=ProcessStatus[driver["Process"]]
-]
+
 
 (* higher level functions *)
 

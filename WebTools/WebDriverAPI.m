@@ -52,6 +52,7 @@ frame[sessionId_, elementId_] := post["/session/" <> sessionId <> "/frame", {"id
 
 geturl[] := geturl[$currentsession];
 geturl[sessionId_] := get["/session/" <> sessionId <> "/url"];
+
 seturl[url_] := seturl[$CurrentBrowserObject["SessionID"],url];
 seturl[sessionId_, url_] := post["/session/" <> sessionId <> "/url", {"url" -> url}];
 
