@@ -5,12 +5,14 @@ Get[ FileNameJoin[{DirectoryName[$InputFileName], "Messages.wl"}] ];
 
 Begin["`Private`"];
 
-Get[ FileNameJoin[{DirectoryName[$InputFileName], "Driver.wl"}] ];
-Get[ FileNameJoin[{DirectoryName[$InputFileName], "Browser.wl"}] ];
+files = {
+	"Driver.wl",
+	"Browser.wl",
+	"Javascript.wl",
+	"WebDriverAPI.m",
+	"Utilities.m"
+};
 
-$currentsession = None;
-
-files = {"WebDriverAPI.m", "Utilities.m"};
 Map[ Get[ FileNameJoin[{DirectoryName[$InputFileName], #}] ] &, files ];
 
 (* Implementation of the package *)
@@ -25,7 +27,7 @@ wtStopWebSession[x___] := Null;
 wtWebSessionStatus[x___] := status[x];
 $wtWebSessions := sessions[];
 
-BrowserOpen[x___] := seturl[x];
+
 wtRefreshWebPage[x___] := refresh[x];
 wtPageBack[x___] := back[x];
 wtPageForward[x___] := forward[x];
@@ -64,12 +66,7 @@ QueryValue[ wtXPath[s_String] ] ^:= s;
 
 
 
-Options[wtJavascriptExecute] = { "SessionID" -> Automatic };
 
-wtJavascriptExecute[javascript_, OptionsPattern[]] := Module[ {sessionId},
-	sessionId = OptionValue["SessionID"] /. {Automatic -> $currentsession};
-	execute[sessionId,javascript, {}]
-];
 
 Options[wtLocateElement] = { "SessionID" -> Automatic };
 

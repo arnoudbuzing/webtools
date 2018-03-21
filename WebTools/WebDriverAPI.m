@@ -28,8 +28,8 @@ back[sessionId_] := post["/session/" <> sessionId <> "/back"];
 refresh[] := refresh[$currentsession];
 refresh[sessionId_] := post["/session/" <> sessionId <> "/refresh"];
 
-execute[script_, args_] := execute[$currentsession, script, args];
-execute[sessionId_, script_, args_] := post["/session/" <> sessionId <> "/execute", {"script" -> script, "args" -> args}];
+execute[baseurl_, sessionid_, script_, args_] := post[ baseurl <> "/session/" <> sessionid <> "/execute", {"script" -> script, "args" -> args}];
+
 
 availableengines[] := availableengines[$currentsession];
 availableengines[sessionId_] := get["/session/" <> sessionId <> "/available_engines"];

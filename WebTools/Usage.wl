@@ -24,6 +24,9 @@ $wtWebSessions::usage = "$wtWebSessions returns the list of all open web session
 
 
 BrowserOpen::usage = "BrowserOpen[url] opens the web page specified by 'url'";
+
+BrowserExecute::usage = "BrowserExecute[script] executes 'script' on the current browser";
+
 wtRefreshWebPage::usage = "wtRefreshWebPage[] refreshes the currently open web page.";
 wtPageBack::usage = "wtPageBack[] instructs the web browser to navigate to the previously visible page in its web session.";
 wtPageForward::usage = "wtPageForward[] instructs the web browser to navigate to the next visible page in its web session and acts as the inverse operation of wtPageBack[].";
