@@ -10,17 +10,17 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     59424,       1218]
-NotebookOptionsPosition[     56015,       1159]
-NotebookOutlinePosition[     56361,       1174]
-CellTagsIndexPosition[     56318,       1171]
+NotebookDataLength[     96183,       1971]
+NotebookOptionsPosition[     91925,       1900]
+NotebookOutlinePosition[     92271,       1915]
+CellTagsIndexPosition[     92228,       1912]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 Cell[BoxData["Quit"], "Input",
  CellChangeTimes->{{3.7306333735021906`*^9, 3.730633373802153*^9}},
- CellLabel->"In[1]:=",ExpressionUUID->"6e389f73-8348-46e3-9a41-87ac2f84f7bc"],
+ CellLabel->"In[5]:=",ExpressionUUID->"6e389f73-8348-46e3-9a41-87ac2f84f7bc"],
 
 Cell["Start a driver:", "Text",
  CellChangeTimes->{{3.7306505430291986`*^9, 
@@ -67,7 +67,7 @@ Cell[BoxData[
                RowBox[{
                  TagBox["\"URL: \"", "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
-                 TagBox["\"http://localhost:53281\"", "SummaryItem"]}], ""}}, 
+                 TagBox["\"http://localhost:54699\"", "SummaryItem"]}], ""}}, 
              GridBoxAlignment -> {
               "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
              False, GridBoxItemSize -> {
@@ -103,7 +103,7 @@ Cell[BoxData[
                RowBox[{
                  TagBox["\"URL: \"", "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
-                 TagBox["\"http://localhost:53281\"", "SummaryItem"]}], ""}, {
+                 TagBox["\"http://localhost:54699\"", "SummaryItem"]}], ""}, {
                RowBox[{
                  TagBox["\"Executable: \"", "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
@@ -141,7 +141,7 @@ Windows-x86-64\\\\2.37\\\\chromedriver.exe\"", "SummaryItem"]}], ""}, {
                     RowBox[{
                     TagBox["\"PID: \"", "SummaryItemAnnotation"], 
                     "\[InvisibleSpace]", 
-                    TagBox["14416", "SummaryItem"]}]}}, 
+                    TagBox["19516", "SummaryItem"]}]}}, 
                     GridBoxAlignment -> {
                     "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
                     AutoDelete -> False, 
@@ -174,11 +174,11 @@ Windows-x86-64\\\\2.37\\\\chromedriver.exe\"", "SummaryItem"]}], ""}, {
                     RowBox[{
                     TagBox["\"PID: \"", "SummaryItemAnnotation"], 
                     "\[InvisibleSpace]", 
-                    TagBox["14416", "SummaryItem"]}]}, {
+                    TagBox["19516", "SummaryItem"]}]}, {
                     RowBox[{
                     TagBox["\"Parent PID: \"", "SummaryItemAnnotation"], 
                     "\[InvisibleSpace]", 
-                    TagBox["14232", "SummaryItem"]}]}, {
+                    TagBox["1100", "SummaryItem"]}]}, {
                     RowBox[{
                     TagBox["\"User: \"", "SummaryItemAnnotation"], 
                     "\[InvisibleSpace]", 
@@ -195,7 +195,7 @@ Windows-x86-64\\\\2.37\\\\chromedriver.exe\"", "SummaryItem"]}]}, {
                     "\[InvisibleSpace]", 
                     TagBox[
                     
-                    TemplateBox[{"8.654848`", "\"MB\"", "megabytes", 
+                    TemplateBox[{"8.658944`", "\"MB\"", "megabytes", 
                     "\"Megabytes\""}, "Quantity", SyntaxForm -> Mod], 
                     "SummaryItem"]}]}, {
                     RowBox[{
@@ -207,7 +207,7 @@ Windows-x86-64\\\\2.37\\\\chromedriver.exe\"", "SummaryItem"]}]}, {
                     "\[InvisibleSpace]", 
                     TagBox[
                     TemplateBox[{
-                    RowBox[{"\"Wed 21 Mar 2018 15:45:35\"", 
+                    RowBox[{"\"Wed 21 Mar 2018 16:47:48\"", 
                     StyleBox[
                     RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
                     StyleBox[
@@ -217,8 +217,8 @@ Windows-x86-64\\\\2.37\\\\chromedriver.exe\"", "SummaryItem"]}]}, {
                     RowBox[{
                     RowBox[{"{", 
                     
-                    RowBox[{"2018", ",", "3", ",", "21", ",", "15", ",", "45",
-                     ",", "35.`"}], "}"}], ",", "\"Instant\"", ",", 
+                    RowBox[{"2018", ",", "3", ",", "21", ",", "16", ",", "47",
+                     ",", "48.`"}], "}"}], ",", "\"Instant\"", ",", 
                     "\"Gregorian\"", ",", 
                     RowBox[{"-", "5.`"}]}], "]"}]}, "DateObject", Editable -> 
                     False], "SummaryItem"]}]}, {
@@ -227,17 +227,15 @@ Windows-x86-64\\\\2.37\\\\chromedriver.exe\"", "SummaryItem"]}]}, {
                     "\[InvisibleSpace]", 
                     TagBox[
                     
-                    TemplateBox[{"0.03125`", "\"s\"", "seconds", 
-                    "\"Seconds\""}, "Quantity", SyntaxForm -> Mod], 
-                    "SummaryItem"]}]}, {
+                    TemplateBox[{"0.`", "\"s\"", "seconds", "\"Seconds\""}, 
+                    "Quantity", SyntaxForm -> Mod], "SummaryItem"]}]}, {
                     RowBox[{
                     TagBox["\"User Time: \"", "SummaryItemAnnotation"], 
                     "\[InvisibleSpace]", 
                     TagBox[
                     
-                    TemplateBox[{"0.015625`", "\"s\"", "seconds", 
-                    "\"Seconds\""}, "Quantity", SyntaxForm -> Mod], 
-                    "SummaryItem"]}]}, {
+                    TemplateBox[{"0.`", "\"s\"", "seconds", "\"Seconds\""}, 
+                    "Quantity", SyntaxForm -> Mod], "SummaryItem"]}]}, {
                     RowBox[{
                     TagBox["\"Real Time: \"", "SummaryItemAnnotation"], 
                     "\[InvisibleSpace]", 
@@ -263,11 +261,11 @@ Windows-x86-64\\\\2.37\\\\chromedriver.exe\"", "SummaryItem"]}]}, {
                     "SummaryPanel"], DynamicModuleValues :> {}], "]"}], 
                    ProcessObject[
                     Association[
-                    "ManagedProcess" -> True, "UID" -> 0, "PID" -> 14416, 
-                    "PPID" -> 14232, "Program" -> "chromedriver.exe", "Path" -> 
+                    "ManagedProcess" -> True, "UID" -> 0, "PID" -> 19516, 
+                    "PPID" -> 1100, "Program" -> "chromedriver.exe", "Path" -> 
                     "C:\\Users\\arnoudb.WRI\\AppData\\Roaming\\Mathematica\\\
 Paclets\\Repository\\WebTools-0.1.2\\Driver\\Chrome\\Windows-x86-64\\2.37\\\
-chromedriver.exe", "User" -> "arnoudb", "StartTime" -> 1521665135]], 
+chromedriver.exe", "User" -> "arnoudb", "StartTime" -> 1521668868]], 
                    Selectable -> False, Editable -> False, SelectWithContents -> 
                    True], "SummaryItem"]}], ""}}, 
              GridBoxAlignment -> {
@@ -289,12 +287,12 @@ chromedriver.exe", "User" -> "arnoudb", "StartTime" -> 1521665135]],
    Association[
    "Driver" -> "Chrome", "Version" -> "2.37", "Process" -> ProcessObject[
       Association[
-      "ManagedProcess" -> True, "UID" -> 0, "PID" -> 14416, "PPID" -> 14232, 
+      "ManagedProcess" -> True, "UID" -> 0, "PID" -> 19516, "PPID" -> 1100, 
        "Program" -> "chromedriver.exe", "Path" -> 
        "C:\\Users\\arnoudb.WRI\\AppData\\Roaming\\Mathematica\\Paclets\\\
 Repository\\WebTools-0.1.2\\Driver\\Chrome\\Windows-x86-64\\2.37\\\
-chromedriver.exe", "User" -> "arnoudb", "StartTime" -> 1521665135]], "URL" -> 
-    "http://localhost:53281", "Port" -> "53281", "Executable" -> 
+chromedriver.exe", "User" -> "arnoudb", "StartTime" -> 1521668868]], "URL" -> 
+    "http://localhost:54699", "Port" -> "54699", "Executable" -> 
     "C:\\Users\\arnoudb.WRI\\AppData\\Roaming\\Mathematica\\Paclets\\\
 Repository\\WebTools-0.1.2\\Driver\\Chrome\\Windows-x86-64\\2.37\\\
 chromedriver.exe"]],
@@ -314,8 +312,10 @@ chromedriver.exe"]],
    3.7306474305091295`*^9, 3.730647928345578*^9, 3.7306483563914795`*^9, 
    3.730649218674363*^9, 3.730649450136785*^9, 3.7306495705719557`*^9, 
    3.73064964908648*^9, 3.7306505749586177`*^9, 3.73065062548781*^9, 
-   3.730651147704441*^9, 3.7306529695271254`*^9, 3.730653936476427*^9},
- CellLabel->"Out[1]=",ExpressionUUID->"7adce0be-ff99-4381-8c64-559a82412472"]
+   3.730651147704441*^9, 3.7306529695271254`*^9, 3.730653936476427*^9, 
+   3.730655162471496*^9, 3.7306558017240133`*^9, 3.730657584181472*^9, 
+   3.730657669290723*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"84fb59ca-073b-4958-8c98-3114913a7ad9"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -326,7 +326,7 @@ Cell[BoxData[
  CellChangeTimes->{{3.7306367519141617`*^9, 3.7306367623379*^9}, {
   3.730639959289767*^9, 3.7306399627127447`*^9}, {3.730650565014544*^9, 
   3.7306505656376505`*^9}},
- CellLabel->"In[15]:=",ExpressionUUID->"78adbfdf-83ec-406c-b008-b3080d6eef3e"],
+ CellLabel->"In[1]:=",ExpressionUUID->"78adbfdf-83ec-406c-b008-b3080d6eef3e"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -359,7 +359,7 @@ Cell[BoxData[
                RowBox[{
                  TagBox["\"URL: \"", "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
-                 TagBox["\"http://localhost:52859\"", "SummaryItem"]}], ""}}, 
+                 TagBox["\"http://localhost:53799\"", "SummaryItem"]}], ""}}, 
              GridBoxAlignment -> {
               "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
              False, GridBoxItemSize -> {
@@ -396,7 +396,7 @@ Cell[BoxData[
                RowBox[{
                  TagBox["\"URL: \"", "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
-                 TagBox["\"http://localhost:52859\"", "SummaryItem"]}], ""}, {
+                 TagBox["\"http://localhost:53799\"", "SummaryItem"]}], ""}, {
                RowBox[{
                  TagBox["\"Executable: \"", "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
@@ -435,7 +435,7 @@ Mathematica\\\\Paclets\\\\Repository\\\\WebTools-0.1.2\\\\Driver\\\\Firefox\\\
                     RowBox[{
                     TagBox["\"PID: \"", "SummaryItemAnnotation"], 
                     "\[InvisibleSpace]", 
-                    TagBox["2820", "SummaryItem"]}]}}, 
+                    TagBox["17272", "SummaryItem"]}]}}, 
                     GridBoxAlignment -> {
                     "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
                     AutoDelete -> False, 
@@ -469,11 +469,11 @@ Mathematica\\\\Paclets\\\\Repository\\\\WebTools-0.1.2\\\\Driver\\\\Firefox\\\
                     RowBox[{
                     TagBox["\"PID: \"", "SummaryItemAnnotation"], 
                     "\[InvisibleSpace]", 
-                    TagBox["2820", "SummaryItem"]}]}, {
+                    TagBox["17272", "SummaryItem"]}]}, {
                     RowBox[{
                     TagBox["\"Parent PID: \"", "SummaryItemAnnotation"], 
                     "\[InvisibleSpace]", 
-                    TagBox["8616", "SummaryItem"]}]}, {
+                    TagBox["17028", "SummaryItem"]}]}, {
                     RowBox[{
                     TagBox["\"User: \"", "SummaryItemAnnotation"], 
                     "\[InvisibleSpace]", 
@@ -490,7 +490,294 @@ Mathematica\\\\Paclets\\\\Repository\\\\WebTools-0.1.2\\\\Driver\\\\Firefox\\\
                     "\[InvisibleSpace]", 
                     TagBox[
                     
-                    TemplateBox[{"1.347584`", "\"MB\"", "megabytes", 
+                    TemplateBox[{"8.634368`", "\"MB\"", "megabytes", 
+                    "\"Megabytes\""}, "Quantity", SyntaxForm -> Mod], 
+                    "SummaryItem"]}]}, {
+                    RowBox[{
+                    TagBox["\"Threads: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["16", "SummaryItem"]}]}, {
+                    RowBox[{
+                    TagBox["\"Start Time: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox[
+                    TemplateBox[{
+                    RowBox[{"\"Wed 21 Mar 2018 16:15:36\"", 
+                    StyleBox[
+                    RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+                    StyleBox[
+                    RowBox[{"-", "5.`"}], NumberMarks -> False, StripOnInput -> 
+                    False]}], FontColor -> GrayLevel[0.5]]}], 
+                    RowBox[{"DateObject", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    
+                    RowBox[{"2018", ",", "3", ",", "21", ",", "16", ",", "15",
+                     ",", "36.`"}], "}"}], ",", "\"Instant\"", ",", 
+                    "\"Gregorian\"", ",", 
+                    RowBox[{"-", "5.`"}]}], "]"}]}, "DateObject", Editable -> 
+                    False], "SummaryItem"]}]}, {
+                    RowBox[{
+                    TagBox["\"System Time: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox[
+                    
+                    TemplateBox[{"0.015625`", "\"s\"", "seconds", 
+                    "\"Seconds\""}, "Quantity", SyntaxForm -> Mod], 
+                    "SummaryItem"]}]}, {
+                    RowBox[{
+                    TagBox["\"User Time: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox[
+                    
+                    TemplateBox[{"0.015625`", "\"s\"", "seconds", 
+                    "\"Seconds\""}, "Quantity", SyntaxForm -> Mod], 
+                    "SummaryItem"]}]}, {
+                    RowBox[{
+                    TagBox["\"Real Time: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox[
+                    
+                    TemplateBox[{"2", "\"s\"", "seconds", "\"Seconds\""}, 
+                    "Quantity", SyntaxForm -> Mod], "SummaryItem"]}]}}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+                    AutoDelete -> False, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxSpacings -> {
+                    "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+                    BaseStyle -> {
+                    ShowStringCharacters -> False, NumberMarks -> False, 
+                    PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+                    GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> 
+                    False, GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    BaselinePosition -> {1, 1}]}, 
+                    Dynamic[Typeset`open$$], ImageSize -> Automatic]}, 
+                    "SummaryPanel"], DynamicModuleValues :> {}], "]"}], 
+                   ProcessObject[
+                    Association[
+                    "ManagedProcess" -> True, "UID" -> 0, "PID" -> 17272, 
+                    "PPID" -> 17028, "Program" -> "geckodriver.exe", "Path" -> 
+                    "C:\\Users\\arnoudb.WRI\\AppData\\Roaming\\Mathematica\\\
+Paclets\\Repository\\WebTools-0.1.2\\Driver\\Firefox\\Windows-x86-64\\0.20.0\\\
+geckodriver.exe", "User" -> "arnoudb", "StartTime" -> 1521666936]], 
+                   Selectable -> False, Editable -> False, SelectWithContents -> 
+                   True], "SummaryItem"]}], ""}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  WebTools`DriverObject[
+   Association[
+   "Driver" -> "Firefox", "Version" -> "0.20.0", "Process" -> ProcessObject[
+      Association[
+      "ManagedProcess" -> True, "UID" -> 0, "PID" -> 17272, "PPID" -> 17028, 
+       "Program" -> "geckodriver.exe", "Path" -> 
+       "C:\\Users\\arnoudb.WRI\\AppData\\Roaming\\Mathematica\\Paclets\\\
+Repository\\WebTools-0.1.2\\Driver\\Firefox\\Windows-x86-64\\0.20.0\\\
+geckodriver.exe", "User" -> "arnoudb", "StartTime" -> 1521666936]], "URL" -> 
+    "http://localhost:53799", "Port" -> "53799", "Executable" -> 
+    "C:\\Users\\arnoudb.WRI\\AppData\\Roaming\\Mathematica\\Paclets\\\
+Repository\\WebTools-0.1.2\\Driver\\Firefox\\Windows-x86-64\\0.20.0\\\
+geckodriver.exe"]],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{
+  3.7306367626737924`*^9, 3.730637651306449*^9, {3.7306394854207125`*^9, 
+   3.7306395206662*^9}, 3.730639963454756*^9, 3.7306399967236576`*^9, 
+   3.7306400582261343`*^9, 3.7306432031361437`*^9, 3.730646314792676*^9, 
+   3.730647438496258*^9, 3.730650576454913*^9, 3.7306506265339994`*^9, 
+   3.7306551082945304`*^9, 3.730655424081492*^9, 3.7306557383077445`*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"52bc48f5-a11a-4806-b653-118bcb0ae783"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"driver", "=", 
+  RowBox[{"StartDriver", "[", "\"\<Edge\>\"", "]"}]}]], "Input",
+ CellChangeTimes->{{3.730636779040347*^9, 3.7306367794483566`*^9}, {
+  3.730640020130091*^9, 3.7306400206954517`*^9}, {3.730650591158355*^9, 
+  3.73065059182936*^9}},
+ CellLabel->"In[12]:=",ExpressionUUID->"c35d5982-9674-48c4-a278-aff63764d93e"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["DriverObject",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    TemplateBox[{PaneSelectorBox[{False -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource[
+               "FEBitmaps", "SquarePlusIconMedium"]], 
+              ButtonFunction :> (Typeset`open$$ = True), Appearance -> None, 
+              Evaluator -> Automatic, Method -> "Preemptive"], 
+             Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Driver: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Edge\"", "SummaryItem"]}], 
+               RowBox[{
+                 TagBox["\"Version: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"15063\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"URL: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"http://localhost:53888\"", "SummaryItem"]}], ""}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource[
+               "FEBitmaps", "SquareMinusIconMedium"]], 
+              ButtonFunction :> (Typeset`open$$ = False), Appearance -> None, 
+              Evaluator -> Automatic, Method -> "Preemptive"], 
+             Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Driver: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Edge\"", "SummaryItem"]}], 
+               RowBox[{
+                 TagBox["\"Version: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"15063\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"URL: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"http://localhost:53888\"", "SummaryItem"]}], ""}, {
+               RowBox[{
+                 TagBox["\"Executable: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                 "\"C:\\\\Users\\\\arnoudb.WRI\\\\AppData\\\\Roaming\\\\\
+Mathematica\\\\Paclets\\\\Repository\\\\WebTools-0.1.2\\\\Driver\\\\Edge\\\\\
+Windows-x86-64\\\\15063\\\\MicrosoftWebDriver.exe\"", "SummaryItem"]}], ""}, {
+               RowBox[{
+                 TagBox["\"Process: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  InterpretationBox[
+                   RowBox[{
+                    TagBox["ProcessObject", "SummaryHead"], "[", 
+                    
+                    DynamicModuleBox[{
+                    Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+                    TemplateBox[{
+                    PaneSelectorBox[{False -> GridBox[{{
+                    PaneBox[
+                    ButtonBox[
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "FEBitmaps", "SquarePlusIconMedium"]], 
+                    ButtonFunction :> (Typeset`open$$ = True), Appearance -> 
+                    None, Evaluator -> Automatic, Method -> "Preemptive"], 
+                    Alignment -> {Center, Center}, ImageSize -> 
+                    Dynamic[{Automatic, 
+                    3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], 
+                    GridBox[{{
+                    RowBox[{
+                    TagBox["\"Program: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["\"MicrosoftWebDriver.exe\"", "SummaryItem"]}]}, {
+                    RowBox[{
+                    TagBox["\"PID: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["4100", "SummaryItem"]}]}}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+                    AutoDelete -> False, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxSpacings -> {
+                    "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+                    BaseStyle -> {
+                    ShowStringCharacters -> False, NumberMarks -> False, 
+                    PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+                    GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> 
+                    False, GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    BaselinePosition -> {1, 1}], True -> GridBox[{{
+                    PaneBox[
+                    ButtonBox[
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "FEBitmaps", "SquareMinusIconMedium"]], 
+                    ButtonFunction :> (Typeset`open$$ = False), Appearance -> 
+                    None, Evaluator -> Automatic, Method -> "Preemptive"], 
+                    Alignment -> {Center, Center}, ImageSize -> 
+                    Dynamic[{Automatic, 
+                    3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], 
+                    GridBox[{{
+                    RowBox[{
+                    TagBox["\"Program: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["\"MicrosoftWebDriver.exe\"", "SummaryItem"]}]}, {
+                    RowBox[{
+                    TagBox["\"PID: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["4100", "SummaryItem"]}]}, {
+                    RowBox[{
+                    TagBox["\"Parent PID: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["17028", "SummaryItem"]}]}, {
+                    RowBox[{
+                    TagBox["\"User: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["\"arnoudb\"", "SummaryItem"]}]}, {
+                    RowBox[{
+                    TagBox["\"Path: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox[
+                    "\"C:\\\\Users\\\\arnoudb.WRI\\\\AppData\\\\Roaming\\\\\
+Mathematica\\\\Paclets\\\\Repository\\\\WebTools-0.1.2\\\\Driver\\\\Edge\\\\\
+Windows-x86-64\\\\15063\\\\MicrosoftWebDriver.exe\"", "SummaryItem"]}]}, {
+                    RowBox[{
+                    TagBox["\"Memory:\"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox[
+                    
+                    TemplateBox[{"2.236416`", "\"MB\"", "megabytes", 
                     "\"Megabytes\""}, "Quantity", SyntaxForm -> Mod], 
                     "SummaryItem"]}]}, {
                     RowBox[{
@@ -502,7 +789,7 @@ Mathematica\\\\Paclets\\\\Repository\\\\WebTools-0.1.2\\\\Driver\\\\Firefox\\\
                     "\[InvisibleSpace]", 
                     TagBox[
                     TemplateBox[{
-                    RowBox[{"\"Wed 21 Mar 2018 14:50:26\"", 
+                    RowBox[{"\"Wed 21 Mar 2018 16:17:00\"", 
                     StyleBox[
                     RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
                     StyleBox[
@@ -512,8 +799,8 @@ Mathematica\\\\Paclets\\\\Repository\\\\WebTools-0.1.2\\\\Driver\\\\Firefox\\\
                     RowBox[{
                     RowBox[{"{", 
                     
-                    RowBox[{"2018", ",", "3", ",", "21", ",", "14", ",", "50",
-                     ",", "26.`"}], "}"}], ",", "\"Instant\"", ",", 
+                    RowBox[{"2018", ",", "3", ",", "21", ",", "16", ",", "17",
+                     ",", "0.`"}], "}"}], ",", "\"Instant\"", ",", 
                     "\"Gregorian\"", ",", 
                     RowBox[{"-", "5.`"}]}], "]"}]}, "DateObject", Editable -> 
                     False], "SummaryItem"]}]}, {
@@ -556,297 +843,12 @@ Mathematica\\\\Paclets\\\\Repository\\\\WebTools-0.1.2\\\\Driver\\\\Firefox\\\
                     "SummaryPanel"], DynamicModuleValues :> {}], "]"}], 
                    ProcessObject[
                     Association[
-                    "ManagedProcess" -> True, "UID" -> 4, "PID" -> 2820, 
-                    "PPID" -> 8616, "Program" -> "geckodriver.exe", "Path" -> 
-                    "C:\\Users\\arnoudb.WRI\\AppData\\Roaming\\Mathematica\\\
-Paclets\\Repository\\WebTools-0.1.2\\Driver\\Firefox\\Windows-x86-64\\0.20.0\\\
-geckodriver.exe", "User" -> "arnoudb", "StartTime" -> 1521661826]], 
-                   Selectable -> False, Editable -> False, SelectWithContents -> 
-                   True], "SummaryItem"]}], ""}}, 
-             GridBoxAlignment -> {
-              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
-             False, GridBoxItemSize -> {
-              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
-              BaseStyle -> {
-              ShowStringCharacters -> False, NumberMarks -> False, 
-               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
-          GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
-          GridBoxItemSize -> {
-           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-          BaselinePosition -> {1, 1}]}, 
-       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
-     "SummaryPanel"],
-    DynamicModuleValues:>{}], "]"}],
-  WebTools`DriverObject[
-   Association[
-   "Driver" -> "Firefox", "Version" -> "0.20.0", "Process" -> ProcessObject[
-      Association[
-      "ManagedProcess" -> True, "UID" -> 4, "PID" -> 2820, "PPID" -> 8616, 
-       "Program" -> "geckodriver.exe", "Path" -> 
-       "C:\\Users\\arnoudb.WRI\\AppData\\Roaming\\Mathematica\\Paclets\\\
-Repository\\WebTools-0.1.2\\Driver\\Firefox\\Windows-x86-64\\0.20.0\\\
-geckodriver.exe", "User" -> "arnoudb", "StartTime" -> 1521661826]], "URL" -> 
-    "http://localhost:52859", "Port" -> "52859", "Executable" -> 
-    "C:\\Users\\arnoudb.WRI\\AppData\\Roaming\\Mathematica\\Paclets\\\
-Repository\\WebTools-0.1.2\\Driver\\Firefox\\Windows-x86-64\\0.20.0\\\
-geckodriver.exe"]],
-  Editable->False,
-  SelectWithContents->True,
-  Selectable->False]], "Output",
- CellChangeTimes->{
-  3.7306367626737924`*^9, 3.730637651306449*^9, {3.7306394854207125`*^9, 
-   3.7306395206662*^9}, 3.730639963454756*^9, 3.7306399967236576`*^9, 
-   3.7306400582261343`*^9, 3.7306432031361437`*^9, 3.730646314792676*^9, 
-   3.730647438496258*^9, 3.730650576454913*^9, 3.7306506265339994`*^9},
- CellLabel->"Out[15]=",ExpressionUUID->"91a9333c-817b-486c-b6d0-549fbed551df"]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"driver", "=", 
-  RowBox[{"StartDriver", "[", "\"\<Edge\>\"", "]"}]}]], "Input",
- CellChangeTimes->{{3.730636779040347*^9, 3.7306367794483566`*^9}, {
-  3.730640020130091*^9, 3.7306400206954517`*^9}, {3.730650591158355*^9, 
-  3.73065059182936*^9}},
- CellLabel->"In[1]:=",ExpressionUUID->"c35d5982-9674-48c4-a278-aff63764d93e"],
-
-Cell[BoxData[
- InterpretationBox[
-  RowBox[{
-   TagBox["DriverObject",
-    "SummaryHead"], "[", 
-   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
-    TemplateBox[{PaneSelectorBox[{False -> GridBox[{{
-            PaneBox[
-             ButtonBox[
-              DynamicBox[
-               FEPrivate`FrontEndResource[
-               "FEBitmaps", "SquarePlusIconMedium"]], 
-              ButtonFunction :> (Typeset`open$$ = True), Appearance -> None, 
-              Evaluator -> Automatic, Method -> "Preemptive"], 
-             Alignment -> {Center, Center}, ImageSize -> 
-             Dynamic[{
-               Automatic, 
-                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                 Magnification])}]], 
-            GridBox[{{
-               RowBox[{
-                 TagBox["\"Driver: \"", "SummaryItemAnnotation"], 
-                 "\[InvisibleSpace]", 
-                 TagBox["\"Edge\"", "SummaryItem"]}], 
-               RowBox[{
-                 TagBox["\"Version: \"", "SummaryItemAnnotation"], 
-                 "\[InvisibleSpace]", 
-                 TagBox["\"15063\"", "SummaryItem"]}]}, {
-               RowBox[{
-                 TagBox["\"URL: \"", "SummaryItemAnnotation"], 
-                 "\[InvisibleSpace]", 
-                 TagBox["\"http://localhost:53060\"", "SummaryItem"]}], ""}}, 
-             GridBoxAlignment -> {
-              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
-             False, GridBoxItemSize -> {
-              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
-              BaseStyle -> {
-              ShowStringCharacters -> False, NumberMarks -> False, 
-               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
-          GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
-          GridBoxItemSize -> {
-           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-          BaselinePosition -> {1, 1}], True -> GridBox[{{
-            PaneBox[
-             ButtonBox[
-              DynamicBox[
-               FEPrivate`FrontEndResource[
-               "FEBitmaps", "SquareMinusIconMedium"]], 
-              ButtonFunction :> (Typeset`open$$ = False), Appearance -> None, 
-              Evaluator -> Automatic, Method -> "Preemptive"], 
-             Alignment -> {Center, Center}, ImageSize -> 
-             Dynamic[{
-               Automatic, 
-                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                 Magnification])}]], 
-            GridBox[{{
-               RowBox[{
-                 TagBox["\"Driver: \"", "SummaryItemAnnotation"], 
-                 "\[InvisibleSpace]", 
-                 TagBox["\"Edge\"", "SummaryItem"]}], 
-               RowBox[{
-                 TagBox["\"Version: \"", "SummaryItemAnnotation"], 
-                 "\[InvisibleSpace]", 
-                 TagBox["\"15063\"", "SummaryItem"]}]}, {
-               RowBox[{
-                 TagBox["\"URL: \"", "SummaryItemAnnotation"], 
-                 "\[InvisibleSpace]", 
-                 TagBox["\"http://localhost:53060\"", "SummaryItem"]}], ""}, {
-               RowBox[{
-                 TagBox["\"Executable: \"", "SummaryItemAnnotation"], 
-                 "\[InvisibleSpace]", 
-                 TagBox[
-                 "\"C:\\\\Users\\\\arnoudb.WRI\\\\AppData\\\\Roaming\\\\\
-Mathematica\\\\Paclets\\\\Repository\\\\WebTools-0.1.2\\\\Driver\\\\Edge\\\\\
-Windows-x86-64\\\\15063\\\\MicrosoftWebDriver.exe\"", "SummaryItem"]}], ""}, {
-               RowBox[{
-                 TagBox["\"Process: \"", "SummaryItemAnnotation"], 
-                 "\[InvisibleSpace]", 
-                 TagBox[
-                  InterpretationBox[
-                   RowBox[{
-                    TagBox["ProcessObject", "SummaryHead"], "[", 
-                    
-                    DynamicModuleBox[{
-                    Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
-                    TemplateBox[{
-                    PaneSelectorBox[{False -> GridBox[{{
-                    PaneBox[
-                    ButtonBox[
-                    DynamicBox[
-                    FEPrivate`FrontEndResource[
-                    "FEBitmaps", "SquarePlusIconMedium"]], 
-                    ButtonFunction :> (Typeset`open$$ = True), Appearance -> 
-                    None, Evaluator -> Automatic, Method -> "Preemptive"], 
-                    Alignment -> {Center, Center}, ImageSize -> 
-                    Dynamic[{Automatic, 
-                    3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                    Magnification])}]], 
-                    GridBox[{{
-                    RowBox[{
-                    TagBox["\"Program: \"", "SummaryItemAnnotation"], 
-                    "\[InvisibleSpace]", 
-                    TagBox["\"MicrosoftWebDriver.exe\"", "SummaryItem"]}]}, {
-                    RowBox[{
-                    TagBox["\"PID: \"", "SummaryItemAnnotation"], 
-                    "\[InvisibleSpace]", 
-                    TagBox["2724", "SummaryItem"]}]}}, 
-                    GridBoxAlignment -> {
-                    "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
-                    AutoDelete -> False, 
-                    GridBoxItemSize -> {
-                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-                    GridBoxSpacings -> {
-                    "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
-                    BaseStyle -> {
-                    ShowStringCharacters -> False, NumberMarks -> False, 
-                    PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
-                    GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> 
-                    False, GridBoxItemSize -> {
-                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-                    BaselinePosition -> {1, 1}], True -> GridBox[{{
-                    PaneBox[
-                    ButtonBox[
-                    DynamicBox[
-                    FEPrivate`FrontEndResource[
-                    "FEBitmaps", "SquareMinusIconMedium"]], 
-                    ButtonFunction :> (Typeset`open$$ = False), Appearance -> 
-                    None, Evaluator -> Automatic, Method -> "Preemptive"], 
-                    Alignment -> {Center, Center}, ImageSize -> 
-                    Dynamic[{Automatic, 
-                    3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                    Magnification])}]], 
-                    GridBox[{{
-                    RowBox[{
-                    TagBox["\"Program: \"", "SummaryItemAnnotation"], 
-                    "\[InvisibleSpace]", 
-                    TagBox["\"MicrosoftWebDriver.exe\"", "SummaryItem"]}]}, {
-                    RowBox[{
-                    TagBox["\"PID: \"", "SummaryItemAnnotation"], 
-                    "\[InvisibleSpace]", 
-                    TagBox["2724", "SummaryItem"]}]}, {
-                    RowBox[{
-                    TagBox["\"Parent PID: \"", "SummaryItemAnnotation"], 
-                    "\[InvisibleSpace]", 
-                    TagBox["18164", "SummaryItem"]}]}, {
-                    RowBox[{
-                    TagBox["\"User: \"", "SummaryItemAnnotation"], 
-                    "\[InvisibleSpace]", 
-                    TagBox["\"arnoudb\"", "SummaryItem"]}]}, {
-                    RowBox[{
-                    TagBox["\"Path: \"", "SummaryItemAnnotation"], 
-                    "\[InvisibleSpace]", 
-                    TagBox[
-                    "\"C:\\\\Users\\\\arnoudb.WRI\\\\AppData\\\\Roaming\\\\\
-Mathematica\\\\Paclets\\\\Repository\\\\WebTools-0.1.2\\\\Driver\\\\Edge\\\\\
-Windows-x86-64\\\\15063\\\\MicrosoftWebDriver.exe\"", "SummaryItem"]}]}, {
-                    RowBox[{
-                    TagBox["\"Memory:\"", "SummaryItemAnnotation"], 
-                    "\[InvisibleSpace]", 
-                    TagBox[
-                    
-                    TemplateBox[{"6.2464`", "\"MB\"", "megabytes", 
-                    "\"Megabytes\""}, "Quantity", SyntaxForm -> Mod], 
-                    "SummaryItem"]}]}, {
-                    RowBox[{
-                    TagBox["\"Threads: \"", "SummaryItemAnnotation"], 
-                    "\[InvisibleSpace]", 
-                    TagBox["4", "SummaryItem"]}]}, {
-                    RowBox[{
-                    TagBox["\"Start Time: \"", "SummaryItemAnnotation"], 
-                    "\[InvisibleSpace]", 
-                    TagBox[
-                    TemplateBox[{
-                    RowBox[{"\"Wed 21 Mar 2018 15:07:22\"", 
-                    StyleBox[
-                    RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
-                    StyleBox[
-                    RowBox[{"-", "5.`"}], NumberMarks -> False, StripOnInput -> 
-                    False]}], FontColor -> GrayLevel[0.5]]}], 
-                    RowBox[{"DateObject", "[", 
-                    RowBox[{
-                    RowBox[{"{", 
-                    
-                    RowBox[{"2018", ",", "3", ",", "21", ",", "15", ",", "7", 
-                    ",", "22.`"}], "}"}], ",", "\"Instant\"", ",", 
-                    "\"Gregorian\"", ",", 
-                    RowBox[{"-", "5.`"}]}], "]"}]}, "DateObject", Editable -> 
-                    False], "SummaryItem"]}]}, {
-                    RowBox[{
-                    TagBox["\"System Time: \"", "SummaryItemAnnotation"], 
-                    "\[InvisibleSpace]", 
-                    TagBox[
-                    
-                    TemplateBox[{"0.`", "\"s\"", "seconds", "\"Seconds\""}, 
-                    "Quantity", SyntaxForm -> Mod], "SummaryItem"]}]}, {
-                    RowBox[{
-                    TagBox["\"User Time: \"", "SummaryItemAnnotation"], 
-                    "\[InvisibleSpace]", 
-                    TagBox[
-                    
-                    TemplateBox[{"0.015625`", "\"s\"", "seconds", 
-                    "\"Seconds\""}, "Quantity", SyntaxForm -> Mod], 
-                    "SummaryItem"]}]}, {
-                    RowBox[{
-                    TagBox["\"Real Time: \"", "SummaryItemAnnotation"], 
-                    "\[InvisibleSpace]", 
-                    TagBox[
-                    
-                    TemplateBox[{"2", "\"s\"", "seconds", "\"Seconds\""}, 
-                    "Quantity", SyntaxForm -> Mod], "SummaryItem"]}]}}, 
-                    GridBoxAlignment -> {
-                    "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
-                    AutoDelete -> False, 
-                    GridBoxItemSize -> {
-                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-                    GridBoxSpacings -> {
-                    "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
-                    BaseStyle -> {
-                    ShowStringCharacters -> False, NumberMarks -> False, 
-                    PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
-                    GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> 
-                    False, GridBoxItemSize -> {
-                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-                    BaselinePosition -> {1, 1}]}, 
-                    Dynamic[Typeset`open$$], ImageSize -> Automatic]}, 
-                    "SummaryPanel"], DynamicModuleValues :> {}], "]"}], 
-                   ProcessObject[
-                    Association[
-                    "ManagedProcess" -> True, "UID" -> 0, "PID" -> 2724, 
-                    "PPID" -> 18164, "Program" -> "MicrosoftWebDriver.exe", 
+                    "ManagedProcess" -> True, "UID" -> 2, "PID" -> 4100, 
+                    "PPID" -> 17028, "Program" -> "MicrosoftWebDriver.exe", 
                     "Path" -> 
                     "C:\\Users\\arnoudb.WRI\\AppData\\Roaming\\Mathematica\\\
 Paclets\\Repository\\WebTools-0.1.2\\Driver\\Edge\\Windows-x86-64\\15063\\\
-MicrosoftWebDriver.exe", "User" -> "arnoudb", "StartTime" -> 1521662842]], 
+MicrosoftWebDriver.exe", "User" -> "arnoudb", "StartTime" -> 1521667020]], 
                    Selectable -> False, Editable -> False, SelectWithContents -> 
                    True], "SummaryItem"]}], ""}}, 
              GridBoxAlignment -> {
@@ -868,12 +870,12 @@ MicrosoftWebDriver.exe", "User" -> "arnoudb", "StartTime" -> 1521662842]],
    Association[
    "Driver" -> "Edge", "Version" -> "15063", "Process" -> ProcessObject[
       Association[
-      "ManagedProcess" -> True, "UID" -> 0, "PID" -> 2724, "PPID" -> 18164, 
+      "ManagedProcess" -> True, "UID" -> 2, "PID" -> 4100, "PPID" -> 17028, 
        "Program" -> "MicrosoftWebDriver.exe", "Path" -> 
        "C:\\Users\\arnoudb.WRI\\AppData\\Roaming\\Mathematica\\Paclets\\\
 Repository\\WebTools-0.1.2\\Driver\\Edge\\Windows-x86-64\\15063\\\
-MicrosoftWebDriver.exe", "User" -> "arnoudb", "StartTime" -> 1521662842]], 
-    "URL" -> "http://localhost:53060", "Port" -> "53060", "Executable" -> 
+MicrosoftWebDriver.exe", "User" -> "arnoudb", "StartTime" -> 1521667020]], 
+    "URL" -> "http://localhost:53888", "Port" -> "53888", "Executable" -> 
     "C:\\Users\\arnoudb.WRI\\AppData\\Roaming\\Mathematica\\Paclets\\\
 Repository\\WebTools-0.1.2\\Driver\\Edge\\Windows-x86-64\\15063\\\
 MicrosoftWebDriver.exe"]],
@@ -883,8 +885,8 @@ MicrosoftWebDriver.exe"]],
  CellChangeTimes->{3.730636780165439*^9, 3.7306376576800795`*^9, 
   3.730640021418641*^9, 3.730640068090948*^9, 3.7306432094621735`*^9, 
   3.730646328714755*^9, 3.7306474668215914`*^9, 3.7306506275615315`*^9, 
-  3.7306516441527596`*^9},
- CellLabel->"Out[1]=",ExpressionUUID->"3118ff4f-89cb-4085-b0dd-8a7958cc7fee"]
+  3.7306516441527596`*^9, 3.7306558201116266`*^9},
+ CellLabel->"Out[12]=",ExpressionUUID->"f60997ba-5a5a-4b65-a186-59a25dcb3e5d"]
 }, Open  ]],
 
 Cell["Start a browser, using the specified driver:", "Text",
@@ -935,7 +937,7 @@ Cell[BoxData[
                  TagBox["\"SessionID: \"", "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
                  TagBox[
-                 "\"3d03ba3e79187de190c9195fd76f48aa\"", "SummaryItem"]}], 
+                 "\"596fc920ba6ecd718c526d51fee7fe49\"", "SummaryItem"]}], 
                ""}}, GridBoxAlignment -> {
               "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
              False, GridBoxItemSize -> {
@@ -972,7 +974,7 @@ Cell[BoxData[
                  TagBox["\"SessionID: \"", "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
                  TagBox[
-                 "\"3d03ba3e79187de190c9195fd76f48aa\"", "SummaryItem"]}], 
+                 "\"596fc920ba6ecd718c526d51fee7fe49\"", "SummaryItem"]}], 
                ""}, {
                RowBox[{
                  TagBox["\"Bla: \"", "SummaryItemAnnotation"], 
@@ -996,20 +998,23 @@ Cell[BoxData[
   WebTools`BrowserObject[
    Association[
    "Name" -> "Chrome", "Version" -> "65.0.3325.181", "SessionID" -> 
-    "3d03ba3e79187de190c9195fd76f48aa"]],
+    "596fc920ba6ecd718c526d51fee7fe49"]],
   Editable->False,
   SelectWithContents->True,
   Selectable->False]], "Output",
- CellChangeTimes->{3.730639944790866*^9, 3.7306399890336576`*^9, 
-  3.730640054794732*^9, 3.7306431989261436`*^9, 3.7306438372816963`*^9, 
-  3.7306454550369043`*^9, 3.730645806302944*^9, 3.730646228609059*^9, 
-  3.730646587754043*^9, 3.730646746771062*^9, 3.7306468599210424`*^9, 
-  3.7306472947099843`*^9, 3.7306474314201307`*^9, 3.7306479325112057`*^9, 
-  3.7306483603547993`*^9, 3.7306492205072336`*^9, 3.7306494510792785`*^9, 
-  3.730649651284001*^9, 3.730649903916662*^9, 3.730650629495965*^9, 
-  3.730651150531375*^9, 3.7306516488662252`*^9, 3.7306529711389894`*^9, 
-  3.730653937652444*^9},
- CellLabel->"Out[2]=",ExpressionUUID->"3ddd404e-0fe9-49c4-9ee7-9616ddc32088"]
+ CellChangeTimes->{
+  3.730639944790866*^9, 3.7306399890336576`*^9, 3.730640054794732*^9, 
+   3.7306431989261436`*^9, 3.7306438372816963`*^9, 3.7306454550369043`*^9, 
+   3.730645806302944*^9, 3.730646228609059*^9, 3.730646587754043*^9, 
+   3.730646746771062*^9, 3.7306468599210424`*^9, 3.7306472947099843`*^9, 
+   3.7306474314201307`*^9, 3.7306479325112057`*^9, 3.7306483603547993`*^9, 
+   3.7306492205072336`*^9, 3.7306494510792785`*^9, 3.730649651284001*^9, 
+   3.730649903916662*^9, 3.730650629495965*^9, 3.730651150531375*^9, 
+   3.7306516488662252`*^9, 3.7306529711389894`*^9, 3.730653937652444*^9, 
+   3.7306551159575768`*^9, 3.7306551658625207`*^9, 3.7306554289795885`*^9, 
+   3.730655741778778*^9, {3.730655804995222*^9, 3.7306558230736103`*^9}, 
+   3.7306575900371585`*^9, 3.730657672166134*^9},
+ CellLabel->"Out[2]=",ExpressionUUID->"14eb4dd1-443e-4446-99e8-ef6d5be63857"]
 }, Open  ]],
 
 Cell["Open a new web page:", "Text",
@@ -1049,7 +1054,7 @@ Cell[BoxData[
  CellChangeTimes->{{3.7306492318712406`*^9, 3.7306492831039515`*^9}, {
   3.730649471942807*^9, 3.730649476477193*^9}, {3.7306496567400904`*^9, 
   3.7306496590990887`*^9}},
- CellLabel->"In[4]:=",ExpressionUUID->"043cef49-7859-43df-a64f-2828f0a984a9"],
+ CellLabel->"In[15]:=",ExpressionUUID->"043cef49-7859-43df-a64f-2828f0a984a9"],
 
 Cell[BoxData[
  RowBox[{"BrowserExecute", "[", 
@@ -1057,7 +1062,7 @@ Cell[BoxData[
  CellChangeTimes->{{3.7306492318712406`*^9, 3.7306492831039515`*^9}, {
   3.730649471942807*^9, 3.730649476477193*^9}, {3.7306496567400904`*^9, 
   3.7306496590990887`*^9}, {3.7306498939456997`*^9, 3.730649898027334*^9}},
- CellLabel->"In[10]:=",ExpressionUUID->"ac4bec7a-3981-4342-a1fc-9bc314c13e84"],
+ CellLabel->"In[4]:=",ExpressionUUID->"ac4bec7a-3981-4342-a1fc-9bc314c13e84"],
 
 Cell[BoxData[
  RowBox[{"BrowserExecute", "[", 
@@ -1080,11 +1085,13 @@ Cell[BoxData[
  RowBox[{"BrowserTabs", "[", "]"}]], "Input",
  CellChangeTimes->{{3.7306511561565504`*^9, 3.730651158786828*^9}, {
   3.7306515619011917`*^9, 3.7306515636602025`*^9}},
- CellLabel->"In[5]:=",ExpressionUUID->"0aa811d6-49eb-4cd1-a5da-2a45322cebc4"],
+ CellLabel->"In[11]:=",ExpressionUUID->"0aa811d6-49eb-4cd1-a5da-2a45322cebc4"],
 
-Cell[BoxData["\<\"CDwindow-1B591DC31CD77658D096C8BBB867922A\"\>"], "Output",
- CellChangeTimes->{3.730651652394249*^9, 3.7306539517948117`*^9},
- CellLabel->"Out[5]=",ExpressionUUID->"f7b9340f-3562-4954-a7be-28ef112cc061"]
+Cell[BoxData["\<\"CDwindow-C99C01BC349680F0E77C22653B91AEE4\"\>"], "Output",
+ CellChangeTimes->{
+  3.730651652394249*^9, 3.7306539517948117`*^9, {3.7306551481862955`*^9, 
+   3.7306551780071354`*^9}},
+ CellLabel->"Out[11]=",ExpressionUUID->"9596d792-e746-4c02-82e2-355828609a90"]
 }, Open  ]],
 
 Cell["Get the page HTML:", "Text",
@@ -1101,13 +1108,65 @@ Cell[BoxData[
    RowBox[{"StringTake", "[", 
     RowBox[{"#", ",", "100"}], "]"}], "&"}]}]], "Input",
  CellChangeTimes->{{3.730653043104026*^9, 3.730653072205905*^9}},
- CellLabel->"In[6]:=",ExpressionUUID->"6bc948d8-7e0a-4d7a-83b6-23854ae75155"],
+ CellLabel->"In[5]:=",ExpressionUUID->"6bc948d8-7e0a-4d7a-83b6-23854ae75155"],
 
-Cell[BoxData["\<\"<head>\\n\\n<!-- begin framework head en -->\\n\\n    <meta \
-http-equiv=\\\"x-ua-compatible\\\" content=\\\"ie=edge\\\">\\n\"\>"], "Output",
+Cell[BoxData[
+ TemplateBox[{
+  "General","jsonoutofrangeunicode",
+   "\"Out of range unicode code point encountered.\"",2,5,1,
+   20253806251789136576,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.730655757667519*^9},
+ CellLabel->
+  "During evaluation of \
+In[5]:=",ExpressionUUID->"511e0d8e-693a-4334-951d-d091b8539e95"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Import","jsonhintposition",
+   "\"An error occurred at line \
+\\!\\(\\*RowBox[{\\\"1\\\"}]\\):\\!\\(\\*RowBox[{\\\"107414\\\"}]\\)\"",2,5,2,
+   20253806251789136576,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.730655757693517*^9},
+ CellLabel->
+  "During evaluation of \
+In[5]:=",ExpressionUUID->"c9b65e07-2965-4f21-b6e3-19ef814a7824"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "ReplaceAll","reps",
+   "\"\\!\\(\\*RowBox[{\\\"{\\\", \\\"$Failed\\\", \\\"}\\\"}]\\) is neither \
+a list of replacement rules nor a valid dispatch table, and so cannot be used \
+for replacing.\"",2,5,3,20253806251789136576,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.7306557577185187`*^9},
+ CellLabel->
+  "During evaluation of \
+In[5]:=",ExpressionUUID->"0d720e93-9641-4026-90f5-2f5f60777f42"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "StringTake","strse",
+   "\"String or list of strings expected at position \\!\\(\\*RowBox[{\\\"1\\\
+\"}]\\) in \\!\\(\\*RowBox[{\\\"StringTake\\\", \\\"[\\\", RowBox[{RowBox[{\\\
+\"\\\\\\\"value\\\\\\\"\\\", \\\"/.\\\", \\\"\[VeryThinSpace]\\\", \
+\\\"$Failed\\\"}], \\\",\\\", \\\"100\\\"}], \\\"]\\\"}]\\).\"",2,5,4,
+   20253806251789136576,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.730655757744519*^9},
+ CellLabel->
+  "During evaluation of \
+In[5]:=",ExpressionUUID->"0acf784b-deed-4cd1-a855-1e10a6cec1d8"],
+
+Cell[BoxData[
+ RowBox[{"StringTake", "[", 
+  RowBox[{
+   RowBox[{"\<\"value\"\>", "/.", "\[VeryThinSpace]", "$Failed"}], ",", 
+   "100"}], "]"}]], "Output",
  CellChangeTimes->{{3.730653046708625*^9, 3.7306530728762703`*^9}, 
-   3.7306539540894194`*^9},
- CellLabel->"Out[6]=",ExpressionUUID->"5a107c84-d022-4b6b-8ef8-abe5474acf52"]
+   3.7306539540894194`*^9, 3.7306557577475195`*^9},
+ CellLabel->"Out[5]=",ExpressionUUID->"c21f1b65-b0af-4c90-90ff-f298e4a7ca78"]
 }, Open  ]],
 
 Cell["Get the hyperlinks from a page:", "Text",
@@ -1122,7 +1181,7 @@ Cell[BoxData[
   RowBox[{"BrowserPageLinks", "[", "]"}], "//", "Short"}]], "Input",
  CellChangeTimes->{{3.7306529863035145`*^9, 3.7306529906853466`*^9}, {
   3.730653027639551*^9, 3.7306530284778748`*^9}},
- CellLabel->"In[7]:=",ExpressionUUID->"9f0ba76e-3a2e-4931-ac44-c680ead5c025"],
+ CellLabel->"In[6]:=",ExpressionUUID->"9f0ba76e-3a2e-4931-ac44-c680ead5c025"],
 
 Cell[BoxData[
  TagBox[
@@ -1135,9 +1194,9 @@ Cell[BoxData[
     ",", "\<\"https://www.wolframcloud.com/?source=footer\"\>"}], "}"}],
   Short]], "Output",
  CellChangeTimes->{{3.7306529923468776`*^9, 3.730653028945882*^9}, 
-   3.7306539564540567`*^9},
+   3.7306539564540567`*^9, 3.730655774318679*^9},
  CellLabel->
-  "Out[7]//Short=",ExpressionUUID->"ee0aee3c-b25f-4ae6-855e-7fcbf5a73942"]
+  "Out[6]//Short=",ExpressionUUID->"7a47bfa2-6c17-49a3-b0d6-cf443c10c1c0"]
 }, Open  ]],
 
 Cell["Get the page URL:", "Text",
@@ -1150,11 +1209,693 @@ Cell[CellGroupData[{
 Cell[BoxData[
  RowBox[{"BrowserPageURL", "[", "]"}]], "Input",
  CellChangeTimes->{{3.7306532082881856`*^9, 3.730653210599969*^9}},
- CellLabel->"In[8]:=",ExpressionUUID->"e6572a06-0b40-43f3-a426-a17bebefb211"],
+ CellLabel->"In[7]:=",ExpressionUUID->"e6572a06-0b40-43f3-a426-a17bebefb211"],
 
 Cell[BoxData["\<\"https://www.wolfram.com/\"\>"], "Output",
- CellChangeTimes->{3.7306539589403286`*^9},
- CellLabel->"Out[8]=",ExpressionUUID->"ba000b3d-1e11-4ff6-accd-719794bfa55d"]
+ CellChangeTimes->{3.7306539589403286`*^9, 3.7306557777782164`*^9},
+ CellLabel->"Out[7]=",ExpressionUUID->"1397d682-7e10-4c46-ba54-e6831ff79bae"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Cookies", "Subsubsection",
+ CellChangeTimes->{{3.7306575973929195`*^9, 
+  3.7306575983129234`*^9}},ExpressionUUID->"252b58cc-d6ef-4503-98c7-\
+a48e758043ba"],
+
+Cell["Get all cookies:", "Text",
+ CellChangeTimes->{{3.7306576002809205`*^9, 
+  3.730657602480027*^9}},ExpressionUUID->"3a692bb9-8d13-4c8d-bc73-\
+9fdf98b8ba9d"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"BrowserCommand", "[", "\"\<GetAllCookies\>\"", "]"}], "[", 
+   "\"\<value\>\"", "]"}], "//", "Dataset"}]], "Input",
+ CellChangeTimes->{{3.7306576037440276`*^9, 3.7306576124258127`*^9}, {
+  3.7306577059887094`*^9, 3.730657713023595*^9}},
+ CellLabel->"In[6]:=",ExpressionUUID->"f4818a18-3753-4441-a8fd-33555f0d1a30"],
+
+Cell[BoxData[
+ TemplateBox[{TagBox[
+    DynamicModuleBox[{
+     TypeSystem`NestedGrid`PackagePrivate`$state$$ = 
+      Data`UnorderedAssociation[
+       "RowCount" -> 5, "Length" -> 5, "InitialType" -> TypeSystem`Vector[
+          
+          TypeSystem`Struct[{
+           "domain", "expiry", "httpOnly", "name", "path", "secure", 
+            "value"}, {
+            TypeSystem`Atom[
+             TypeSystem`Enumeration[".wolfram.com"]], 
+            TypeSystem`Atom[Real], 
+            TypeSystem`Atom[TypeSystem`Boolean], 
+            TypeSystem`Atom[String], 
+            TypeSystem`Atom[
+             TypeSystem`Enumeration["/"]], 
+            TypeSystem`Atom[TypeSystem`Boolean], 
+            TypeSystem`Atom[String]}], 5], "Shape" -> 
+        TypeSystem`PackageScope`HeaderShape[
+          
+          Association[{All, "domain"} -> 1, {All, "expiry"} -> 
+           1, {All, "httpOnly"} -> 1, {All, "name"} -> 1, {All, "path"} -> 
+           1, {All, "secure"} -> 1, {All, "value"} -> 1], 
+          TypeSystem`PackageScope`Limited[
+           TypeSystem`PackageScope`ColumnShape[
+            TypeSystem`PackageScope`RowShape[
+             Association[
+             "domain" -> TypeSystem`PackageScope`AtomShape[108.], "expiry" -> 
+              TypeSystem`PackageScope`AtomShape[60], "httpOnly" -> 
+              TypeSystem`PackageScope`AtomShape[36], "name" -> 
+              TypeSystem`PackageScope`AtomShape[57.60000000000001], "path" -> 
+              TypeSystem`PackageScope`AtomShape[27.], "secure" -> 
+              TypeSystem`PackageScope`AtomShape[36], "value" -> 
+              TypeSystem`PackageScope`AtomShape[249.60000000000002`]]]], 
+           5, {}]], "InitialData" -> 
+        TypeSystem`PackageScope`CacheHandle[1060968540], "Type" -> 
+        TypeSystem`Vector[
+          
+          TypeSystem`Struct[{
+           "domain", "expiry", "httpOnly", "name", "path", "secure", 
+            "value"}, {
+            TypeSystem`Atom[
+             TypeSystem`Enumeration[".wolfram.com"]], 
+            TypeSystem`Atom[Real], 
+            TypeSystem`Atom[TypeSystem`Boolean], 
+            TypeSystem`Atom[String], 
+            TypeSystem`Atom[
+             TypeSystem`Enumeration["/"]], 
+            TypeSystem`Atom[TypeSystem`Boolean], 
+            TypeSystem`Atom[String]}], 5], "HandleQ" -> True, "RowTarget" -> 
+        20, "Data" -> TypeSystem`PackageScope`CacheHandle[1060968540]], 
+      TypeSystem`NestedGrid`PackagePrivate`$path$$ = {}, 
+      TypeSystem`NestedGrid`PackagePrivate`$pos$$ = 1, 
+      TypeSystem`NestedGrid`PackagePrivate`$grid$$ = 
+      DynamicModule[{
+        TypeSystem`NestedGrid`PackagePrivate`renderedGrid = Deploy[
+           Style[
+            Grid[{{
+               Item[
+                Annotation[
+                 EventHandler[
+                  MouseAppearance[
+                   Mouseover[
+                    Pane[
+                    RawBoxes[
+                    StyleBox["\"domain\"", FontColor -> GrayLevel[0.4]]], {{
+                    20, Full}, 15}], 
+                    Style[
+                    Pane[
+                    RawBoxes[
+                    StyleBox[
+                    "\"domain\"", FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], {{20, Full}, 15}], FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                   TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    1645049553][{All, "domain"}]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1645049553][
+                  GeneralUtilities`Slice[All, "domain"]], "Mouse"], 
+                Background -> GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+               Item[
+                Annotation[
+                 EventHandler[
+                  MouseAppearance[
+                   Mouseover[
+                    Pane[
+                    RawBoxes[
+                    StyleBox["\"expiry\"", FontColor -> GrayLevel[0.4]]], {{
+                    20, Full}, 15}], 
+                    Style[
+                    Pane[
+                    RawBoxes[
+                    StyleBox[
+                    "\"expiry\"", FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], {{20, Full}, 15}], FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                   TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    1645049553][{All, "expiry"}]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1645049553][
+                  GeneralUtilities`Slice[All, "expiry"]], "Mouse"], 
+                Background -> GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+               Item[
+                Annotation[
+                 EventHandler[
+                  MouseAppearance[
+                   Mouseover[
+                    Pane[
+                    RawBoxes[
+                    StyleBox["\"httpOnly\"", FontColor -> GrayLevel[0.4]]], {{
+                    20, Full}, 15}], 
+                    Style[
+                    Pane[
+                    RawBoxes[
+                    StyleBox[
+                    "\"httpOnly\"", FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], {{20, Full}, 15}], FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                   TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    1645049553][{All, "httpOnly"}]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1645049553][
+                  GeneralUtilities`Slice[All, "httpOnly"]], "Mouse"], 
+                Background -> GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+               Item[
+                Annotation[
+                 EventHandler[
+                  MouseAppearance[
+                   Mouseover[
+                    Pane[
+                    RawBoxes[
+                    StyleBox["\"name\"", FontColor -> GrayLevel[0.4]]], {{
+                    20, Full}, 15}], 
+                    Style[
+                    Pane[
+                    RawBoxes[
+                    StyleBox[
+                    "\"name\"", FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], {{20, Full}, 15}], FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                   TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    1645049553][{All, "name"}]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1645049553][
+                  GeneralUtilities`Slice[All, "name"]], "Mouse"], Background -> 
+                GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+               Item[
+                Annotation[
+                 EventHandler[
+                  MouseAppearance[
+                   Mouseover[
+                    Pane[
+                    RawBoxes[
+                    StyleBox["\"path\"", FontColor -> GrayLevel[0.4]]], {{
+                    20, Full}, 15}], 
+                    Style[
+                    Pane[
+                    RawBoxes[
+                    StyleBox[
+                    "\"path\"", FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], {{20, Full}, 15}], FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                   TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    1645049553][{All, "path"}]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1645049553][
+                  GeneralUtilities`Slice[All, "path"]], "Mouse"], Background -> 
+                GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+               Item[
+                Annotation[
+                 EventHandler[
+                  MouseAppearance[
+                   Mouseover[
+                    Pane[
+                    RawBoxes[
+                    StyleBox["\"secure\"", FontColor -> GrayLevel[0.4]]], {{
+                    20, Full}, 15}], 
+                    Style[
+                    Pane[
+                    RawBoxes[
+                    StyleBox[
+                    "\"secure\"", FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], {{20, Full}, 15}], FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                   TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    1645049553][{All, "secure"}]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1645049553][
+                  GeneralUtilities`Slice[All, "secure"]], "Mouse"], 
+                Background -> GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+               Item[
+                Annotation[
+                 EventHandler[
+                  MouseAppearance[
+                   Mouseover[
+                    Pane[
+                    RawBoxes[
+                    StyleBox["\"value\"", FontColor -> GrayLevel[0.4]]], {{
+                    20, Full}, 15}], 
+                    Style[
+                    Pane[
+                    RawBoxes[
+                    StyleBox[
+                    "\"value\"", FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], {{20, Full}, 15}], FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                   TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    1645049553][{All, "value"}]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1645049553][
+                  GeneralUtilities`Slice[All, "value"]], "Mouse"], Background -> 
+                GrayLevel[0.95], Alignment -> {Left, Baseline}]}, {
+               Pane[
+                Annotation[".wolfram.com", 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1645049553][
+                  GeneralUtilities`Slice[1, 
+                   Key["domain"]]], "Mouse"], 
+                ImageSize -> {{108., Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes["1837028881."], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1645049553][
+                  GeneralUtilities`Slice[1, 
+                   Key["expiry"]]], "Mouse"], 
+                ImageSize -> {{60, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes["False"], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1645049553][
+                  GeneralUtilities`Slice[1, 
+                   Key["httpOnly"]]], "Mouse"], 
+                ImageSize -> {{36, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation["WR_SID", 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1645049553][
+                  GeneralUtilities`Slice[1, 
+                   Key["name"]]], "Mouse"], 
+                ImageSize -> {{57.60000000000001, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation["/", 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1645049553][
+                  GeneralUtilities`Slice[1, 
+                   Key["path"]]], "Mouse"], 
+                ImageSize -> {{27., Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes["False"], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1645049553][
+                  GeneralUtilities`Slice[1, 
+                   Key["secure"]]], "Mouse"], 
+                ImageSize -> {{36, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation["a0699af605f5ab2d310dcff", 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1645049553][
+                  GeneralUtilities`Slice[1, 
+                   Key["value"]]], "Mouse"], 
+                ImageSize -> {{249.60000000000002`, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}]}, {
+               Pane[
+                Annotation[".wolfram.com", 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1645049553][
+                  GeneralUtilities`Slice[2, 
+                   Key["domain"]]], "Mouse"], 
+                ImageSize -> {{108., Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes["1521668941"], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1645049553][
+                  GeneralUtilities`Slice[2, 
+                   Key["expiry"]]], "Mouse"], 
+                ImageSize -> {{60, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes["False"], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1645049553][
+                  GeneralUtilities`Slice[2, 
+                   Key["httpOnly"]]], "Mouse"], 
+                ImageSize -> {{36, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation["_gat", 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1645049553][
+                  GeneralUtilities`Slice[2, 
+                   Key["name"]]], "Mouse"], 
+                ImageSize -> {{57.60000000000001, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation["/", 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1645049553][
+                  GeneralUtilities`Slice[2, 
+                   Key["path"]]], "Mouse"], 
+                ImageSize -> {{27., Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes["False"], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1645049553][
+                  GeneralUtilities`Slice[2, 
+                   Key["secure"]]], "Mouse"], 
+                ImageSize -> {{36, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation["1", 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1645049553][
+                  GeneralUtilities`Slice[2, 
+                   Key["value"]]], "Mouse"], 
+                ImageSize -> {{249.60000000000002`, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}]}, {
+               Pane[
+                Annotation[".wolfram.com", 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1645049553][
+                  GeneralUtilities`Slice[3, 
+                   Key["domain"]]], "Mouse"], 
+                ImageSize -> {{108., Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes["1521755281"], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1645049553][
+                  GeneralUtilities`Slice[3, 
+                   Key["expiry"]]], "Mouse"], 
+                ImageSize -> {{60, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes["False"], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1645049553][
+                  GeneralUtilities`Slice[3, 
+                   Key["httpOnly"]]], "Mouse"], 
+                ImageSize -> {{36, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation["_gid", 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1645049553][
+                  GeneralUtilities`Slice[3, 
+                   Key["name"]]], "Mouse"], 
+                ImageSize -> {{57.60000000000001, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation["/", 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1645049553][
+                  GeneralUtilities`Slice[3, 
+                   Key["path"]]], "Mouse"], 
+                ImageSize -> {{27., Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes["False"], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1645049553][
+                  GeneralUtilities`Slice[3, 
+                   Key["secure"]]], "Mouse"], 
+                ImageSize -> {{36, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation["GA1.2.151443525.1521668881", 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1645049553][
+                  GeneralUtilities`Slice[3, 
+                   Key["value"]]], "Mouse"], 
+                ImageSize -> {{249.60000000000002`, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}]}, {
+               Pane[
+                Annotation[".wolfram.com", 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1645049553][
+                  GeneralUtilities`Slice[4, 
+                   Key["domain"]]], "Mouse"], 
+                ImageSize -> {{108., Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes["1584740881"], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1645049553][
+                  GeneralUtilities`Slice[4, 
+                   Key["expiry"]]], "Mouse"], 
+                ImageSize -> {{60, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes["False"], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1645049553][
+                  GeneralUtilities`Slice[4, 
+                   Key["httpOnly"]]], "Mouse"], 
+                ImageSize -> {{36, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation["_ga", 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1645049553][
+                  GeneralUtilities`Slice[4, 
+                   Key["name"]]], "Mouse"], 
+                ImageSize -> {{57.60000000000001, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation["/", 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1645049553][
+                  GeneralUtilities`Slice[4, 
+                   Key["path"]]], "Mouse"], 
+                ImageSize -> {{27., Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes["False"], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1645049553][
+                  GeneralUtilities`Slice[4, 
+                   Key["secure"]]], "Mouse"], 
+                ImageSize -> {{36, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation["GA1.2.719294963.1521668881", 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1645049553][
+                  GeneralUtilities`Slice[4, 
+                   Key["value"]]], "Mouse"], 
+                ImageSize -> {{249.60000000000002`, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}]}, {
+               Pane[
+                Annotation[".wolfram.com", 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1645049553][
+                  GeneralUtilities`Slice[5, 
+                   Key["domain"]]], "Mouse"], 
+                ImageSize -> {{108., Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes["1553204881."], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1645049553][
+                  GeneralUtilities`Slice[5, 
+                   Key["expiry"]]], "Mouse"], 
+                ImageSize -> {{60, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes["False"], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1645049553][
+                  GeneralUtilities`Slice[5, 
+                   Key["httpOnly"]]], "Mouse"], 
+                ImageSize -> {{36, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation["__eucd", 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1645049553][
+                  GeneralUtilities`Slice[5, 
+                   Key["name"]]], "Mouse"], 
+                ImageSize -> {{57.60000000000001, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation["/", 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1645049553][
+                  GeneralUtilities`Slice[5, 
+                   Key["path"]]], "Mouse"], 
+                ImageSize -> {{27., Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes["False"], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1645049553][
+                  GeneralUtilities`Slice[5, 
+                   Key["secure"]]], "Mouse"], 
+                ImageSize -> {{36, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation["0", 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1645049553][
+                  GeneralUtilities`Slice[5, 
+                   Key["value"]]], "Mouse"], 
+                ImageSize -> {{249.60000000000002`, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}]}}, BaseStyle -> {ContextMenu -> {
+                 MenuItem["Copy position to clipboard", 
+                  KernelExecute[
+                   TypeSystem`NestedGrid`PackagePrivate`toCurrentPosition[
+                   TypeSystem`NestedGrid`PackagePrivate`copyClip]], 
+                  MenuEvaluator -> Automatic], 
+                 MenuItem["Copy data to clipboard", 
+                  KernelExecute[
+                   TypeSystem`NestedGrid`PackagePrivate`toCurrentData[
+                   TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`copyClip]], 
+                  MenuEvaluator -> Automatic], Delimiter, 
+                 MenuItem["Paste position in new cell", 
+                  KernelExecute[
+                   TypeSystem`NestedGrid`PackagePrivate`toCurrentPosition[
+                   TypeSystem`NestedGrid`PackagePrivate`cellPaste]], 
+                  MenuEvaluator -> Automatic], 
+                 MenuItem["Paste data in new cell", 
+                  KernelExecute[
+                   TypeSystem`NestedGrid`PackagePrivate`toCurrentData[
+                   TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`cellPaste]], 
+                  MenuEvaluator -> Automatic]}, FontFamily -> "Verdana", 
+               FontSize -> 12}, Alignment -> Left, RowMinHeight -> 1.5, 
+             Dividers -> All, FrameStyle -> GrayLevel[0.85], 
+             BaseStyle -> {FontFamily -> "Verdana", FontSize -> 12}], 
+            LineBreakWithin -> False, ContextMenu -> {}, NumberMarks -> False,
+             ShowAutoStyles -> False]], 
+         TypeSystem`NestedGrid`PackagePrivate`initialQ = True, 
+         TypeSystem`NestedGrid`PackagePrivate`self = $Failed}, 
+        Dynamic[
+         TypeSystem`NestedGrid`PackagePrivate`setupViewPath[
+         TypeSystem`NestedGrid`PackagePrivate`$path$$, If[
+            Not[TypeSystem`NestedGrid`PackagePrivate`initialQ], 
+            
+            Module[{TypeSystem`NestedGrid`PackagePrivate`tmpGrid$ = $Failed, 
+              TypeSystem`NestedGrid`PackagePrivate`tmpData$ = 
+              TypeSystem`NestedGrid`PackagePrivate`LookupCacheValue[
+                TypeSystem`NestedGrid`PackagePrivate`$state$$["Data"]]}, 
+             TypeSystem`NestedGrid`PackagePrivate`tmpGrid$ = 
+              If[TypeSystem`NestedGrid`PackagePrivate`tmpData$ === 
+                TypeSystem`NestedGrid`PackagePrivate`$NotCached, 
+                TypeSystem`NestedGrid`PackagePrivate`renderedGrid, 
+                TypeSystem`NestedGrid`PackagePrivate`renderGrid[
+                TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                 TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                 TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                 TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1645049553][
+                TypeSystem`NestedGrid`PackagePrivate`tmpData$]]; If[
+               Not[
+                FailureQ[TypeSystem`NestedGrid`PackagePrivate`tmpGrid$]], 
+               TypeSystem`NestedGrid`PackagePrivate`renderedGrid = 
+               TypeSystem`NestedGrid`PackagePrivate`tmpGrid$]; Null]]; 
+          TypeSystem`NestedGrid`PackagePrivate`initialQ = False; 
+          TypeSystem`NestedGrid`PackagePrivate`$pos$$; If[
+            FailureQ[TypeSystem`NestedGrid`PackagePrivate`renderedGrid], 
+            TypeSystem`SparseGrid[
+             TypeSystem`H["(data no longer present)"]], 
+            If[GeneralUtilities`$DebugMode, 
+             Row[{TypeSystem`NestedGrid`PackagePrivate`renderedGrid, "  ", 
+               TypeSystem`NestedGrid`PackagePrivate`formatState[
+               TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                TypeSystem`NestedGrid`PackagePrivate`$pos$$]}], 
+             TypeSystem`NestedGrid`PackagePrivate`renderedGrid]]], 
+         TrackedSymbols :> {TypeSystem`NestedGrid`PackagePrivate`$pos$$}], 
+        DynamicModuleValues :> {}], 
+      TypeSystem`NestedGrid`PackagePrivate`$posCell$$, 
+      TypeSystem`NestedGrid`PackagePrivate`$topBar$$ = Dynamic[
+        TypeSystem`NestedGrid`PackagePrivate`alignBar[
+        TypeSystem`NestedGrid`PackagePrivate`$state$$][
+         TypeSystem`NestedGrid`PackagePrivate`makeFramedBar[
+          TypeSystem`PackageScope`Pathbar[
+          TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+           TypeSystem`NestedGrid`PackagePrivate`updateState[
+           TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+            TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+            TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+            TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1645049553]]]], 
+        TrackedSymbols :> {TypeSystem`NestedGrid`PackagePrivate`$path$$}], 
+      TypeSystem`NestedGrid`PackagePrivate`$bottomBar$$ = Framed[
+        Dynamic[
+         Replace[
+          MouseAnnotation[Null], {
+          TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1645049553][Null] -> 
+           "", TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1645049553][
+             Pattern[TypeSystem`NestedGrid`PackagePrivate`path, 
+              Blank[]]] :> (
+            TypeSystem`NestedGrid`PackagePrivate`$lastPath = 
+             TypeSystem`NestedGrid`PackagePrivate`path; 
+            TypeSystem`NestedGrid`PackagePrivate`makePathTrail[
+             TypeSystem`NestedGrid`PackagePrivate`path, 
+              TypeSystem`NestedGrid`PackagePrivate`makePathElements]), Null :> 
+           Spacer[10], Blank[] :> Spacer[10]}], TrackedSymbols :> {}], 
+        FrameStyle -> None, ImageMargins -> 0, FrameMargins -> 0, Alignment -> 
+        Top, ImageSize -> {Automatic, 14}]}, 
+     DynamicBox[
+      ToBoxes[
+       Column[
+        If[TypeSystem`NestedGrid`PackagePrivate`$path$$ == {}, {
+          TypeSystem`NestedGrid`PackagePrivate`displayScrollBar[
+          TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+           TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+           TypeSystem`NestedGrid`PackagePrivate`$pos$$], 
+          TypeSystem`NestedGrid`PackagePrivate`onDesktopShow[
+           TypeSystem`NestedGrid`PackagePrivate`alignBar[
+           TypeSystem`NestedGrid`PackagePrivate`$state$$][
+           TypeSystem`NestedGrid`PackagePrivate`$bottomBar$$]]}, {
+         TypeSystem`NestedGrid`PackagePrivate`$topBar$$, 
+          TypeSystem`NestedGrid`PackagePrivate`displayScrollBar[
+          TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+           TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+           TypeSystem`NestedGrid`PackagePrivate`$pos$$], 
+          TypeSystem`NestedGrid`PackagePrivate`onDesktopShow[
+           TypeSystem`NestedGrid`PackagePrivate`alignBar[
+           TypeSystem`NestedGrid`PackagePrivate`$state$$][
+           TypeSystem`NestedGrid`PackagePrivate`$bottomBar$$]]}], Spacings -> 
+        If[TypeSystem`NestedGrid`PackagePrivate`$path$$ == {}, 
+          0, {{}, {0, 0.05, 0}}]], StandardForm], 
+      ImageSizeCache -> {695., {80., 86.}}, 
+      TrackedSymbols :> {
+       TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+        TypeSystem`NestedGrid`PackagePrivate`$grid$$}], 
+     BaseStyle -> {LineBreakWithin -> False}, Deinitialization :> 
+     TypeSystem`NestedGrid`PackagePrivate`deleteState[
+      TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+     DynamicModuleValues :> {}, Initialization :> 
+     Block[{$ContextPath = $ContextPath}, 
+       Needs["TypeSystem`"]]], Deploy, DefaultBaseStyle -> "Deploy"]},
+  "CopyTag",
+  DisplayFunction->(#& ),
+  InterpretationFunction->("Dataset[<>]"& )]], "Output",
+ CellChangeTimes->{
+  3.730657613468871*^9, {3.730657684472865*^9, 3.7306577138569784`*^9}},
+ CellLabel->"Out[6]=",ExpressionUUID->"165e660f-86e0-4641-9b7a-a0104ba197e4"]
+}, Open  ]]
 }, Open  ]]
 },
 WindowSize->{1920, 1007},
@@ -1177,52 +1918,62 @@ Cell[558, 20, 176, 2, 28, "Input",ExpressionUUID->"6e389f73-8348-46e3-9a41-87ac2
 Cell[737, 24, 161, 3, 34, "Text",ExpressionUUID->"b71da2b0-6ccf-4cbc-9f24-508b120bf9e3"],
 Cell[CellGroupData[{
 Cell[923, 31, 401, 6, 28, "Input",ExpressionUUID->"57ee4983-0182-4ce4-b021-04591b46f0dd"],
-Cell[1327, 39, 14473, 278, 71, "Output",ExpressionUUID->"7adce0be-ff99-4381-8c64-559a82412472"]
+Cell[1327, 39, 14515, 278, 71, "Output",ExpressionUUID->"84fb59ca-073b-4958-8c98-3114913a7ad9"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[15837, 322, 353, 6, 28, "Input",ExpressionUUID->"78adbfdf-83ec-406c-b008-b3080d6eef3e"],
-Cell[16193, 330, 13854, 271, 71, "Output",ExpressionUUID->"91a9333c-817b-486c-b6d0-549fbed551df"]
+Cell[15879, 322, 352, 6, 28, "Input",ExpressionUUID->"78adbfdf-83ec-406c-b008-b3080d6eef3e"],
+Cell[16234, 330, 13989, 274, 71, "Output",ExpressionUUID->"52bc48f5-a11a-4806-b653-118bcb0ae783"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[30084, 606, 348, 6, 28, "Input",ExpressionUUID->"c35d5982-9674-48c4-a278-aff63764d93e"],
-Cell[30435, 614, 13858, 272, 71, "Output",ExpressionUUID->"3118ff4f-89cb-4085-b0dd-8a7958cc7fee"]
+Cell[30260, 609, 349, 6, 28, "Input",ExpressionUUID->"c35d5982-9674-48c4-a278-aff63764d93e"],
+Cell[30612, 617, 13858, 271, 71, "Output",ExpressionUUID->"f60997ba-5a5a-4b65-a186-59a25dcb3e5d"]
 }, Open  ]],
-Cell[44308, 889, 237, 4, 34, "Text",ExpressionUUID->"c1af5882-35c7-4126-afd7-76428b9baa54"],
+Cell[44485, 891, 237, 4, 34, "Text",ExpressionUUID->"c1af5882-35c7-4126-afd7-76428b9baa54"],
 Cell[CellGroupData[{
-Cell[44570, 897, 452, 7, 28, "Input",ExpressionUUID->"a26f63a1-ad22-4956-be27-3255cf6db425"],
-Cell[45025, 906, 5117, 105, 71, "Output",ExpressionUUID->"3ddd404e-0fe9-49c4-9ee7-9616ddc32088"]
+Cell[44747, 899, 452, 7, 28, "Input",ExpressionUUID->"a26f63a1-ad22-4956-be27-3255cf6db425"],
+Cell[45202, 908, 5324, 108, 71, "Output",ExpressionUUID->"14eb4dd1-443e-4446-99e8-ef6d5be63857"]
 }, Open  ]],
-Cell[50157, 1014, 162, 3, 34, "Text",ExpressionUUID->"d2da01e9-0354-4925-9483-ffa148537172"],
-Cell[50322, 1019, 249, 4, 28, "Input",ExpressionUUID->"1c92aeaa-91fb-4f9a-a909-86402f25b7cb"],
-Cell[50574, 1025, 328, 5, 28, "Input",ExpressionUUID->"fcb00eb7-2007-4a2f-916b-a6881ff4834e"],
-Cell[50905, 1032, 395, 7, 28, "Input",ExpressionUUID->"43e23535-b124-4a64-b69f-9dbfa9d391b7"],
-Cell[51303, 1041, 185, 3, 34, "Text",ExpressionUUID->"a8b54440-8703-4822-9154-6db7c92943df"],
-Cell[51491, 1046, 336, 5, 28, "Input",ExpressionUUID->"043cef49-7859-43df-a64f-2828f0a984a9"],
-Cell[51830, 1053, 414, 6, 28, "Input",ExpressionUUID->"ac4bec7a-3981-4342-a1fc-9bc314c13e84"],
-Cell[52247, 1061, 482, 8, 28, "Input",ExpressionUUID->"a4f18d50-1983-4aa7-ad1b-fd0b6ddc545d"],
-Cell[52732, 1071, 169, 3, 34, "Text",ExpressionUUID->"8f9c8b6c-993f-47c0-aa83-5f1261b4d40c"],
+Cell[50541, 1019, 162, 3, 34, "Text",ExpressionUUID->"d2da01e9-0354-4925-9483-ffa148537172"],
+Cell[50706, 1024, 249, 4, 28, "Input",ExpressionUUID->"1c92aeaa-91fb-4f9a-a909-86402f25b7cb"],
+Cell[50958, 1030, 328, 5, 28, "Input",ExpressionUUID->"fcb00eb7-2007-4a2f-916b-a6881ff4834e"],
+Cell[51289, 1037, 395, 7, 28, "Input",ExpressionUUID->"43e23535-b124-4a64-b69f-9dbfa9d391b7"],
+Cell[51687, 1046, 185, 3, 34, "Text",ExpressionUUID->"a8b54440-8703-4822-9154-6db7c92943df"],
+Cell[51875, 1051, 337, 5, 28, "Input",ExpressionUUID->"043cef49-7859-43df-a64f-2828f0a984a9"],
+Cell[52215, 1058, 413, 6, 28, "Input",ExpressionUUID->"ac4bec7a-3981-4342-a1fc-9bc314c13e84"],
+Cell[52631, 1066, 482, 8, 28, "Input",ExpressionUUID->"a4f18d50-1983-4aa7-ad1b-fd0b6ddc545d"],
+Cell[53116, 1076, 169, 3, 34, "Text",ExpressionUUID->"8f9c8b6c-993f-47c0-aa83-5f1261b4d40c"],
 Cell[CellGroupData[{
-Cell[52926, 1078, 258, 4, 28, "Input",ExpressionUUID->"0aa811d6-49eb-4cd1-a5da-2a45322cebc4"],
-Cell[53187, 1084, 220, 2, 32, "Output",ExpressionUUID->"f7b9340f-3562-4954-a7be-28ef112cc061"]
+Cell[53310, 1083, 259, 4, 28, "Input",ExpressionUUID->"0aa811d6-49eb-4cd1-a5da-2a45322cebc4"],
+Cell[53572, 1089, 278, 4, 32, "Output",ExpressionUUID->"9596d792-e746-4c02-82e2-355828609a90"]
 }, Open  ]],
-Cell[53422, 1089, 161, 3, 34, "Text",ExpressionUUID->"e72ae146-4ced-43e9-92d8-49ded09d6c78"],
+Cell[53865, 1096, 161, 3, 34, "Text",ExpressionUUID->"e72ae146-4ced-43e9-92d8-49ded09d6c78"],
 Cell[CellGroupData[{
-Cell[53608, 1096, 314, 7, 28, "Input",ExpressionUUID->"6bc948d8-7e0a-4d7a-83b6-23854ae75155"],
-Cell[53925, 1105, 333, 4, 128, "Output",ExpressionUUID->"5a107c84-d022-4b6b-8ef8-abe5474acf52"]
+Cell[54051, 1103, 314, 7, 28, "Input",ExpressionUUID->"6bc948d8-7e0a-4d7a-83b6-23854ae75155"],
+Cell[54368, 1112, 347, 9, 21, "Message",ExpressionUUID->"511e0d8e-693a-4334-951d-d091b8539e95"],
+Cell[54718, 1123, 393, 10, 21, "Message",ExpressionUUID->"c9b65e07-2965-4f21-b6e3-19ef814a7824"],
+Cell[55114, 1135, 454, 10, 23, "Message",ExpressionUUID->"0d720e93-9641-4026-90f5-2f5f60777f42"],
+Cell[55571, 1147, 571, 12, 23, "Message",ExpressionUUID->"0acf784b-deed-4cd1-a855-1e10a6cec1d8"],
+Cell[56145, 1161, 354, 7, 32, "Output",ExpressionUUID->"c21f1b65-b0af-4c90-90ff-f298e4a7ca78"]
 }, Open  ]],
-Cell[54273, 1112, 175, 3, 34, "Text",ExpressionUUID->"406b0b35-ed2a-4270-8cb9-d0aeca3869a2"],
+Cell[56514, 1171, 175, 3, 34, "Text",ExpressionUUID->"406b0b35-ed2a-4270-8cb9-d0aeca3869a2"],
 Cell[CellGroupData[{
-Cell[54473, 1119, 291, 5, 28, "Input",ExpressionUUID->"9f0ba76e-3a2e-4931-ac44-c680ead5c025"],
-Cell[54767, 1126, 637, 13, 32, "Output",ExpressionUUID->"ee0aee3c-b25f-4ae6-855e-7fcbf5a73942"]
+Cell[56714, 1178, 291, 5, 28, "Input",ExpressionUUID->"9f0ba76e-3a2e-4931-ac44-c680ead5c025"],
+Cell[57008, 1185, 659, 13, 32, "Output",ExpressionUUID->"7a47bfa2-6c17-49a3-b0d6-cf443c10c1c0"]
 }, Open  ]],
-Cell[55419, 1142, 163, 3, 34, "Text",ExpressionUUID->"d68eb744-8aae-4b0d-8df1-525a6b4bcd14"],
+Cell[57682, 1201, 163, 3, 34, "Text",ExpressionUUID->"d68eb744-8aae-4b0d-8df1-525a6b4bcd14"],
 Cell[CellGroupData[{
-Cell[55607, 1149, 208, 3, 28, "Input",ExpressionUUID->"e6572a06-0b40-43f3-a426-a17bebefb211"],
-Cell[55818, 1154, 181, 2, 32, "Output",ExpressionUUID->"ba000b3d-1e11-4ff6-accd-719794bfa55d"]
+Cell[57870, 1208, 208, 3, 28, "Input",ExpressionUUID->"e6572a06-0b40-43f3-a426-a17bebefb211"],
+Cell[58081, 1213, 205, 2, 32, "Output",ExpressionUUID->"1397d682-7e10-4c46-ba54-e6831ff79bae"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[58323, 1220, 162, 3, 44, "Subsubsection",ExpressionUUID->"252b58cc-d6ef-4503-98c7-a48e758043ba"],
+Cell[58488, 1225, 160, 3, 34, "Text",ExpressionUUID->"3a692bb9-8d13-4c8d-bc73-9fdf98b8ba9d"],
+Cell[CellGroupData[{
+Cell[58673, 1232, 361, 7, 28, "Input",ExpressionUUID->"f4818a18-3753-4441-a8fd-33555f0d1a30"],
+Cell[59037, 1241, 32860, 655, 185, "Output",ExpressionUUID->"165e660f-86e0-4641-9b7a-a0104ba197e4"]
+}, Open  ]]
 }, Open  ]]
 }
 ]
 *)
-
-(* End of internal cache information *)
 

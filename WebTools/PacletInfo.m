@@ -13,7 +13,7 @@ Paclet[
       "WebTools`StartBrowser", "Webtools`BrowserObject", "WebTools`$CurrentBrowserObject",
       "WebTools`BrowserOpenPage", "Webtools`BrowserTabs",
       "WebTools`BrowserExecute", "WebTools`BrowserPageLinks","WebTools`BrowserPageHTML", "WebTools`BrowserPageURL",
-
+      "WebTools`BrowserCommand",
    "WebTools`wtCaptureWebPage", "WebTools`wtClearElement",
 "WebTools`wtClickElement", "WebTools`wtCssSelector", "WebTools`wtElementClassName", "WebTools`wtFocusFrame",
 "WebTools`wtHideElement", "WebTools`wtHoverElement", "WebTools`wtId",

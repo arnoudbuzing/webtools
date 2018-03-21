@@ -18,7 +18,7 @@ BrowserObject::usage = "BrowserObject[...] represents the browser launches by St
 $CurrentBrowserObject::usage = "$CurrentBrowserObject gives the most recently started browser object.";
 BrowserOpenPage::usage = "BrowserOpenPage[url] opens the web page specified by 'url'";
 BrowserTabs::usage = "BrowserTabs[] returns a list of all window identifiers, that are open in a given web session.";
-
+BrowserCommand::usage = "";
 (* javascript based functions *)
 BrowserExecute::usage = "BrowserExecute[script] executes 'script' on the current browser";
 BrowserPageLinks::usage = "BrowserPageLinks[] returns the hyperlinks for the current active page.";

@@ -7,7 +7,7 @@ Begin["`Private`"];
 
 $WebToolsDirectory = DirectoryName[$InputFileName];
 
-files = {	"Driver.wl", "Browser.wl", "Javascript.wl", "Page.wl", "WebDriverAPI.m", "Utilities.m"};
+files = {	"Driver.wl", "Browser.wl", "Javascript.wl", "Page.wl", "Cookies.wl", "WebDriverAPI.m", "Utilities.m"};
 Map[ Get[ FileNameJoin[{DirectoryName[$InputFileName], #}] ] &, files ];
 
 End[];
