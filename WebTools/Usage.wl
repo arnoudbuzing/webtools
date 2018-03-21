@@ -4,6 +4,8 @@ StartDriver[\"Chrome\"] launches the driver for Chrome.\n\
 StartDriver[\"Firefox\"] launches the driver for Firefox.\n\
 StartDriver[\"Edge\"] launches the driver for Edge.";
 
+StopDriver::usage = "StopDriver[driver] stops the process associated with 'driver'";
+
 DriverObject::usage = "DriverObject[...] represents the driver launched by StartDriver.";
 
 GetDrivers::usage = "GetDrivers[] gives the list of web drivers supported on your platform.\n\

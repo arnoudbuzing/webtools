@@ -50,6 +50,20 @@ getdriver[driver_,version_] := Module[{directory},
 	First[ FileNames["*",directory] ] (* assume only one driver per versioned directory *)
 	]
 
+(* driver object *)
+
+DriverObject[assoc_Association][key_] := assoc[key];
+
+DriverObject /: MakeBoxes[object:_DriverObject, form:(StandardForm|TraditionalForm)] := Module[{assoc=First[object]},
+	BoxForm`ArrangeSummaryBox[DriverObject, object, None, {
+		{BoxForm`SummaryItem[{"Driver: ", assoc["Driver"]}], BoxForm`SummaryItem[{"Version: ", assoc["Version"]}]},
+	 	{BoxForm`SummaryItem[{"URL: ", assoc["URL"]}]}
+	}, {
+		{BoxForm`SummaryItem[{"Executable: ", assoc["Executable"]}]},
+		{BoxForm`SummaryItem[{"Process: ", assoc["Process"]}]}
+	}, form, "Interpretable" -> True]
+];
+
 (* execute once to start the standalone driver *)
 StartDriver[] := StartDriver["Chrome", "2.37"];
 
@@ -64,16 +78,11 @@ StartDriver[driver_, version_] := Module[{executable,process,port},
 	DriverObject[ <| "Driver" -> driver, "Version" -> version, "Process" -> process, "URL" -> "http://localhost:"<>port, "Port" -> port, "Executable" -> executable |> ]
 ]
 
-DriverObject[assoc_Association][key_] := assoc[key];
-
-DriverObject /: MakeBoxes[object:_DriverObject, form:(StandardForm|TraditionalForm)] := Module[{assoc=First[object]},
-	BoxForm`ArrangeSummaryBox[DriverObject, object, None, {
-		{BoxForm`SummaryItem[{"Driver: ", assoc["Driver"]}], BoxForm`SummaryItem[{"Version: ", assoc["Version"]}]},
-	 	{BoxForm`SummaryItem[{"URL: ", assoc["URL"]}]}
-	}, {
-		{BoxForm`SummaryItem[{"Executable: ", assoc["Executable"]}]},
-		{BoxForm`SummaryItem[{"Process: ", assoc["Process"]}]}
-	}, form, "Interpretable" -> True]];
+(* terminate the driver process *)
+StopDriver[ driver_DriverObject ] := Module[{status},
+	KillProcess[ driver["Process"] ];
+	status=ProcessStatus[driver["Process"]]
+]
 
 (* higher level functions *)
 
