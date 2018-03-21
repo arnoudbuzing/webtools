@@ -28,7 +28,7 @@ back[sessionId_] := post["/session/" <> sessionId <> "/back"];
 refresh[] := refresh[$currentsession];
 refresh[sessionId_] := post["/session/" <> sessionId <> "/refresh"];
 
-execute[baseurl_, sessionid_, script_, args_] := post[ baseurl <> "/session/" <> sessionid <> "/execute", {"script" -> script, "args" -> args}];
+execute[baseurl_, sessionid_, script_, args_] := post[ baseurl <> "/session/" <> sessionid <> "/execute/sync", {"script" -> script, "args" -> args}];
 
 
 availableengines[] := availableengines[$currentsession];
