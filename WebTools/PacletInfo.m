@@ -12,7 +12,8 @@ Paclet[
       "WebTools`StartDriver", "WebTools`StopDriver", "WebTools`DriverObject", "WebTools`$CurrentDriverObject","WebTools`GetDrivers",
       "WebTools`BrowserOpen", "Webtools`BrowserObject", "WebTools`$CurrentBrowserObject",
       "Webtools`BrowserTabs",
-      "WebTools`BrowserExecute", "WebTools`BrowserPageLinks","WebTools`BrowserPageHTML",
+      "WebTools`BrowserExecute", "WebTools`BrowserPageLinks","WebTools`BrowserPageHTML", "WebTools`BrowserPageURL",
+      
    "WebTools`wtCaptureWebPage", "WebTools`wtClearElement",
 "WebTools`wtClickElement", "WebTools`wtCssSelector", "WebTools`wtElementClassName", "WebTools`wtFocusFrame",
 "WebTools`wtHideElement", "WebTools`wtHoverElement", "WebTools`wtId",

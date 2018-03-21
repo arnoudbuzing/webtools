@@ -20,6 +20,10 @@ BrowserPageHTML[] := BrowserPageHTML[ $CurrentDriverObject, $CurrentBrowserObjec
 BrowserPageHTML[browser_] := BrowserPageHTML[ $CurrentDriverObject, browser];
 BrowserPageHTML[driver_, browser_] := BrowserExecute[ driver, browser, resources["pagehtml"] ];
 
+BrowserPageURL[] := BrowserPageURL[ $CurrentDriverObject, $CurrentBrowserObject];
+BrowserPageURL[browser_] := BrowserPageURL[ $CurrentDriverObject, browser];
+BrowserPageURL[driver_, browser_] := BrowserExecute[ driver, browser, resources["pageurl"] ];
+
 
 (*Get part of HTML*)
 Options[wtGetHtml]={"Selection"->"outer"};

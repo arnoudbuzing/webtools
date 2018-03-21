@@ -24,7 +24,7 @@ BrowserTabs::usage = "BrowserTabs[] returns a list of all window identifiers, th
 BrowserExecute::usage = "BrowserExecute[script] executes 'script' on the current browser";
 BrowserPageLinks::usage = "BrowserPageLinks[] returns the hyperlinks for the current active page.";
 BrowserPageHTML::usage = "BrowserPageHTML gives the raw HTML for the current browser page.";
-
+BrowserPageURL::usage = "BrowserPageURL gives the url for the current page";
 
 wtStopWebSession::usage = "wtStopWebSession[sessionid] stops the web session identified by 'sessionid'";
 wtWebSessionStatus::usage = "wtWebSessionStatus[] returns status information for the current web session. wtWebSessionStatus[sessionid] returns status information for the specified 'sessionid'";
