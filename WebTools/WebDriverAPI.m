@@ -13,7 +13,7 @@ setsession[ driver_DriverObject ] := Module[{assoc=First[driver],response,result
   name = Capitalize @ First @ Cases[result,HoldPattern["browserName"->s_String]:>s,Infinity];
   version = First @ Cases[result, HoldPattern[("version"|"browserVersion")->s_String]:>s, Infinity ];
   sessionid = First @ Cases[result,HoldPattern["sessionId"->s_String]:>s,Infinity];
-  BrowserObject[ <| "Name" -> name, "Version"->version, "SessionID"->sessionid|> ]
+  $CurrentBrowserObject = BrowserObject[ <| "Name" -> name, "Version"->version, "SessionID"->sessionid|> ]
 ]
 
 
@@ -52,7 +52,7 @@ frame[sessionId_, elementId_] := post["/session/" <> sessionId <> "/frame", {"id
 
 geturl[] := geturl[$currentsession];
 geturl[sessionId_] := get["/session/" <> sessionId <> "/url"];
-seturl[url_] := seturl[$currentsession,url];
+seturl[url_] := seturl[$CurrentBrowserObject["SessionID"],url];
 seturl[sessionId_, url_] := post["/session/" <> sessionId <> "/url", {"url" -> url}];
 
 screenshot[] := screenshot[$currentsession];

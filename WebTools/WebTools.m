@@ -89,7 +89,7 @@ StartDriver[driver_, version_] := Module[{executable,process,port},
   executable = getdriver[driver,version];
 	port = randomport[];
 	process=StartProcess[{executable,"--port="<>port}];
-	DriverObject[ <| "Driver" -> driver, "Version" -> version, "Process" -> process, "URL" -> "http://localhost:"<>port, "Port" -> port, "Executable" -> executable |> ]
+	$CurrentDriverObject = DriverObject[ <| "Driver" -> driver, "Version" -> version, "Process" -> process, "URL" -> "http://localhost:"<>port, "Port" -> port, "Executable" -> executable |> ]
 ]
 
 (* terminate the driver process *)
