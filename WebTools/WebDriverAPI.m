@@ -2,15 +2,16 @@ status[] := get["/status"];
 
 sessions[] := get["/sessions"];
 
-setsession[ driver_DriverObject ] := Module[{assoc=First[driver],response,result},
+setsession[ driver_DriverObject ] := Module[{assoc=First[driver],response,result,sessionid},
   response = URLRead[
     HTTPRequest[
       assoc["URL"]<>"/session",
       <|"Method" -> "POST", "Body" -> ExportString[{"desiredCapabilities" -> {"browserName" -> assoc["Driver"]}}, "JSON"]|>
     ]
   ];
-  result = ImportString[response["Body"],"JSON"];
-  $currentsession = "sessionId" /. Cases[result,HoldPattern["sessionId"->_String],Infinity]
+  result = ImportString[response["Body"],"JSON"]; Print[result];
+  sessionid = "sessionId" /. Cases[result,HoldPattern["sessionId"->_String],Infinity];
+  BrowserObject[ <| "Browser" -> assoc["Driver"], "Version"->"1"|> ]
 ]
 
 

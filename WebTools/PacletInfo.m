@@ -11,7 +11,7 @@ Paclet[
    { "Kernel", Symbols -> {"WebTools`wtBrowserWindows", "WebTools`wtCaptureWebPage", "WebTools`wtClearElement",
 "WebTools`wtClickElement", "WebTools`wtCssSelector", "WebTools`wtElementClassName", "WebTools`wtFocusFrame",
 "WebTools`wtGetPageHtml", "WebTools`wtHideElement", "WebTools`wtHoverElement", "WebTools`wtId", "WebTools`StartDriver",
-"webTools`StopDriver", "WebTools`DriverObject",
+"webTools`StopDriver", "WebTools`DriverObject", "Webtools`BrowserObject",
 "WebTools`wtJavascriptExecute", "WebTools`wtLinkText", "WebTools`wtLocateElement", "WebTools`wtName", "WebTools`wtOpenWebPage",
 "WebTools`wtPageBack", "WebTools`wtPageForward", "WebTools`wtPageLinks", "WebTools`wtPartialLinkText", "WebTools`wtRefreshWebPage",
 "WebTools`wtSetBrowserWindow", "WebTools`StartBrowser", "WebTools`wtStopWebSession", "WebTools`wtSubmitElement",

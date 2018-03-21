@@ -66,6 +66,18 @@ DriverObject /: MakeBoxes[object:_DriverObject, form:(StandardForm|TraditionalFo
 	}, form, "Interpretable" -> True]
 ];
 
+BrowserObject[assoc_Association][key_] := assoc[key];
+
+BrowserObject /: MakeBoxes[object:_BrowserObject, form:(StandardForm|TraditionalForm)] := Module[{assoc=First[object]},
+	BoxForm`ArrangeSummaryBox[BrowserObject, object, None, {
+		{BoxForm`SummaryItem[{"Browser: ", assoc["Browser"]}], BoxForm`SummaryItem[{"Version: ", None}]},
+	 	{BoxForm`SummaryItem[{"SessionID: ", assoc["SessionID"]}]}
+	}, {
+		{BoxForm`SummaryItem[{"Bla: ", None}]}
+	}, form, "Interpretable" -> True]
+];
+
+
 (* execute once to start the standalone driver *)
 StartDriver[] := StartDriver["Chrome", "2.37"];
 
