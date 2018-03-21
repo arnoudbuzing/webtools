@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     27344,        621]
-NotebookOptionsPosition[     24265,        556]
-NotebookOutlinePosition[     24822,        577]
-CellTagsIndexPosition[     24736,        572]
+NotebookDataLength[     43963,        956]
+NotebookOptionsPosition[     40649,        887]
+NotebookOutlinePosition[     41206,        908]
+CellTagsIndexPosition[     41120,        903]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -26,7 +26,7 @@ Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"chrome", "=", 
-  RowBox[{"LaunchDriver", "[", "\"\<Chrome\>\"", "]"}]}]], "Input",
+  RowBox[{"StartDriver", "[", "\"\<Chrome\>\"", "]"}]}]], "Input",
  CellChangeTimes->{{3.7306366172264442`*^9, 3.730636621360382*^9}, {
   3.7306399258183484`*^9, 3.7306399259453497`*^9}, {3.730639976771212*^9, 
   3.730639977744214*^9}},
@@ -37,7 +37,7 @@ Cell[BoxData[
   RowBox[{
    TagBox["DriverObject",
     "SummaryHead"], "[", 
-   DynamicModuleBox[{Typeset`open$$ = True, Typeset`embedState$$ = "Ready"}, 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
     TemplateBox[{PaneSelectorBox[{False -> GridBox[{{
             PaneBox[
              ButtonBox[
@@ -54,11 +54,15 @@ Cell[BoxData[
                RowBox[{
                  TagBox["\"Driver: \"", "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
-                 TagBox["\"Chrome\"", "SummaryItem"]}]}, {
+                 TagBox["\"Chrome\"", "SummaryItem"]}], 
+               RowBox[{
+                 TagBox["\"Version: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"2.37\"", "SummaryItem"]}]}, {
                RowBox[{
                  TagBox["\"URL: \"", "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
-                 TagBox["\"http://localhost:60163\"", "SummaryItem"]}]}}, 
+                 TagBox["\"http://localhost:60220\"", "SummaryItem"]}], ""}}, 
              GridBoxAlignment -> {
               "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
              False, GridBoxItemSize -> {
@@ -86,19 +90,181 @@ Cell[BoxData[
                RowBox[{
                  TagBox["\"Driver: \"", "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
-                 TagBox["\"Chrome\"", "SummaryItem"]}]}, {
-               RowBox[{
-                 TagBox["\"URL: \"", "SummaryItemAnnotation"], 
-                 "\[InvisibleSpace]", 
-                 TagBox["\"http://localhost:60163\"", "SummaryItem"]}]}, {
+                 TagBox["\"Chrome\"", "SummaryItem"]}], 
                RowBox[{
                  TagBox["\"Version: \"", "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
                  TagBox["\"2.37\"", "SummaryItem"]}]}, {
                RowBox[{
-                 TagBox["\"Port: \"", "SummaryItemAnnotation"], 
+                 TagBox["\"URL: \"", "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
-                 TagBox["\"60163\"", "SummaryItem"]}]}}, 
+                 TagBox["\"http://localhost:60220\"", "SummaryItem"]}], ""}, {
+               RowBox[{
+                 TagBox["\"Executable: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                 "\"C:\\\\Users\\\\arnoudb.WRI\\\\AppData\\\\Roaming\\\\\
+Mathematica\\\\Paclets\\\\Repository\\\\WebTools-0.1.2\\\\Driver\\\\Chrome\\\\\
+Windows-x86-64\\\\2.37\\\\chromedriver.exe\"", "SummaryItem"]}], ""}, {
+               RowBox[{
+                 TagBox["\"Process: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  InterpretationBox[
+                   RowBox[{
+                    TagBox["ProcessObject", "SummaryHead"], "[", 
+                    
+                    DynamicModuleBox[{
+                    Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+                    TemplateBox[{
+                    PaneSelectorBox[{False -> GridBox[{{
+                    PaneBox[
+                    ButtonBox[
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "FEBitmaps", "SquarePlusIconMedium"]], 
+                    ButtonFunction :> (Typeset`open$$ = True), Appearance -> 
+                    None, Evaluator -> Automatic, Method -> "Preemptive"], 
+                    Alignment -> {Center, Center}, ImageSize -> 
+                    Dynamic[{Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                    AbsoluteCurrentValue[Magnification]}]], 
+                    GridBox[{{
+                    RowBox[{
+                    TagBox["\"Program: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["\"chromedriver.exe\"", "SummaryItem"]}]}, {
+                    RowBox[{
+                    TagBox["\"PID: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["16284", "SummaryItem"]}]}}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+                    AutoDelete -> False, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxSpacings -> {
+                    "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+                    BaseStyle -> {
+                    ShowStringCharacters -> False, NumberMarks -> False, 
+                    PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+                    GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> 
+                    False, GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    BaselinePosition -> {1, 1}], True -> GridBox[{{
+                    PaneBox[
+                    ButtonBox[
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "FEBitmaps", "SquareMinusIconMedium"]], 
+                    ButtonFunction :> (Typeset`open$$ = False), Appearance -> 
+                    None, Evaluator -> Automatic, Method -> "Preemptive"], 
+                    Alignment -> {Center, Center}, ImageSize -> 
+                    Dynamic[{Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                    AbsoluteCurrentValue[Magnification]}]], 
+                    GridBox[{{
+                    RowBox[{
+                    TagBox["\"Program: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["\"chromedriver.exe\"", "SummaryItem"]}]}, {
+                    RowBox[{
+                    TagBox["\"PID: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["16284", "SummaryItem"]}]}, {
+                    RowBox[{
+                    TagBox["\"Parent PID: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["2648", "SummaryItem"]}]}, {
+                    RowBox[{
+                    TagBox["\"User: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["\"arnoudb\"", "SummaryItem"]}]}, {
+                    RowBox[{
+                    TagBox["\"Path: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox[
+                    "\"C:\\\\Users\\\\arnoudb.WRI\\\\AppData\\\\Roaming\\\\\
+Mathematica\\\\Paclets\\\\Repository\\\\WebTools-0.1.2\\\\Driver\\\\Chrome\\\\\
+Windows-x86-64\\\\2.37\\\\chromedriver.exe\"", "SummaryItem"]}]}, {
+                    RowBox[{
+                    TagBox["\"Memory:\"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox[
+                    
+                    TemplateBox[{"8.605696`", "\"MB\"", "megabytes", 
+                    "\"Megabytes\""}, "Quantity", SyntaxForm -> Mod], 
+                    "SummaryItem"]}]}, {
+                    RowBox[{
+                    TagBox["\"Threads: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["11", "SummaryItem"]}]}, {
+                    RowBox[{
+                    TagBox["\"Start Time: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox[
+                    TemplateBox[{
+                    RowBox[{"\"Wed 21 Mar 2018 13:02:28\"", 
+                    StyleBox[
+                    RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+                    StyleBox[
+                    RowBox[{"-", "5.`"}], NumberMarks -> False, StripOnInput -> 
+                    False]}], FontColor -> GrayLevel[0.5]]}], 
+                    RowBox[{"DateObject", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    
+                    RowBox[{"2018", ",", "3", ",", "21", ",", "13", ",", "2", 
+                    ",", "28.`"}], "}"}], ",", "\"Instant\"", ",", 
+                    "\"Gregorian\"", ",", 
+                    RowBox[{"-", "5.`"}]}], "]"}]}, "DateObject", Editable -> 
+                    False], "SummaryItem"]}]}, {
+                    RowBox[{
+                    TagBox["\"System Time: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox[
+                    
+                    TemplateBox[{"0.03125`", "\"s\"", "seconds", 
+                    "\"Seconds\""}, "Quantity", SyntaxForm -> Mod], 
+                    "SummaryItem"]}]}, {
+                    RowBox[{
+                    TagBox["\"User Time: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox[
+                    
+                    TemplateBox[{"0.015625`", "\"s\"", "seconds", 
+                    "\"Seconds\""}, "Quantity", SyntaxForm -> Mod], 
+                    "SummaryItem"]}]}, {
+                    RowBox[{
+                    TagBox["\"Real Time: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox[
+                    
+                    TemplateBox[{"0", "\"s\"", "seconds", "\"Seconds\""}, 
+                    "Quantity", SyntaxForm -> Mod], "SummaryItem"]}]}}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+                    AutoDelete -> False, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxSpacings -> {
+                    "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+                    BaseStyle -> {
+                    ShowStringCharacters -> False, NumberMarks -> False, 
+                    PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+                    GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> 
+                    False, GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    BaselinePosition -> {1, 1}]}, 
+                    Dynamic[Typeset`open$$], ImageSize -> Automatic]}, 
+                    "SummaryPanel"], DynamicModuleValues :> {}], "]"}], 
+                   ProcessObject[
+                    Association[
+                    "ManagedProcess" -> True, "UID" -> 0, "PID" -> 16284, 
+                    "PPID" -> 2648, "Program" -> "chromedriver.exe", "Path" -> 
+                    "C:\\Users\\arnoudb.WRI\\AppData\\Roaming\\Mathematica\\\
+Paclets\\Repository\\WebTools-0.1.2\\Driver\\Chrome\\Windows-x86-64\\2.37\\\
+chromedriver.exe", "User" -> "arnoudb", "StartTime" -> 1521655348]], 
+                   Selectable -> False, Editable -> False, SelectWithContents -> 
+                   True], "SummaryItem"]}], ""}}, 
              GridBoxAlignment -> {
               "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
              False, GridBoxItemSize -> {
@@ -118,12 +284,12 @@ Cell[BoxData[
    Association[
    "Driver" -> "Chrome", "Version" -> "2.37", "Process" -> ProcessObject[
       Association[
-      "ManagedProcess" -> True, "UID" -> 0, "PID" -> 9388, "PPID" -> 10888, 
+      "ManagedProcess" -> True, "UID" -> 0, "PID" -> 16284, "PPID" -> 2648, 
        "Program" -> "chromedriver.exe", "Path" -> 
        "C:\\Users\\arnoudb.WRI\\AppData\\Roaming\\Mathematica\\Paclets\\\
 Repository\\WebTools-0.1.2\\Driver\\Chrome\\Windows-x86-64\\2.37\\\
-chromedriver.exe", "User" -> "arnoudb", "StartTime" -> 1521655027]], "URL" -> 
-    "http://localhost:60163", "Port" -> "60163", "Executable" -> 
+chromedriver.exe", "User" -> "arnoudb", "StartTime" -> 1521655348]], "URL" -> 
+    "http://localhost:60220", "Port" -> "60220", "Executable" -> 
     "C:\\Users\\arnoudb.WRI\\AppData\\Roaming\\Mathematica\\Paclets\\\
 Repository\\WebTools-0.1.2\\Driver\\Chrome\\Windows-x86-64\\2.37\\\
 chromedriver.exe"]],
@@ -134,8 +300,8 @@ chromedriver.exe"]],
   3.730636748905028*^9, 3.730637645650117*^9, 3.7306399283360853`*^9, 
   3.730639983529642*^9, 3.7306400529533825`*^9, 3.7306431968656645`*^9, 
   3.7306435023759694`*^9, 3.7306436217397304`*^9, 3.7306437695545692`*^9, 
-  3.7306438288827558`*^9},
- CellLabel->"Out[1]=",ExpressionUUID->"5311be56-91f7-4b4e-98ce-9254774f2c5b"]
+  3.7306438288827558`*^9, 3.7306441489943967`*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"da6e6cc1-c5e0-4ceb-bece-d048d026f5af"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -146,8 +312,173 @@ Cell[BoxData[
  CellLabel->"In[2]:=",ExpressionUUID->"abd366a2-83ad-4e8a-b8e6-fd36dab47f01"],
 
 Cell[BoxData["\<\"Chrome\"\>"], "Output",
- CellChangeTimes->{3.7306438351378117`*^9},
- CellLabel->"Out[2]=",ExpressionUUID->"d6d0bb55-1faa-4506-bd04-7205952026b3"]
+ CellChangeTimes->{3.7306438351378117`*^9, 3.7306441705749054`*^9},
+ CellLabel->"Out[2]=",ExpressionUUID->"015b6d9f-ae64-40f8-a412-532b1c706203"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"chrome", "[", "\"\<Process\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.7306441725676236`*^9, 3.7306441778382673`*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"8bf46b28-5bee-4412-b8b2-135a2bbe9167"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["ProcessObject",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    TemplateBox[{PaneSelectorBox[{False -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource[
+               "FEBitmaps", "SquarePlusIconMedium"]], 
+              ButtonFunction :> (Typeset`open$$ = True), Appearance -> None, 
+              Evaluator -> Automatic, Method -> "Preemptive"], 
+             Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                AbsoluteCurrentValue[Magnification]}]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Program: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"chromedriver.exe\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"PID: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["16284", "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource[
+               "FEBitmaps", "SquareMinusIconMedium"]], 
+              ButtonFunction :> (Typeset`open$$ = False), Appearance -> None, 
+              Evaluator -> Automatic, Method -> "Preemptive"], 
+             Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                AbsoluteCurrentValue[Magnification]}]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Program: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"chromedriver.exe\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"PID: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["16284", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Parent PID: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["2648", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"User: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"arnoudb\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Path: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                 "\"C:\\\\Users\\\\arnoudb.WRI\\\\AppData\\\\Roaming\\\\\
+Mathematica\\\\Paclets\\\\Repository\\\\WebTools-0.1.2\\\\Driver\\\\Chrome\\\\\
+Windows-x86-64\\\\2.37\\\\chromedriver.exe\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Memory:\"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  
+                  TemplateBox[{
+                   "8.523776`", "\"MB\"", "megabytes", "\"Megabytes\""}, 
+                   "Quantity", SyntaxForm -> Mod], "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Threads: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["8", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Start Time: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  TemplateBox[{
+                    RowBox[{"\"Wed 21 Mar 2018 13:02:28\"", 
+                    StyleBox[
+                    RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+                    StyleBox[
+                    RowBox[{"-", "5.`"}], NumberMarks -> False, StripOnInput -> 
+                    False]}], FontColor -> GrayLevel[0.5]]}], 
+                    RowBox[{"DateObject", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    
+                    RowBox[{
+                    "2018", ",", "3", ",", "21", ",", "13", ",", "2", ",", 
+                    "28.`"}], "}"}], ",", "\"Instant\"", ",", "\"Gregorian\"",
+                     ",", 
+                    RowBox[{"-", "5.`"}]}], "]"}]}, "DateObject", Editable -> 
+                   False], "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"System Time: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  
+                  TemplateBox[{"0.03125`", "\"s\"", "seconds", "\"Seconds\""},
+                    "Quantity", SyntaxForm -> Mod], "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"User Time: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  
+                  TemplateBox[{
+                   "0.015625`", "\"s\"", "seconds", "\"Seconds\""}, 
+                   "Quantity", SyntaxForm -> Mod], "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Real Time: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  
+                  TemplateBox[{"30", "\"s\"", "seconds", "\"Seconds\""}, 
+                   "Quantity", SyntaxForm -> Mod], "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  ProcessObject[
+   Association[
+   "ManagedProcess" -> True, "UID" -> 0, "PID" -> 16284, "PPID" -> 2648, 
+    "Program" -> "chromedriver.exe", "Path" -> 
+    "C:\\Users\\arnoudb.WRI\\AppData\\Roaming\\Mathematica\\Paclets\\\
+Repository\\WebTools-0.1.2\\Driver\\Chrome\\Windows-x86-64\\2.37\\\
+chromedriver.exe", "User" -> "arnoudb", "StartTime" -> 1521655348]],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{3.730644178158523*^9},
+ CellLabel->"Out[3]=",ExpressionUUID->"3af721b9-159b-4a47-9e05-d6d350af1791"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -168,7 +499,7 @@ Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"firefox", "=", 
-  RowBox[{"LaunchDriver", "[", "\"\<Firefox\>\"", "]"}]}]], "Input",
+  RowBox[{"StartDriver", "[", "\"\<Firefox\>\"", "]"}]}]], "Input",
  CellChangeTimes->{{3.7306367519141617`*^9, 3.7306367623379*^9}, {
   3.730639959289767*^9, 3.7306399627127447`*^9}},
  CellLabel->"In[16]:=",ExpressionUUID->"78adbfdf-83ec-406c-b008-b3080d6eef3e"],
@@ -211,7 +542,7 @@ Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"edge", "=", 
-  RowBox[{"LaunchDriver", "[", "\"\<Edge\>\"", "]"}]}]], "Input",
+  RowBox[{"StartDriver", "[", "\"\<Edge\>\"", "]"}]}]], "Input",
  CellChangeTimes->{{3.730636779040347*^9, 3.7306367794483566`*^9}, {
   3.730640020130091*^9, 3.7306400206954517`*^9}},
  CellLabel->"In[18]:=",ExpressionUUID->"c35d5982-9674-48c4-a278-aff63764d93e"],
@@ -435,7 +766,7 @@ Cell[BoxData[
  CellLabel->"In[6]:=",ExpressionUUID->"e368b081-7db7-47ff-9e4c-8a207efdd60d"],
 
 Cell[BoxData["\<\"DriverObject[...] represents the driver launched by \
-LaunchDriver.\"\>"], "Print", "PrintUsage",
+StartDriver.\"\>"], "Print", "PrintUsage",
  CellChangeTimes->{3.7306435623325324`*^9},
  CellTags->
   "Info63730625562-2239640",ExpressionUUID->"f86c9cbb-76b5-44ec-8ffe-\
@@ -565,13 +896,13 @@ StyleDefinitions->"Default.nb"
 (*CellTagsOutline
 CellTagsIndex->{
  "Info63730625562-2239640"->{
-  Cell[18718, 436, 257, 5, 45, "Print",ExpressionUUID->"f86c9cbb-76b5-44ec-8ffe-0f1dc9322408",
+  Cell[35102, 767, 257, 5, 45, "Print",ExpressionUUID->"f86c9cbb-76b5-44ec-8ffe-0f1dc9322408",
    CellTags->"Info63730625562-2239640"]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Info63730625562-2239640", 24576, 566}
+ {"Info63730625562-2239640", 40960, 897}
  }
 *)
 (*NotebookFileOutline
@@ -579,49 +910,53 @@ Notebook[{
 Cell[558, 20, 176, 2, 28, "Input",ExpressionUUID->"6e389f73-8348-46e3-9a41-87ac2f84f7bc"],
 Cell[CellGroupData[{
 Cell[759, 26, 354, 6, 28, "Input",ExpressionUUID->"57ee4983-0182-4ce4-b021-04591b46f0dd"],
-Cell[1116, 34, 5121, 103, 103, "Output",ExpressionUUID->"5311be56-91f7-4b4e-98ce-9254774f2c5b"]
+Cell[1116, 34, 13834, 269, 71, "Output",ExpressionUUID->"da6e6cc1-c5e0-4ceb-bece-d048d026f5af"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[6274, 142, 218, 3, 28, "Input",ExpressionUUID->"abd366a2-83ad-4e8a-b8e6-fd36dab47f01"],
-Cell[6495, 147, 163, 2, 32, "Output",ExpressionUUID->"d6d0bb55-1faa-4506-bd04-7205952026b3"]
+Cell[14987, 308, 218, 3, 28, "Input",ExpressionUUID->"abd366a2-83ad-4e8a-b8e6-fd36dab47f01"],
+Cell[15208, 313, 187, 2, 32, "Output",ExpressionUUID->"015b6d9f-ae64-40f8-a412-532b1c706203"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[6695, 154, 272, 4, 28, "Input",ExpressionUUID->"a26f63a1-ad22-4956-be27-3255cf6db425"],
-Cell[6970, 160, 284, 3, 32, "Output",ExpressionUUID->"e3c13005-e977-49b2-aafe-886f4a056caf"]
+Cell[15432, 320, 221, 3, 28, "Input",ExpressionUUID->"8bf46b28-5bee-4412-b8b2-135a2bbe9167"],
+Cell[15656, 325, 7386, 155, 71, "Output",ExpressionUUID->"3af721b9-159b-4a47-9e05-d6d350af1791"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[7291, 168, 304, 5, 28, "Input",ExpressionUUID->"78adbfdf-83ec-406c-b008-b3080d6eef3e"],
-Cell[7598, 175, 958, 18, 32, "Output",ExpressionUUID->"cc3c8b47-1b00-4ed2-b6eb-985071a83351"]
+Cell[23079, 485, 272, 4, 28, "Input",ExpressionUUID->"a26f63a1-ad22-4956-be27-3255cf6db425"],
+Cell[23354, 491, 284, 3, 32, "Output",ExpressionUUID->"e3c13005-e977-49b2-aafe-886f4a056caf"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[8593, 198, 219, 3, 28, "Input",ExpressionUUID->"5ea0dcc8-536f-40bd-9972-9eb5bbbb1d0a"],
-Cell[8815, 203, 241, 3, 32, "Output",ExpressionUUID->"cc34f2b7-2b42-4032-af96-48ac55624bd8"]
+Cell[23675, 499, 304, 5, 28, "Input",ExpressionUUID->"78adbfdf-83ec-406c-b008-b3080d6eef3e"],
+Cell[23982, 506, 958, 18, 32, "Output",ExpressionUUID->"cc3c8b47-1b00-4ed2-b6eb-985071a83351"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[9093, 211, 300, 5, 28, "Input",ExpressionUUID->"c35d5982-9674-48c4-a278-aff63764d93e"],
-Cell[9396, 218, 877, 16, 32, "Output",ExpressionUUID->"7be7d9c5-0876-45d0-8195-6f875d56b48a"]
+Cell[24977, 529, 219, 3, 28, "Input",ExpressionUUID->"5ea0dcc8-536f-40bd-9972-9eb5bbbb1d0a"],
+Cell[25199, 534, 241, 3, 32, "Output",ExpressionUUID->"cc34f2b7-2b42-4032-af96-48ac55624bd8"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[10310, 239, 216, 3, 28, "Input",ExpressionUUID->"b98ec7b4-50c1-48d5-845d-aed8ad5479c8"],
-Cell[10529, 244, 245, 3, 32, "Output",ExpressionUUID->"e80e6901-4f2b-4b14-b0a5-432e008df8dd"]
-}, Open  ]],
-Cell[10789, 250, 1957, 49, 87, "Input",ExpressionUUID->"f2bbeea4-4adf-4444-8763-4af4b2b61c70"],
-Cell[CellGroupData[{
-Cell[12771, 303, 221, 3, 28, "Input",ExpressionUUID->"807d2a51-7ec2-457b-bd50-6b532e859de0"],
-Cell[12995, 308, 191, 3, 32, "Output",ExpressionUUID->"7d2b5377-1d68-4b4b-8b52-bd5844ecf27f"]
+Cell[25477, 542, 300, 5, 28, "Input",ExpressionUUID->"c35d5982-9674-48c4-a278-aff63764d93e"],
+Cell[25780, 549, 877, 16, 32, "Output",ExpressionUUID->"7be7d9c5-0876-45d0-8195-6f875d56b48a"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[13223, 316, 737, 14, 48, "Input",ExpressionUUID->"66f0e598-351d-4f6c-a7d3-4794feceab26"],
-Cell[13963, 332, 4515, 94, 71, "Output",ExpressionUUID->"acc97be4-a6e9-44cd-8455-b4d7cce529cc"]
+Cell[26694, 570, 216, 3, 28, "Input",ExpressionUUID->"b98ec7b4-50c1-48d5-845d-aed8ad5479c8"],
+Cell[26913, 575, 245, 3, 32, "Output",ExpressionUUID->"e80e6901-4f2b-4b14-b0a5-432e008df8dd"]
+}, Open  ]],
+Cell[27173, 581, 1957, 49, 87, "Input",ExpressionUUID->"f2bbeea4-4adf-4444-8763-4af4b2b61c70"],
+Cell[CellGroupData[{
+Cell[29155, 634, 221, 3, 28, "Input",ExpressionUUID->"807d2a51-7ec2-457b-bd50-6b532e859de0"],
+Cell[29379, 639, 191, 3, 32, "Output",ExpressionUUID->"7d2b5377-1d68-4b4b-8b52-bd5844ecf27f"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[18515, 431, 200, 3, 28, "Input",ExpressionUUID->"e368b081-7db7-47ff-9e4c-8a207efdd60d"],
-Cell[18718, 436, 257, 5, 45, "Print",ExpressionUUID->"f86c9cbb-76b5-44ec-8ffe-0f1dc9322408",
+Cell[29607, 647, 737, 14, 48, "Input",ExpressionUUID->"66f0e598-351d-4f6c-a7d3-4794feceab26"],
+Cell[30347, 663, 4515, 94, 71, "Output",ExpressionUUID->"acc97be4-a6e9-44cd-8455-b4d7cce529cc"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[34899, 762, 200, 3, 28, "Input",ExpressionUUID->"e368b081-7db7-47ff-9e4c-8a207efdd60d"],
+Cell[35102, 767, 257, 5, 45, "Print",ExpressionUUID->"f86c9cbb-76b5-44ec-8ffe-0f1dc9322408",
  CellTags->"Info63730625562-2239640"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[19012, 446, 215, 3, 28, "Input",ExpressionUUID->"12a79052-67fd-4506-855a-00073c970b81"],
-Cell[19230, 451, 5019, 102, 71, "Output",ExpressionUUID->"78dc64a3-1372-4daa-9656-fd6c13399e0f"]
+Cell[35396, 777, 215, 3, 28, "Input",ExpressionUUID->"12a79052-67fd-4506-855a-00073c970b81"],
+Cell[35614, 782, 5019, 102, 71, "Output",ExpressionUUID->"78dc64a3-1372-4daa-9656-fd6c13399e0f"]
 }, Open  ]]
 }
 ]

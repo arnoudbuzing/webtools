@@ -1,10 +1,10 @@
-LaunchDriver::usage = "LaunchDriver[] launches the default web driver which allows Mathematica to communicate with a web browser.\n\
-LaunchDriver[driver] launches the specified driver.\n\
-LaunchDriver[\"Chrome\"] launches the driver for Chrome.\n\
-LaunchDriver[\"Firefox\"] launches the driver for Firefox.\n\
-LaunchDriver[\"Edge\"] launches the driver for Edge.";
+StartDriver::usage = "StartDriver[] launches the default web driver which allows Mathematica to communicate with a web browser.\n\
+StartDriver[driver] launches the specified driver.\n\
+StartDriver[\"Chrome\"] launches the driver for Chrome.\n\
+StartDriver[\"Firefox\"] launches the driver for Firefox.\n\
+StartDriver[\"Edge\"] launches the driver for Edge.";
 
-DriverObject::usage = "DriverObject[...] represents the driver launched by LaunchDriver.";
+DriverObject::usage = "DriverObject[...] represents the driver launched by StartDriver.";
 
 GetDrivers::usage = "GetDrivers[] gives the list of web drivers supported on your platform.\n\
 GetDrivers[\"systemid\"] gives the list for the specified 'systemid' ($SystemID)";

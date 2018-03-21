@@ -51,13 +51,13 @@ getdriver[driver_,version_] := Module[{directory},
 	]
 
 (* execute once to start the standalone driver *)
-LaunchDriver[] := LaunchDriver["Chrome", "2.37"];
+StartDriver[] := StartDriver["Chrome", "2.37"];
 
-LaunchDriver["Chrome"] := LaunchDriver["Chrome", "2.37"];
-LaunchDriver["Firefox"] := LaunchDriver["Firefox", "0.20.0"];
-LaunchDriver["Edge"] := LaunchDriver["Edge", "15063"];
+StartDriver["Chrome"] := StartDriver["Chrome", "2.37"];
+StartDriver["Firefox"] := StartDriver["Firefox", "0.20.0"];
+StartDriver["Edge"] := StartDriver["Edge", "15063"];
 
-LaunchDriver[driver_, version_] := Module[{executable,process,port},
+StartDriver[driver_, version_] := Module[{executable,process,port},
   executable = getdriver[driver,version];
 	port = randomport[];
 	process=StartProcess[{executable,"--port="<>port}];
