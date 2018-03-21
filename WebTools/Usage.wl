@@ -11,7 +11,7 @@ GetDrivers[\"systemid\"] gives the list for the specified 'systemid' ($SystemID)
 
 (* Web session functions *)
 
-wtStartWebSession::usage = "wtStartWebSession[] starts a new web session in a web browser and returns the unique session identifier.";
+LaunchBrowser::usage = "LaunchBrowser[driver] launches a new browser using the DriverObject 'driver'";
 wtStopWebSession::usage = "wtStopWebSession[sessionid] stops the web session identified by 'sessionid'";
 wtWebSessionStatus::usage = "wtWebSessionStatus[] returns status information for the current web session. wtWebSessionStatus[sessionid] returns status information for the specified 'sessionid'";
 $wtCurrentWebSession::usage = "$wtCurrentWebSession holds the session identifier for the current web session.";

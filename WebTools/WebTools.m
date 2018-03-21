@@ -15,7 +15,7 @@ $WebToolsDirectory = DirectoryName[$InputFileName];
 
 (* toplevel functions to api binding translations *)
 
-wtStartWebSession[x___] := setsession[x];
+LaunchBrowser[ driver_DriverObject ] := setsession[ driver ];
 wtStopWebSession[x___] := Null;
 wtWebSessionStatus[x___] := status[x];
 $wtWebSessions := sessions[];
@@ -47,7 +47,7 @@ randomport[] := Module[{sock,port},
 
 getdriver[driver_,version_] := Module[{directory},
 	directory= FileNameJoin[{ $WebToolsDirectory, "Driver", driver, $SystemID, version }];
-	First[ FileNames["*",directory] ] (* assume only one driver per directory *)
+	First[ FileNames["*",directory] ] (* assume only one driver per versioned directory *)
 	]
 
 (* execute once to start the standalone driver *)
