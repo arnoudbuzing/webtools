@@ -15,7 +15,7 @@ Paclet[
 "WebTools`wtJavascriptExecute", "WebTools`wtLinkText", "WebTools`wtLocateElement", "WebTools`wtName", "WebTools`wtOpenWebPage",
 "WebTools`wtPageBack", "WebTools`wtPageForward", "WebTools`wtPageLinks", "WebTools`wtPartialLinkText", "WebTools`wtRefreshWebPage",
 "WebTools`wtSetBrowserWindow", "WebTools`StartBrowser", "WebTools`wtStopWebSession", "WebTools`wtSubmitElement",
-"WebTools`wtTagName", "WebTools`wtTypeElement", "WebTools`wtWebSessionStatus", "WebTools`wtXPath", "WebTools`$wtCurrentWebSession",
+"WebTools`wtTagName", "WebTools`wtTypeElement", "WebTools`wtWebSessionStatus", "WebTools`wtXPath", "WebTools`$currentsession",
 "WebTools`GetDrivers", "WebTools`$wtWebSessions", "WebTools`$wtWebDriver", "WebTools`$wtWebDriverBaseURL"},
  Context -> {"WebTools`"} }
   }
