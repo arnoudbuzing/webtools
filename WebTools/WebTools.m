@@ -15,7 +15,7 @@ $WebToolsDirectory = DirectoryName[$InputFileName];
 
 (* toplevel functions to api binding translations *)
 
-LaunchBrowser[ driver_DriverObject ] := setsession[ driver ];
+StartBrowser[ driver_DriverObject ] := setsession[ driver ];
 wtStopWebSession[x___] := Null;
 wtWebSessionStatus[x___] := status[x];
 $wtWebSessions := sessions[];
