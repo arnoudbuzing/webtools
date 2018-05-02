@@ -1,3 +1,4 @@
+#!wolframscript
 Print[];
 
 (* uninstall old paclets first *)
@@ -13,3 +14,4 @@ Print["Paclet file(s) found: ", files];
 paclet = Last @ Sort @ files;
 Print["Selecting paclet: ",paclet];
 PacletInstall[paclet, IgnoreVersion -> True];
+RebuildPacletData[];
