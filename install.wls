@@ -1,4 +1,4 @@
-#!wolframscript
+#!/usr/bin/env wolframscript
 Print[];
 
 (* uninstall old paclets first *)
