@@ -33,7 +33,11 @@ StartDriver["Edge"] := StartDriver["Edge", "15063"];
 StartDriver[driver_, version_] := Module[{executable,process,port},
   executable = getdriver[driver,version];
 	port = randomport[];
-	process=StartProcess[{executable,"--port="<>port}];
+	process=Switch[$OperatingSystem,
+		"Windows",StartProcess[{executable,"--port="<>port}],
+		"MacOSX",StartProcess[{executable,"--port="<>port}],
+		"Unix",StartProcess[{"/usr/bin/env","--unset=LD_LIBRARY_PATH",executable,"--port="<>port}]
+		];
 	$CurrentDriverObject = DriverObject[ <| "Driver" -> driver, "Version" -> version, "Process" -> process, "URL" -> "http://localhost:"<>port, "Port" -> port, "Executable" -> executable |> ]
 ]
 
