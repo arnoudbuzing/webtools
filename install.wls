@@ -1,15 +1,12 @@
-#!/usr/bin/env wolframscript
-Print[];
-
 (* uninstall old paclets first *)
 paclets = PacletFind["WebTools"];
 Print["Found the following old paclets (uninstalling): ", Map[ #["Location"]&, paclets]];
 Map[ PacletUninstall, paclets ];
 
 (* install new version *)
-directory = DirectoryName[$InputFileName];
-Print["Using directory: ", directory];
-files = FileNames["*.paclet", directory];
+buildDirectory = FileNameJoin[{Directory[],"build"}];
+Print["Using directory: ", buildDirectory];
+files = FileNames["*.paclet", buildDirectory];
 Print["Paclet file(s) found: ", files];
 paclet = Last @ Sort @ files;
 Print["Selecting paclet: ",paclet];
