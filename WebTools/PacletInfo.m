@@ -5,9 +5,13 @@ Paclet[
   Publisher -> "Wolfram Research",
   Version -> "0.1.3",
   MathematicaVersion -> "11.2+",
-  Loading -> Automatic,
+  Loading -> "Startup",
   Extensions -> {
-   { "Documentation", Language -> "English"},
+   {
+     "Documentation",
+     Language -> "English",
+     MainPage -> "Guides/Prototypes"
+    },
    { "Kernel", Symbols -> {
       "WebTools`StartDriver", "WebTools`StopDriver", "WebTools`DriverObject", "WebTools`$CurrentDriverObject",
       "WebTools`StartBrowser", "Webtools`BrowserObject", "WebTools`$CurrentBrowserObject",
